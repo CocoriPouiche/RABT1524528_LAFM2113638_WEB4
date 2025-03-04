@@ -1,0 +1,21 @@
+/* /////////////////////////////////////////////////////*/
+/*[ importation du dossier _base ]*/
+@import url('_base/variables.css');
+@import url('_base/reset.css');
+@import url('_base/typo.css');
+
+/*[ importation du dossier _composant ]*/
+@import url('_composant/montage-img.css');
+@import url('_composant/montage-text.css');
+@import url('_composant/montage-formes.css');
+@import url('_composant/section-chef.css');
+@import url('_composant/section-img.css');
+@import url('_composant/section-footer.css');
+@import url('_composant/section-header.css');
+@import url('_composant/section-menu.css');
+
+/*[ importation du dossier _layout ]*/
+@import url('_layout/structure.css');
+@import url('_layout/container-montage.css');
+
+/* /////////////////////////////////////////////////////*/
