@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #222222;
     padding: 20px;
     border-radius: 8px;
 }
@@ -22,7 +22,7 @@
 .voir-btn {
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #c3a93f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -30,5 +30,10 @@
 }
 
 .voir-btn:hover {
-    background-color: #0056b3;
+    background-color: #896d00;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+p {
+    color: #e6e6e7;
 }
