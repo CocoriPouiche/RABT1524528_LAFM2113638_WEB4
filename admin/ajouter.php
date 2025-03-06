@@ -1,8 +1,9 @@
 <?php
 
     // $bdd : Connexion à la base de données SQLite
-    include "../includes/db.php";
-
+    include "../includes/base.php";
+    
+    VerifierConnexion();
     /**
      * Affiche un formulaire pour ajouter une entrée
      * 
@@ -35,7 +36,7 @@
         ]);
 
         // Redirection vers index.php
-        header("location: index.php");
+        header("location: repas.php");
         }
 
         $sql = "
@@ -68,11 +69,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter un repas</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <p>
-        <a href="index.php"> Retour</a>
+        <a class="deconnexion" href="deconnexion.php">
+            Deconnexion
+        </a>
     </p>
+    <h1>Zone admin</h1>
+    <p>
+        <a class="changement_page" href="repas.php">
+            Liste des repas
+        </a>
+    </p>
+    <p>
+        <a class="changement_page" href="gestion_admin.php">
+            Gérer admins
+        </a>
+    </p>  
     <h1>Ajouter</h1>
 
     <!-- action: La page qui reçoit les infos (soi-même) -->
