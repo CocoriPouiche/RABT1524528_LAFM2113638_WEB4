@@ -1,7 +1,7 @@
 <?php
 
     // $bdd : Connexion à la base de données SQLite
-    include "includes/db.php";
+    include "includes/base.php";
 
     // === Récupère tous repas selon leur catégorie et sous catégorie
     $sql = "
