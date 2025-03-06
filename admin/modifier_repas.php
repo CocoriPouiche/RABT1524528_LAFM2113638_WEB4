@@ -2,7 +2,9 @@
 
     // $bdd : Connexion à la base de données SQLite
     include "../includes/base.php";
-
+    
+    VerifierConnexion();
+    
     /**
      * Affiche un formulaire pour modifier un repas
      * 
@@ -85,7 +87,7 @@
         ]);
 
         // Redirection
-        header("location: index.php");
+        header("location: repas.php");
     }
 
 ?>
@@ -95,12 +97,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un repas</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <p>
-        <a href="index.php"> Retour</a>
-    </p>
-    <h1>Modifier</h1>
+        <p>
+            <a class="deconnexion" href="deconnexion.php">
+                Deconnexion
+            </a>
+        </p>
+        <h1>Zone admin</h1>
+        <p>
+            <a class="changement_page" href="repas.php">
+                Liste des repas
+            </a>
+        </p>
+        <p>
+            <a class="changement_page" href="gestion_admin.php">
+                Gérer admins
+            </a>
+        </p>
+    <h1>Modifier un repas</h1>
     <form action="modifier_repas.php" method="post">
         <!-- Input caché pour transférer le id -->
         <!-- L'attribut value="" permet d'avoir une valeur par défaut -->
