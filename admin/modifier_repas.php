@@ -1,8 +1,8 @@
 <?php
 
     // $bdd : Connexion à la base de données SQLite
-    include "../includes/db.php";
-    
+    include "../includes/base.php";
+
     /**
      * Affiche un formulaire pour modifier un repas
      * 
@@ -101,7 +101,7 @@
         <a href="index.php"> Retour</a>
     </p>
     <h1>Modifier</h1>
-    <form action="modifier.php" method="post">
+    <form action="modifier_repas.php" method="post">
         <!-- Input caché pour transférer le id -->
         <!-- L'attribut value="" permet d'avoir une valeur par défaut -->
         <input name="id" type="hidden" value="<?= $repas["id"]?>">
