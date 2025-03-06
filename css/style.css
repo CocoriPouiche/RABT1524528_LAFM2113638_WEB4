@@ -22,19 +22,31 @@ a {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.305);
 }
 
-a.ajouter {
-    background-color: rgb(178, 236, 92);
+a {
+    &.ajout {
+        background-color: rgb(178, 236, 92);
+    }
+
+    &.supprimer {
+        background-color: rgb(212, 59, 59);
+        margin-left: 20px;
+    }
+
+    &.modifier {
+        background-color: #4cf5ea;
+        margin-left: auto;
+    }
+
+    &.changement_page {
+        background-color: rgb(177, 70, 177);
+    }
+
+    &.deconnexion {
+        background-color: yellow;
+    }
 }
 
-a.supprimer {
-    background-color: rgb(212, 59, 59);
-    margin-left: 20px;
-}
 
-a.modifier {
-    background-color: #4cf5ea;
-    margin-left: auto;
-}
 
 .un_repas {
     font-size: large;
