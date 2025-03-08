@@ -30,21 +30,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion à l'admin</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style_admin.css">
 </head>
 <body>
-    <p>
-        <a class="deconnexion" href="deconnexion.php">
-            Deconnexion
-        </a>
-    </p>
     <h1>Zone admin</h1>
     <nav>
         <a class="changement_page" href="../index.php"> Accueil </a>
         <a class="changement_page" href="../repas/repas.php"> Liste des repas </a>
         <a class="changement_page" href="gestion_admin.php"> Gérer admins </a>
+        <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
     </nav>
-    <h1>Création d'administrateur</h1>
+    <h2>Création d'administrateur</h2>
 
     <form action="creer_administrateur.php" method="post">
         <input name="courriel" type="text" placeholder="Courriel">

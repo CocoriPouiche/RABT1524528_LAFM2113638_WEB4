@@ -45,33 +45,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone admin</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style_admin.css">
 </head>
 <body>
     <header>
-        <div>
-            <p>
-                <a class="deconnexion" href="deconnexion.php">
-                    Deconnexion
-                </a>
-            </p>
-        </div>
         <h1>Zone admin</h1>
         <nav>
             <a class="changement_page" href="../index.php"> Accueil </a>
             <a class="changement_page" href="repas.php"> Liste des repas </a>
             <a class="changement_page" href="../employes/gestion_admin.php"> Gérer admins </a>
+            <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
         </nav>
-        <p>
-            <a class="ajout" href="ajouter.php"> Ajouter un repas</a>
-        </p>
     </header>
     <main>
-        <h2>Liste des repas</h2>
-        <div class="les_repas">
+        <div class="tete_liste">
+            <h2>Liste des repas</h2>
+            <a class="ajout" href="ajouter.php"> Ajouter un repas</a>
+        </div>
+        <div class="les_items">
             <!-- Pour chaque $un_repas dans le tableau $les_repas -->
             <?php foreach ($les_repas as $un_repas): ?>
-                <div class="un_repas">
+                <div class="un_item">
                     <?= $un_repas["id"]?>
                     <?= $un_repas["nom"]?>
                     <?= $un_repas["ingredients"]?>
@@ -81,6 +75,7 @@
                     <a class="supprimer" href="repas.php?supprimer=<?= $un_repas['id']?>">Supprimer</a>
                 </div>
             <?php endforeach?>
+            <div class="dernier_item"></div>
         </div>
     </main>
 </body>

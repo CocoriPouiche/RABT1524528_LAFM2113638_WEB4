@@ -72,19 +72,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un repas</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style_admin.css">
 </head>
 <body>
-    <p>
-        <a class="deconnexion" href="deconnexion.php">
-            Deconnexion
-        </a>
-    </p>
     <h1>Zone admin</h1>
     <nav>
         <a class="changement_page" href="../index.php"> Accueil </a>
         <a class="changement_page" href="../repas/repas.php"> Liste des repas </a>
         <a class="changement_page" href="gestion_admin.php"> Gérer admins </a>
+        <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
     </nav>
     <h1>Modifier un administrateur</h1>
     <form action="modifier_admin.php" method="post">

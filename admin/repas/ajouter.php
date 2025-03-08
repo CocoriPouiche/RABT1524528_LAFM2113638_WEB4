@@ -69,21 +69,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter un repas</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style_admin.css">
 </head>
 <body>
-    <p>
-        <a class="deconnexion" href="deconnexion.php">
-            Deconnexion
-        </a>
-    </p>
     <h1>Zone admin</h1>
     <nav>
         <a class="changement_page" href="../index.php"> Accueil </a>
         <a class="changement_page" href="repas.php"> Liste des repas </a>
         <a class="changement_page" href="../employes/gestion_admin.php"> Gérer admins </a>
+        <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
     </nav>
-    <h1>Ajouter</h1>
+    <h2>Ajouter</h2>
 
     <!-- action: La page qui reçoit les infos (soi-même) -->
     <!-- method: le type d'envoi -->

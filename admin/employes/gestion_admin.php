@@ -45,37 +45,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone admin</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style_admin.css">
 </head>
 <body>
     <header>
-        <div>
-            <p>
-                <a class="deconnexion" href="deconnexion.php">
-                    Deconnexion
-                </a>
-            </p>
-            
-        </div>
         <h1>Zone admin</h1>
         <nav>
             <a class="changement_page" href="../index.php"> Accueil </a>
             <a class="changement_page" href="../repas/repas.php"> Liste des repas </a>
             <a class="changement_page" href="gestion_admin.php"> Gérer admins </a>
+            <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
         </nav>
-        <p>
-            <a class="ajout" href="creer_administrateur.php">
-                Créer un administrateur
-            </a>
-        </p>
-
+        
     </header>
     <main>
-        <h2>Liste des administrateurs</h2>
-        <div class="les_admins">
+        <div class="tete_liste">
+            <h2>Liste des administrateurs</h2>
+            <a class="ajout" href="creer_administrateur.php"> Créer un administrateur </a>
+        </div>
+        <div class="les_items">
             <!-- Pour chaque $un_admin dans le tableau $les_admins -->
             <?php foreach ($les_admins as $un_admin): ?>
-                <div class="un_admin">
+                <div class="un_item">
                     <?= $un_admin["id"]?>
                     <?= $un_admin["courriel"]?>
                     <?= $un_admin["mdp"]?>
@@ -85,6 +76,7 @@
                     <a class="supprimer" href="gestion_admin.php?supprimer=<?= $un_admin['id']?>">Supprimer</a>
                 </div>
             <?php endforeach?>
+            <div class="dernier_item"></div>
         </div>
     </main>
 </body>
