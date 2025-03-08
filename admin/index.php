@@ -2,8 +2,8 @@
 
     // $bdd : Connexion à la base de données SQLite
     include "../includes/base.php";
-
-    VerifierConnexion();
+    $location = "connexion.php";
+    VerifierConnexion($location);
 
     /**
      * Affiche la liste des repas
@@ -54,7 +54,7 @@
             <a class="changement_page" href="index.php"> Accueil </a>
             <a class="changement_page" href="repas/repas.php"> Gérer repas </a>
             <a class="changement_page" href="employes/gestion_admin.php"> Gérer admins </a>
-            <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
+            <a class="deconnexion" href="../deconnexion.php"> Deconnexion </a>
         </nav>
     </header>
     <main>

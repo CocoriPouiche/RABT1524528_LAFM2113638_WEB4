@@ -50,9 +50,9 @@ function selectById($nom_table, $id, $nom_colonne = "*")
     return $stmt->fetchAll();
 }
 
-function VerifierConnexion()
+function VerifierConnexion($location)
 {
     if (!isset($_SESSION["est_connecte"])) {
-        header("location: connexion.php");
+        header("location: $location");
     }
 }

@@ -2,8 +2,8 @@
 
     // $bdd : Connexion à la base de données SQLite
     include "../../includes/base.php";
-
-    VerifierConnexion();
+    $location = "../connexion.php";
+    VerifierConnexion($location);
     
     /**
      * Affiche un formulaire pour modifier un administrateur
@@ -80,7 +80,7 @@
         <a class="changement_page" href="../index.php"> Accueil </a>
         <a class="changement_page" href="../repas/repas.php"> Gérer repas </a>
         <a class="changement_page" href="gestion_admin.php"> Gérer admins </a>
-        <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
+        <a class="deconnexion" href="../deconnexion.php"> Deconnexion </a>
     </nav>
     <h2>Modifier un administrateur</h2>
     <form action="modifier_admin.php" method="post">
