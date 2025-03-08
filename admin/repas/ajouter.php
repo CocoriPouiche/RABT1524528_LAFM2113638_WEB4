@@ -85,6 +85,7 @@
     <!-- method: le type d'envoi -->
     <form action="ajouter.php" method="post">
 
+        <p>Catégorie: </p>
         <select name="categorie_id"><!-- deviendra $_POST["categorie_id"] -->
         <?php foreach ($categories as $categorie): ?>
             <option
@@ -92,7 +93,8 @@
             </option>
         <?php endforeach ?>
         </select>
-
+        
+        <p>Sous-catégorie: </p>
         <select name="sous_categorie_id"><!-- deviendra $_POST["sous_categorie_id"] -->
             <option value="null"></option>
             <?php foreach ($sous_categories as $sous_categorie): ?>
@@ -112,7 +114,7 @@
         <input name="prix" type="text" ><!-- deviendra $_POST["prix"] -->
 
         <div>
-            <input type="submit" value="Ajouter">
+            <input class="ajouter" type="submit" value="Ajouter">
         </div>
     </form>
 </body>

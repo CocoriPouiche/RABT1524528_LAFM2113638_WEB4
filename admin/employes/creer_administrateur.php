@@ -43,9 +43,13 @@
     <h2>Création d'administrateur</h2>
 
     <form action="creer_administrateur.php" method="post">
+        <p>Courriel: </p>
         <input name="courriel" type="text" placeholder="Courriel">
+        <p>Mot de passe: </p>
         <input name="mdp" type="password" placeholder="Mot de passe">
-        <input type="submit" value="Créer">
+        <div>
+            <input class="ajouter" type="submit" value="Créer">
+        </div>
     </form>
 </body>
 </html>

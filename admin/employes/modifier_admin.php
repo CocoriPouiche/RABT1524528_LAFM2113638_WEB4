@@ -95,7 +95,7 @@
         <input name="mdp" type="text"  value="<?= $admin["mdp"]?>">
 
         <div>
-            <input type="submit" value="Modifier">
+            <input class="modifier" type="submit" value="Modifier">
         </div>
     </form>
 </body>

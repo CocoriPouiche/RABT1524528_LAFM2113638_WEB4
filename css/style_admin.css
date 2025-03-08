@@ -13,6 +13,11 @@ h1 {
     padding: 25px;
     border-radius: 25px;
     text-align: center;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 nav {
@@ -31,7 +36,8 @@ main {
     padding: 15px;
 }
 
-a {
+a, input.modifier, input.ajouter {
+    border: none;
     padding: 10px;
     border-radius: 15px;
     text-decoration: none;
@@ -40,7 +46,21 @@ a {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.305);
 }
 
-a {
+input, select {
+    font-size: 16px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+form p {
+    font-weight: bold;
+}
+
+a, input {
+    &.ajouter{
+        background-color: rgb(178, 236, 92);
+    }
+
     &.ajout {
         background-color: rgb(178, 236, 92);
         height: 20px;

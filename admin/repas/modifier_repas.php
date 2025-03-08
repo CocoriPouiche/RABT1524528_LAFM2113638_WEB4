@@ -139,7 +139,7 @@
         <p>Prix: </p>
         <input name="prix" type="text"  value="<?= $repas["prix"]?>">
         <div>
-            <input type="submit" value="Modifier">
+            <input class="modifier" type="submit" value="Modifier">
         </div>
     </form>
 </body>
