@@ -1,7 +1,7 @@
 <?php
 
     // $bdd : Connexion à la base de données SQLite
-    include "../includes/base.php";
+    include "../../includes/base.php";
 
     VerifierConnexion();
 
@@ -33,7 +33,7 @@
     SELECT id, courriel, mdp
     FROM administrateurs
 ";
-    // Liste de tous les repas
+    // Liste de tous les admins
     $stmt = $bdd->prepare($sql);
     $stmt->execute();
     $les_admins = $stmt->fetchAll();
@@ -45,7 +45,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone admin</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <header>
@@ -58,11 +58,11 @@
             
         </div>
         <h1>Zone admin</h1>
-        <p>
-            <a class="changement_page" href="repas.php">
-                Liste des repas
-            </a>
-        </p>
+        <nav>
+            <a class="changement_page" href="../index.php"> Accueil </a>
+            <a class="changement_page" href="../repas/repas.php"> Liste des repas </a>
+            <a class="changement_page" href="gestion_admin.php"> Gérer admins </a>
+        </nav>
         <p>
             <a class="ajout" href="creer_administrateur.php">
                 Créer un administrateur
@@ -73,7 +73,7 @@
     <main>
         <h2>Liste des administrateurs</h2>
         <div class="les_admins">
-            <!-- Pour chaque $un_repas dans le tableau $les_repas -->
+            <!-- Pour chaque $un_admin dans le tableau $les_admins -->
             <?php foreach ($les_admins as $un_admin): ?>
                 <div class="un_admin">
                     <?= $un_admin["id"]?>

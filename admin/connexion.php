@@ -26,8 +26,7 @@
 
             if ($mdp_valide) {
                 $_SESSION["est_connecte"] = true;
-                //  À CHANGER POUR L'INDEX LORSQUE JE L'AURAI CRÉÉ
-                header("location: repas.php");
+                header("location: index.php");
             } else {
                 $erreur = true;
             }

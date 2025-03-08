@@ -1,7 +1,7 @@
 <?php
 
     // $bdd : Connexion à la base de données SQLite
-    include "../includes/base.php";
+    include "../../includes/base.php";
 
     VerifierConnexion();
 
@@ -45,7 +45,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zone admin</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <header>
@@ -57,11 +57,11 @@
             </p>
         </div>
         <h1>Zone admin</h1>
-        <p>
-            <a class="changement_page" href="gestion_admin.php">
-                Gérer admins
-            </a>
-        </p>
+        <nav>
+            <a class="changement_page" href="../index.php"> Accueil </a>
+            <a class="changement_page" href="repas.php"> Liste des repas </a>
+            <a class="changement_page" href="../employes/gestion_admin.php"> Gérer admins </a>
+        </nav>
         <p>
             <a class="ajout" href="ajouter.php"> Ajouter un repas</a>
         </p>

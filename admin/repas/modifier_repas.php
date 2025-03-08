@@ -1,7 +1,7 @@
 <?php
 
     // $bdd : Connexion à la base de données SQLite
-    include "../includes/base.php";
+    include "../../includes/base.php";
     
     VerifierConnexion();
     
@@ -97,25 +97,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un repas</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-        <p>
-            <a class="deconnexion" href="deconnexion.php">
-                Deconnexion
-            </a>
-        </p>
-        <h1>Zone admin</h1>
-        <p>
-            <a class="changement_page" href="repas.php">
-                Liste des repas
-            </a>
-        </p>
-        <p>
-            <a class="changement_page" href="gestion_admin.php">
-                Gérer admins
-            </a>
-        </p>
+    <p>
+        <a class="deconnexion" href="deconnexion.php">
+            Deconnexion
+        </a>
+    </p>
+    <h1>Zone admin</h1>
+    <nav>
+        <a class="changement_page" href="../index.php"> Accueil </a>
+        <a class="changement_page" href="repas.php"> Liste des repas </a>
+        <a class="changement_page" href="../employes/gestion_admin.php"> Gérer admins </a>
+    </nav>
     <h1>Modifier un repas</h1>
     <form action="modifier_repas.php" method="post">
         <!-- Input caché pour transférer le id -->
