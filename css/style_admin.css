@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfebfb;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 25px 0;
+    background-color: #f5b032;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+nav {
+    background-color: #2fccec;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+main {
+    background-color: #2fccec;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+a {
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.305);
+}
+
+a {
+    &.ajout {
+        background-color: rgb(178, 236, 92);
+        height: 20px;
+    }
+
+    &.supprimer {
+        background-color: rgb(212, 59, 59);
+        margin-left: 20px;
+    }
+
+    &.modifier {
+        background-color: #4cf5ea;
+        margin-left: auto;
+    }
+
+    &.changement_page {
+        background-color: rgb(177, 70, 177);
+    }
+
+    &.deconnexion {
+        background-color: yellow;
+        margin-left: auto;
+    }
+}
+
+.un_item {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 10px;
+}
+
+.dernier_item {
+    border-bottom: 1px solid black;
+}
+
+.tete_liste {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bienvenu {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
