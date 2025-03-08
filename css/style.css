@@ -46,8 +46,6 @@ a {
     }
 }
 
-
-
 .un_repas {
     font-size: large;
     display: flex;
@@ -61,4 +59,10 @@ nav {
     justify-content: center;
     gap: 15px;
     margin-bottom: 15px;
+}
+
+.bienvenu {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
 }

@@ -64,6 +64,9 @@
         </nav>
     </header>
     <main>
+        <p class="bienvenu">
+            Bienvenu dans l'administration du site
+        </p>
     </main>
 </body>
 </html>
