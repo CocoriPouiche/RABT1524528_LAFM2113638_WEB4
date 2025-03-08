@@ -52,7 +52,7 @@
         <h1>Zone admin</h1>
         <nav>
             <a class="changement_page" href="../index.php"> Accueil </a>
-            <a class="changement_page" href="repas.php"> Liste des repas </a>
+            <a class="changement_page" href="repas.php"> Gérer repas </a>
             <a class="changement_page" href="../employes/gestion_admin.php"> Gérer admins </a>
             <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
         </nav>

@@ -78,11 +78,11 @@
     <h1>Zone admin</h1>
     <nav>
         <a class="changement_page" href="../index.php"> Accueil </a>
-        <a class="changement_page" href="../repas/repas.php"> Liste des repas </a>
+        <a class="changement_page" href="../repas/repas.php"> Gérer repas </a>
         <a class="changement_page" href="gestion_admin.php"> Gérer admins </a>
         <a class="deconnexion" href="deconnexion.php"> Deconnexion </a>
     </nav>
-    <h1>Modifier un administrateur</h1>
+    <h2>Modifier un administrateur</h2>
     <form action="modifier_admin.php" method="post">
         <!-- Input caché pour transférer le id -->
         <!-- L'attribut value="" permet d'avoir une valeur par défaut -->
