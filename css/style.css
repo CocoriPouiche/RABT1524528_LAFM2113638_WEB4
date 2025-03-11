@@ -15,6 +15,7 @@
 @import url('_composant/section-menu.css');
 @import url('_composant/section-reservation.css');
 @import url('_composant/section-pagemenu.css');
+@import url('_composant/section-carnet.css');
 
 /*[ importation du dossier _layout ]*/
 @import url('_layout/structure.css');
