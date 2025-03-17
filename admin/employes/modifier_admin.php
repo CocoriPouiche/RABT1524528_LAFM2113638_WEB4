@@ -3,7 +3,7 @@
     // $bdd : Connexion à la base de données SQLite
     include "../../includes/base.php";
     $location = "../connexion.php";
-    VerifierConnexion($location);
+    verifierConnexion($location);
     
     /**
      * Affiche un formulaire pour modifier un administrateur

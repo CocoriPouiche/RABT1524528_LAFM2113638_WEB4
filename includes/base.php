@@ -2,6 +2,8 @@
 
 session_start();
 
+date_default_timezone_set("America/Toronto");
+
 include "db.php";
 
 /**
@@ -50,9 +52,23 @@ function selectById($nom_table, $id, $nom_colonne = "*")
     return $stmt->fetchAll();
 }
 
-function VerifierConnexion($location)
+function verifierConnexion($location)
 {
     if (!isset($_SESSION["est_connecte"])) {
         header("location: $location");
+    }
+}
+
+function chargerImage($chemin) {
+    $extension = strtolower(pathinfo($chemin, PATHINFO_EXTENSION));
+
+    switch ($extension) {
+        case "jpg": return imagecreatefromjpeg($chemin);
+        case "jpeg": return imagecreatefromjpeg($chemin);
+        case "png": return imagecreatefrompng($chemin);
+        case "gif": return imagecreatefromgif($chemin);
+        case "avif": return imagecreatefromavif($chemin);
+        case "webp": return imagecreatefromwebp($chemin);
+        default: return false;
     }
 }

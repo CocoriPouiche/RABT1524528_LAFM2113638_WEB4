@@ -2,7 +2,7 @@
 
     include "../../includes/base.php";
     $location = "../connexion.php";
-    VerifierConnexion($location);
+    verifierConnexion($location);
 
     if (! empty($_POST)) {
         $courriel     = $_POST["courriel"];
