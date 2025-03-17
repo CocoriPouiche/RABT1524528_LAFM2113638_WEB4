@@ -60,9 +60,12 @@ section {
 
 
 h2 {
-    font-size: 1.5rem;
+    position: absolute;
+    font-size: 2rem;
     margin-bottom: 10px;
     color: #e6e6e7;
+    bottom: 0;
+    right: 1%;
 }
 
 
@@ -73,6 +76,12 @@ ul {
 li {
     padding: 5px 0;
     font-size: 1.1rem;
+}
+
+.logo-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
