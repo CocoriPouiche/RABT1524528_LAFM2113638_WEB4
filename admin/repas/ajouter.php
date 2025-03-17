@@ -10,6 +10,7 @@
      * Si la page est appelée avec des valeurs dans le POST, 
      * on traite les données et redirige vers la liste
      */
+    $erreur_upload = false;
 
     // Si le formulaire est envoyé
     if (!empty($_POST)) {
@@ -23,7 +24,7 @@
         $sql = "
         INSERT INTO repas (categorie_id, sous_categorie_id, nom, ingredients, prix)
         VALUES (:categorie_id, :sous_categorie_id, :nom,:ingredients, :prix)
-    ";
+        ";
 
         $stmt = $bdd->prepare($sql);
         // Insère les variables dans la requête SQL
@@ -35,33 +36,59 @@
             ":prix"              => $prix,
         ]);
 
-        // Redirection vers repas.php
-        header("location: repas.php");
+        $image = $_FILES["image"];
+
+        // Si l'upload s'est bien passé
+        if ($image["error"] == 0) {
+            $dossier = "uploads/";
+
+            $nom_fichier = date("h-i-s")."_".random_int(100000, 999999);
+            //ex: "jpg" ou "png"
+            $extension = pathinfo($image["full_path"], PATHINFO_EXTENSION);
+            //ex: "uploads/09/19-00-123456.jpg"
+            $cible = "../../$dossier$nom_fichier.$extension";
+
+            $extension_permises = ["jpg", "jpeg", "png", "gif", "avif", "webp"];
+
+            if (in_array($extension, $extension_permises)) {
+                // echo $cible;
+                move_uploaded_file($image["tmp_name"], $cible);
+                // Redirection vers repas.php
+                header("location: repas.php");
+            }
+            else {
+                $erreur_upload = true;
+            }
         }
+        else {
+            $erreur_upload = true;
+        }
+    }
 
-        $sql = "
-        SELECT *
-        FROM categories
+    $sql = "
+    SELECT *
+    FROM categories
+    ";
+
+    $stmt = $bdd->prepare($sql);
+    // Donne le $id à la requête
+    $stmt->execute([]);
+
+    // Récupère les catégories
+    $categories = $stmt->fetchAll();
+
+    $sql = "
+    SELECT *
+    FROM sous_categories
     ";
     
-        $stmt = $bdd->prepare($sql);
-        // Donne le $id à la requête
-        $stmt->execute([]);
-    
-        // Récupère les catégories
-        $categories = $stmt->fetchAll();
+    $stmt = $bdd->prepare($sql);
+    // Donne le $id à la requête
+    $stmt->execute([]);
 
-        $sql = "
-        SELECT *
-        FROM sous_categories
-    ";
-    
-        $stmt = $bdd->prepare($sql);
-        // Donne le $id à la requête
-        $stmt->execute([]);
-    
-        // Récupère les catégories
-        $sous_categories = $stmt->fetchAll();
+    // Récupère les catégories
+    $sous_categories = $stmt->fetchAll();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +110,7 @@
 
     <!-- action: La page qui reçoit les infos (soi-même) -->
     <!-- method: le type d'envoi -->
-    <form action="ajouter.php" method="post">
+    <form action="ajouter.php" method="post" enctype="multipart/form-data">
 
         <p>Catégorie: </p>
         <select name="categorie_id"><!-- deviendra $_POST["categorie_id"] -->
@@ -112,10 +139,17 @@
 
         <p>Prix: </p>
         <input name="prix" type="text" ><!-- deviendra $_POST["prix"] -->
+        
+        <p>Image: </p>
+        <input name="image" type="file">
 
         <div>
             <input class="ajouter" type="submit" value="Ajouter">
         </div>
     </form>
+
+    <?php if ($erreur_upload): ?>
+        <p>Erreur de téléversement</p>
+    <?php endif ?>
 </body>
 </html>
