@@ -5,6 +5,7 @@
     $location = "../connexion.php";
     verifierConnexion($location);
     
+    $erreur_upload = false;
     /**
      * Affiche un formulaire pour modifier un repas
      * 
@@ -86,8 +87,35 @@
             ":prix" => $prix
         ]);
 
-        // Redirection
-        header("location: repas.php");
+        $image = $_FILES["image"];
+        var_dump($_FILES);
+
+        // Si l'upload s'est bien passé
+        if ($image["error"] == 0) {
+            $dossier = "uploads/";
+
+            $nom_fichier = date("h-i-s")."_".random_int(100000, 999999);
+            //ex: "jpg" ou "png"
+            $extension = pathinfo($image["full_path"], PATHINFO_EXTENSION);
+            //ex: "uploads/09/19-00-123456.jpg"
+            $cible = "../../$dossier$nom_fichier.$extension";
+
+            $extension_permises = ["jpg", "jpeg", "png", "gif", "avif", "webp"];
+
+            if (in_array($extension, $extension_permises)) {
+                // echo $cible;
+                move_uploaded_file($image["tmp_name"], $cible);
+                // Redirection
+                header("location: repas.php");
+            }
+            else {
+                $erreur_upload = true;
+            }
+        }
+        else {
+            $erreur_upload = true;
+        }
+
     }
 
 ?>
@@ -108,7 +136,7 @@
         <a class="deconnexion" href="../deconnexion.php"> Deconnexion </a>
     </nav>
     <h2>Modifier un repas</h2>
-    <form action="modifier_repas.php" method="post">
+    <form action="modifier_repas.php" method="post" enctype="multipart/form-data">
         <!-- Input caché pour transférer le id -->
         <!-- L'attribut value="" permet d'avoir une valeur par défaut -->
         <input name="id" type="hidden" value="<?= $repas["id"]?>">
@@ -138,9 +166,17 @@
 
         <p>Prix: </p>
         <input name="prix" type="text"  value="<?= $repas["prix"]?>">
+
+        <p>Image: </p>
+        <input name="image" type="file">
+
         <div>
             <input class="modifier" type="submit" value="Modifier">
         </div>
     </form>
+
+    <?php if ($erreur_upload): ?>
+        <p>Erreur de téléversement</p>
+    <?php endif ?>
 </body>
 </html>
