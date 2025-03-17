@@ -59,7 +59,7 @@ section {
 }
 
 
-h2 {
+.btn-reservation {
     position: absolute;
     font-size: 2rem;
     margin-bottom: 10px;

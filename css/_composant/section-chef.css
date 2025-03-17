@@ -5,6 +5,12 @@ body {
     background-color: #e6e6e7;
 }
 
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e6e6e7;
+}
+
 .chef-section {
     background-color: #222222;
     padding: 50px 20px;
