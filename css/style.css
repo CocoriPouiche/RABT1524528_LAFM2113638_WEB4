@@ -12,10 +12,10 @@
 @import url('_composant/section-img.css');
 @import url('_composant/section-footer.css');
 @import url('_composant/section-header.css');
-@import url('_composant/section-menu.css');
+@import url('_composant/section-plats.css');
 @import url('_composant/section-reservation.css');
 @import url('_composant/section-pagemenu.css');
-@import url('_composant/section-carnet.css');
+@import url('_composant/section-vin.css');
 
 /*[ importation du dossier _layout ]*/
 @import url('_layout/structure.css');
