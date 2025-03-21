@@ -1,82 +1,86 @@
-/*[ COMPOSANT SECTION-MENU (HAMBURGER) ]*/
+/*[ COMPOSANT SECTION-PLATS PRINCIPAUX ]*/
 /* ------------------------------------------------------------ */
 
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
 }
 
-
-.menu-ham {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 20px;
-    background-color: #c3a93f;
+/* En-tête des plats principaux */
+.Header-principaux {
+    background-color: #004A80;
+    padding: 1rem;
+    text-align: center;
+    color: white;
 }
-
-#menu-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px; 
-}
-
-#menu-toggle svg {
-    fill: #333;
-    width: 40px;
-    height: 40px;
-}
-
 
 h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main section pour les plats principaux */
+.Main-principaux {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Section pour chaque catégorie de plats */
+.section-plats {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de chaque catégorie de plats */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #004A80;
+}
+
+/* Style des éléments de chaque plat */
+.plat-item {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* Nom du plat */
+.plat-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #17334A;
+    margin-bottom: 0.5rem;
+}
+
+/* Description du plat */
+.plat-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Prix du plat */
+.plat-price {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #C3A93F;
+    text-align: right;
+}
+
+/* Footer du site */
+footer {
+    background-color: #004A80;
+    color: white;
     text-align: center;
-    font-size: 3.5rem;
-    padding: 25px;
-}
-
-
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-
-section {
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #e6e6e7;
-}
-
-
-ul {
-    list-style: none;
-}
-
-li {
-    padding: 5px 0;
-    font-size: 1.1rem;
-}
-
-.logo-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
+    padding: 1rem 0;
 }
