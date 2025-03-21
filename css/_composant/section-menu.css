@@ -75,6 +75,12 @@ li {
     font-size: 1.1rem;
 }
 
+.logo-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 footer {
     text-align: center;
