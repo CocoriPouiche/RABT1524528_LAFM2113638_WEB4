@@ -8,15 +8,15 @@
     font-family: Arial, sans-serif;
 }
 
-
-header {
+/* Header */
+.header-reserve {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: #004A80;
     position: relative;
 }
 
@@ -35,16 +35,12 @@ header {
     height: 40px;
 }
 
+/* Le h1 de la page */
 .header-title h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    color: white;
 }
-
-.header-title p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
 
 .reservation-grid {
     display: grid;

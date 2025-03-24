@@ -45,7 +45,7 @@ body {
     color: #004A80;
 }
 
-/* Style des éléments de chaque plat */
+
 .plat-item {
     padding: 1rem;
     background-color: white;
@@ -77,7 +77,7 @@ body {
     text-align: right;
 }
 
-/* Footer du site */
+
 footer {
     background-color: #004A80;
     color: white;
