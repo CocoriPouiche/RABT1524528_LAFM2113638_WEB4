@@ -3,7 +3,7 @@
     // $bdd : Connexion à la base de données SQLite
     include "includes/base.php";
 
-    // === Récupère tous repas selon leur catégorie et sous catégorie
+    // === Récupère tous les repas selon leur catégorie et sous catégorie
     $sql = "
     SELECT *
     FROM categories
@@ -120,9 +120,9 @@
     ORDER BY repas.nom
 ";
 
-$stmt = $bdd->prepare($sql);
-$stmt->execute();
-$vins_spiritueux = $stmt->fetchAll();
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $vins_spiritueux = $stmt->fetchAll();
 
 ?>
 <!DOCTYPE html>
