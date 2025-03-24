@@ -60,63 +60,65 @@
     }
     else {
         //Traitement du form
-        
         //Variables postées du formulaire
         $id = $_POST["id"];
         $categorie_id = $_POST["categorie_id"];
         $sous_categorie_id = $_POST["sous_categorie_id"];
         $nom = $_POST["nom"];
-        $ingredients       = $_POST["ingredients"];
+        $ingredients = $_POST["ingredients"];
         $prix = $_POST["prix"];
-        
-        //Pour ajouter des données dans la TABLE repas de la base de données
-        $sql = "
-        UPDATE repas
-        SET id = :id, categorie_id = :categorie_id, sous_categorie_id = :sous_categorie_id, nom = :nom, ingredients = :ingredients, prix = :prix
-        WHERE id = :id
-        ";
-        
-        
-        // WHERE id = :id pour limiter la modification au repas voulu
-        $stmt = $bdd->prepare($sql);
-        $stmt->execute([ 
-            ":id" => $id,
-            ":categorie_id" => $categorie_id,
-            ":sous_categorie_id" => $sous_categorie_id,
-            ":nom" => $nom,
-            ":ingredients" => $ingredients,
-            ":prix" => $prix
-        ]);
+                
         
         $sql = "
         SELECT url_image
         FROM repas
         WHERE id = :id
-    ";
-    
+        ";
+        
         $stmt = $bdd->prepare($sql);
         // Donne le $id à la requête
         $stmt->execute([
             ":id" => $id,
         ]);
-    
+        
         // Récupère le repas à modifier pour afficher les valeurs initiales 
         $url_image = $stmt->fetch();
+
+        //Pour ajouter des données dans la TABLE repas de la base de données
+        $sql = "
+        UPDATE repas
+        SET id = :id, categorie_id = :categorie_id, sous_categorie_id = :sous_categorie_id, nom = :nom, ingredients = :ingredients, prix = :prix, url_image = :url_image
+        WHERE id = :id
+        ";
+
+        
+        
+        
         
         $image = $_FILES["image"];
         
         // Si l'upload s'est bien passé
         if ($image["error"] == 0) {
-            $emplacement_image = $url_image["url_image"];
-            // $dossier = "uploads/";
-            // $nom_fichier = date("h-i-s")."_".random_int(100000, 999999);
-            // //ex: "jpg" ou "png"
-            $extension = pathinfo($image["full_path"], PATHINFO_EXTENSION);
-            // //ex: "../../uploads/09/19-00-123456.jpg"
-            $cible = "../../$emplacement_image";
-
+            if ($url_image["url_image"] != null) {
+                $emplacement_image = $url_image["url_image"];
+                //ex: "jpg" ou "png"
+                $extension = pathinfo($image["full_path"], PATHINFO_EXTENSION);
+                //ex: "../../uploads/09/19-00-123456.jpg"
+                $cible = "../../$emplacement_image";
+            }
+            else {
+                $dossier = "uploads/";
+                $nom_fichier = date("h-i-s")."_".random_int(100000, 999999);
+                // //ex: "jpg" ou "png"
+                $extension = pathinfo($image["full_path"], PATHINFO_EXTENSION);
+                // //ex: "../../uploads/09/19-00-123456.jpg"
+                $cible = "../../$dossier$nom_fichier.$extension";
+                $emplacement_image = "$dossier$nom_fichier.$extension";
+            }
+            
+            
             $extension_permises = ["jpg", "jpeg", "png", "gif", "avif", "webp"];
-
+            
             if (in_array($extension, $extension_permises)) {
                 // echo $cible;
                 move_uploaded_file($image["tmp_name"], $cible);
@@ -131,12 +133,23 @@
             $erreur_upload = true;
         }
 
+        // WHERE id = :id pour limiter la modification au repas voulu
+        $stmt = $bdd->prepare($sql);
+        $stmt->execute([ 
+            ":id" => $id,
+            ":categorie_id" => $categorie_id,
+            ":sous_categorie_id" => $sous_categorie_id,
+            ":nom" => $nom,
+            ":ingredients" => $ingredients,
+            ":prix" => $prix,
+            ":url_image" => $emplacement_image
+        ]);
     }
-
-?>
+    
+    ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un repas</title>
