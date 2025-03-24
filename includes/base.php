@@ -72,3 +72,15 @@ function chargerImage($chemin) {
         default: return false;
     }
 }
+
+function selectCount($nom_table) {
+    global $bdd;
+
+    $stmt = $bdd->prepare("
+        SELECT COUNT(*) as nb
+        FROM $nom_table
+    ");
+    $stmt->execute();
+    $resultat = $stmt->fetch();
+    return $resultat["nb"];
+}

@@ -60,6 +60,7 @@
     }
     else {
         //Traitement du form
+        
         //Variables postées du formulaire
         $id = $_POST["id"];
         $categorie_id = $_POST["categorie_id"];
@@ -70,12 +71,12 @@
         
         //Pour ajouter des données dans la TABLE repas de la base de données
         $sql = "
-            UPDATE repas
-            SET id = :id, categorie_id = :categorie_id, sous_categorie_id = :sous_categorie_id, nom = :nom, ingredients = :ingredients, prix = :prix
-            WHERE id = :id
+        UPDATE repas
+        SET id = :id, categorie_id = :categorie_id, sous_categorie_id = :sous_categorie_id, nom = :nom, ingredients = :ingredients, prix = :prix
+        WHERE id = :id
         ";
-
-
+        
+        
         // WHERE id = :id pour limiter la modification au repas voulu
         $stmt = $bdd->prepare($sql);
         $stmt->execute([ 
@@ -86,19 +87,33 @@
             ":ingredients" => $ingredients,
             ":prix" => $prix
         ]);
-
+        
+        $sql = "
+        SELECT url_image
+        FROM repas
+        WHERE id = :id
+    ";
+    
+        $stmt = $bdd->prepare($sql);
+        // Donne le $id à la requête
+        $stmt->execute([
+            ":id" => $id,
+        ]);
+    
+        // Récupère le repas à modifier pour afficher les valeurs initiales 
+        $url_image = $stmt->fetch();
+        
         $image = $_FILES["image"];
-        var_dump($_FILES);
-
+        
         // Si l'upload s'est bien passé
         if ($image["error"] == 0) {
-            $dossier = "uploads/";
-
-            $nom_fichier = date("h-i-s")."_".random_int(100000, 999999);
-            //ex: "jpg" ou "png"
+            $emplacement_image = $url_image["url_image"];
+            // $dossier = "uploads/";
+            // $nom_fichier = date("h-i-s")."_".random_int(100000, 999999);
+            // //ex: "jpg" ou "png"
             $extension = pathinfo($image["full_path"], PATHINFO_EXTENSION);
-            //ex: "uploads/09/19-00-123456.jpg"
-            $cible = "../../$dossier$nom_fichier.$extension";
+            // //ex: "../../uploads/09/19-00-123456.jpg"
+            $cible = "../../$emplacement_image";
 
             $extension_permises = ["jpg", "jpeg", "png", "gif", "avif", "webp"];
 

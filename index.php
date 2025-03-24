@@ -139,6 +139,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $entree["nom"]?></strong> <?= $entree["ingredients"]?>  <?= $entree["prix"]?>
             </p>
+            <img src="<?= $entree["url_image"] ?>" alt="">
         <?php endforeach?>
         
         <!-- Pour chaque $plat_viande dans le tableau $plats_viandes -->
@@ -147,6 +148,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $plat_viande["nom"]?></strong> <?= $plat_viande["ingredients"]?>  <?= $plat_viande["prix"]?>
             </p>
+            <img src="<?= $plat_viande["url_image"] ?>" alt="">
         <?php endforeach?>
         
         <!-- Pour chaque $plat_poisson dans le tableau $plats_poissons -->
@@ -155,6 +157,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $plat_poisson["nom"]?></strong> <?= $plat_poisson["ingredients"]?>  <?= $plat_poisson["prix"]?>
             </p>
+            <img src="<?= $plat_poisson["url_image"] ?>" alt="">
         <?php endforeach?>
         
         <!-- Pour chaque $plat_vegetarien dans le tableau $plats_vegetariens -->
@@ -163,6 +166,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $plat_vegetarien["nom"]?></strong> <?= $plat_vegetarien["ingredients"]?>  <?= $plat_vegetarien["prix"]?>
             </p>
+            <img src="<?= $plat_vegetarien["url_image"] ?>" alt="">
         <?php endforeach?>
         
         <!-- Pour chaque $dessert dans le tableau $desserts -->
@@ -171,6 +175,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $dessert["nom"]?></strong> <?= $dessert["ingredients"]?>  <?= $dessert["prix"]?>
             </p>
+            <img src="<?= $dessert["url_image"] ?>" alt="">
         <?php endforeach?>
         
         <h3>Cave à vin:</h3>
@@ -181,6 +186,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $vin_blanc["nom"]?></strong> <?= $vin_blanc["ingredients"]?>  <?= $vin_blanc["prix"]?>
             </p>
+            <img src="<?= $vin_blanc["url_image"] ?>" alt="">
         <?php endforeach?>
 
         <!-- Pour chaque $vin_rouge dans le tableau $vins_rouges -->
@@ -189,6 +195,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $vin_rouge["nom"]?></strong> <?= $vin_rouge["ingredients"]?>  <?= $vin_rouge["prix"]?>
             </p>
+            <img src="<?= $vin_rouge["url_image"] ?>" alt="">
         <?php endforeach?>
 
         <!-- Pour chaque $vin_orange dans le tableau $vins_oranges -->
@@ -197,6 +204,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $vin_orange["nom"]?></strong> <?= $vin_orange["ingredients"]?>  <?= $vin_orange["prix"]?>
             </p>
+            <img src="<?= $vin_orange["url_image"] ?>" alt="">
         <?php endforeach?>
 
         <!-- Pour chaque $vin_mousseux dans le tableau $vins_mousseux -->
@@ -205,6 +213,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $vin_mousseux["nom"]?></strong> <?= $vin_mousseux["ingredients"]?>  <?= $vin_mousseux["prix"]?>
             </p>
+            <img src="<?= $vin_mousseux["url_image"] ?>" alt="">
         <?php endforeach?>
 
         <!-- Pour chaque $vin_spiritueux dans le tableau $vins_spiritueux -->
@@ -213,6 +222,7 @@ $vins_spiritueux = $stmt->fetchAll();
             <p>
                 <strong><?= $vin_spiritueux["nom"]?></strong> <?= $vin_spiritueux["ingredients"]?>  <?= $vin_spiritueux["prix"]?>
             </p>
+            <img src="<?= $vin_spiritueux["url_image"] ?>" alt="">
         <?php endforeach?>
 </body>
 </html>

@@ -5,8 +5,6 @@
     $location = "../connexion.php";
     verifierConnexion($location);
     /**
-     * Affiche un formulaire pour ajouter une entrée
-     * 
      * Si la page est appelée avec des valeurs dans le POST, 
      * on traite les données et redirige vers la liste
      */
@@ -22,34 +20,26 @@
         $prix              = $_POST["prix"];
 
         $sql = "
-        INSERT INTO repas (categorie_id, sous_categorie_id, nom, ingredients, prix)
-        VALUES (:categorie_id, :sous_categorie_id, :nom,:ingredients, :prix)
+        INSERT INTO repas (categorie_id, sous_categorie_id, nom, ingredients, prix, url_image)
+        VALUES (:categorie_id, :sous_categorie_id, :nom,:ingredients, :prix, :url_image)
         ";
 
-        $stmt = $bdd->prepare($sql);
-        // Insère les variables dans la requête SQL
-        $stmt->execute([
-            ":categorie_id"      => $categorie_id,
-            ":sous_categorie_id" => $sous_categorie_id,
-            ":nom"               => $nom,
-            ":ingredients"       => $ingredients,
-            ":prix"              => $prix,
-        ]);
-
+        
         $image = $_FILES["image"];
-
+        
         // Si l'upload s'est bien passé
         if ($image["error"] == 0) {
             $dossier = "uploads/";
-
+            
             $nom_fichier = date("h-i-s")."_".random_int(100000, 999999);
             //ex: "jpg" ou "png"
             $extension = pathinfo($image["full_path"], PATHINFO_EXTENSION);
             //ex: "uploads/09/19-00-123456.jpg"
             $cible = "../../$dossier$nom_fichier.$extension";
-
+            $url_image = "$dossier$nom_fichier.$extension";
+            
             $extension_permises = ["jpg", "jpeg", "png", "gif", "avif", "webp"];
-
+            
             if (in_array($extension, $extension_permises)) {
                 // echo $cible;
                 move_uploaded_file($image["tmp_name"], $cible);
@@ -63,6 +53,17 @@
         else {
             $erreur_upload = true;
         }
+
+        $stmt = $bdd->prepare($sql);
+        // Insère les variables dans la requête SQL
+        $stmt->execute([
+            ":categorie_id"      => $categorie_id,
+            ":sous_categorie_id" => $sous_categorie_id,
+            ":nom"               => $nom,
+            ":ingredients"       => $ingredients,
+            ":prix"              => $prix,
+            ":url_image"         => $url_image
+        ]);
     }
 
     $sql = "
