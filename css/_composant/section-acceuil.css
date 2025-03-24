@@ -31,14 +31,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.grid-item.text h2 {
+/* .grid-item.text h2 {
     font-size: 32px;
     font-weight: bold;
     color: #333; 
     margin-bottom: 15px;
     color: #e6e6e7;
 
-}
+} */
 
 .grid-item.text p {
     font-size: 18px;
@@ -71,9 +71,9 @@ body {
     padding: 20px;
 }
 
-.grid-item.text h2 {
+.grid-item.text .t-chef {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 59px;
 }
 
 .grid-item.text p {
