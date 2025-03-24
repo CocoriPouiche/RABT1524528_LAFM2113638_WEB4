@@ -17,6 +17,7 @@
 @import url('_composant/section-vin.css');
 @import url('_composant/section-plats.css');
 @import url('_composant/section-dessert.css');
+@import url('_composant/section-entrees.css');
 
 /*[ importation du dossier _layout ]*/
 @import url('_layout/structure.css');
