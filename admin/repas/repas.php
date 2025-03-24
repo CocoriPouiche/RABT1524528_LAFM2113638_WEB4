@@ -23,8 +23,7 @@
         $stmt = $bdd->prepare($sql);
         $stmt->execute([
             ":id" => $_GET["supprimer"]
-        ]
-        );
+        ]);
         // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
         header("location: repas.php");
     }
@@ -67,9 +66,12 @@
             <?php foreach ($les_repas as $un_repas): ?>
                 <div class="un_item">
                     <?= $un_repas["id"]?>
-                    <?= $un_repas["nom"]?>
-                    <?= $un_repas["ingredients"]?>
-                    <?= $un_repas["prix"]?>
+                    <p class="partie_liste_repas"><strong>NOM :  </strong></p>
+                    <p class="item_liste_repas"><?= $un_repas["nom"]?></p>
+                    <p class="partie_liste_repas"><strong>INGRÉDIENTS :  </strong></p>
+                    <p class="item_liste_repas"><?= $un_repas["ingredients"]?></p>
+                    <p class="partie_liste_repas"><strong>PRIX :  </strong></p>
+                    <p class="item_liste_repas"><?= $un_repas["prix"]?></p>
                     <!-- On donne le paramètre GET du id directement dans les liens -->
                     <a class="modifier" href="modifier_repas.php?id=<?= $un_repas['id']?>">Modifier</a>
                     <a class="supprimer" href="repas.php?supprimer=<?= $un_repas['id']?>">Supprimer</a>

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #bfebfb;
+    background-color: #dcdad7;
 }
 
 header {
@@ -9,7 +9,8 @@ header {
 
 h1 {
     margin: 0 0 25px 0;
-    background-color: #f5b032;
+    color: #fff;
+    background-color: #C3A93F;
     padding: 25px;
     border-radius: 25px;
     text-align: center;
@@ -21,7 +22,7 @@ h2 {
 }
 
 nav {
-    background-color: #2fccec;
+    background-color: #374d5c;
     padding: 10px;
     border-radius: 25px;
     display: flex;
@@ -31,7 +32,8 @@ nav {
 }
 
 main {
-    background-color: #2fccec;
+    color: #fff;
+    background-color: #374d5c;
     border-radius: 25px;
     padding: 15px;
 }
@@ -43,7 +45,7 @@ a, input.modifier, input.ajouter {
     text-decoration: none;
     color: black;
     font-size: larger;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.305);
+    box-shadow: 5px 5px #0000004e;
 }
 
 input, select {
@@ -58,30 +60,30 @@ form p {
 
 a, input {
     &.ajouter{
-        background-color: rgb(178, 236, 92);
+        background-color: #acf046;
     }
 
     &.ajout {
-        background-color: rgb(178, 236, 92);
+        background-color: #acf046;
         height: 20px;
     }
 
     &.supprimer {
-        background-color: rgb(212, 59, 59);
+        background-color: #d43b3b;
         margin-left: 20px;
     }
 
     &.modifier {
-        background-color: #4cf5ea;
+        background-color: #F5CC00;
         margin-left: auto;
     }
 
     &.changement_page {
-        background-color: rgb(177, 70, 177);
+        background-color: #F5CC00;
     }
 
     &.deconnexion {
-        background-color: yellow;
+        background-color: #d43b3b;
         margin-left: auto;
     }
 }
@@ -90,13 +92,13 @@ a, input {
     font-size: large;
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-bottom: none;
     padding: 10px;
 }
 
 .dernier_item {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
 }
 
 .tete_liste {
@@ -109,4 +111,12 @@ a, input {
     text-align: center;
     font-size: 38px;
     font-weight: bold;
+}
+
+p.item_liste_repas {
+    margin: 0 8px;
+}
+
+p.partie_liste_repas {
+    margin-left: 8px;
 }
