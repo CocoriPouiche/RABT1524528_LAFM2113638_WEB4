@@ -1,0 +1,82 @@
+/*[ COMPOSANT SECTION-MENU (HAMBURGER) ]*/
+/* ------------------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.menu-ham {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    background-color: #c3a93f;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+}
+
+#menu-toggle svg {
+    fill: #333;
+    width: 40px;
+    height: 40px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 25px;
+}
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+section {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e6e6e7;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+.logo-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

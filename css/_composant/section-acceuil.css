@@ -1,0 +1,98 @@
+/*[ COMPOSANT SECTION-CHEF ]*/
+/* ------------------------------------------------------------ */
+
+body {
+    background-color: #e6e6e7;
+}
+
+.chef-section {
+    background-color: #222222;
+    padding: 50px 20px;
+}
+
+.separator-section{
+    background-color: #222222;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    background-color: #222222;
+}
+
+.grid-item.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.reserver-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #c3a93f; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reserver-btn:hover {
+    background-color: #896d00; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.section-h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 15px;
+    color: #e6e6e7;
+    text-align: center;
+
+}
+
+.grid-item.text p {
+    font-size: 18px;
+    color: #e6e6e7;
+    line-height: 1.6; 
+    text-align: center; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-container.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-item.text {
+    padding: 20px;
+}
+
+.grid-item.text .t-chef {
+    margin-bottom: 10px;
+    font-size: 59px;
+}
+
+.grid-item.text p {
+    font-size: 16px;
+    color: #e6e6e7;
+}
