@@ -6,13 +6,13 @@
     SELECT *
     FROM categories
     INNER JOIN repas ON categories.id = repas.categorie_id
-    WHERE repas.categorie_id = '5'
+    WHERE repas.categorie_id = '1'
     ORDER BY repas.nom
 ";
 
     $stmt = $bdd->prepare($sql);
     $stmt->execute();
-    $desserts = $stmt->fetchAll();
+    $entrees = $stmt->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +20,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Les Rives Boréales - Desserts</title>
+    <title>Les Rives Boréales - Entrées</title>
 </head>
 <body>
-    <header class="Header-dessert">
+    <header class="header-entrees">
 
         <div class="header-container">
             <div class="menu-toggle">
@@ -33,20 +33,23 @@
             </div>
         </div>
         
-        <h1 class="t-desserts">Desserts</h1>
+        <h1 class="t-entrees">Entrées</h1>
+
     </header>
     
-    <main class="Main-dessert">
+    <main class="Main-principaux">
 
-        <section class="section-dessert">
+        <section class="section-plats">
+            
+            <h2 class="section-title">Les Entrées</h2>
 
-            <h2 class="section-title">Les Desserts</h2>
-            <?php foreach ($desserts as $dessert): ?>
+            
+            <?php foreach ($entrees as $entree): ?>
                 <div class="plat-item">
-                    <img src="<?= $dessert["url_image"] ?>" alt="Desserts">
-                    <h3 class="plat-name"><?= $dessert["nom"]?></h3>
-                    <p class="plat-description"><?= $dessert["ingredients"]?></p>
-                    <p class="plat-price"><?= $dessert["prix"]?></p>
+                    <img src="<?= $entree["url_image"] ?>" alt="Entrees">
+                    <h3 class="plat-name"><?= $entree["nom"]?></h3>
+                    <p class="plat-description"><?= $entree["ingredients"]?></p>
+                    <p class="plat-price"><?= $entree["prix"]?></p>
                 </div>
             <?php endforeach?>
             
@@ -55,7 +58,9 @@
     </main>
 
     <footer>
+
         <p>&copy; 2025 Les Rives Boréales</p>
+        
     </footer>
 </body>
 </html>
