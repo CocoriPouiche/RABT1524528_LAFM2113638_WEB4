@@ -1,0 +1,25 @@
+/*[ STRUCTURE CONTAINER--MONTAGE ]*/
+/* ------------------------------------------------------------ */
+
+.container--montage {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height: 100%; 
+
+    @media (min-width: 768px){
+        width: 600px;
+    }
+
+    @media (min-width: 980px){
+        width:800px;
+        margin-left: auto;
+    }
+
+    @media (min-width: 1200px){
+        width:1180px;
+    }
+}

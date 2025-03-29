@@ -1,0 +1,82 @@
+/*[ COMPOSANT MONTAGE-TEXT ]*/
+/* ------------------------------------------------------------ */
+
+.container--montage > span{
+    position: absolute;
+    display: block;
+    width: 1.8rem;
+    word-wrap: wrap;
+    text-align: center;
+
+    &:nth-child(1){
+        z-index: 10;
+        top: 10rem;
+        left: 0;
+        font-family:'Sketchtica', serif;
+        font-size: 4.2rem;
+        transition: font-size 0.3s ease;
+        color: var(--blanc);
+
+        @media (min-width: 768px){
+            z-index: 3;
+            transform: rotate(-90deg);
+            font-size: 6rem;
+            top:31rem;
+            left: 4.8rem;
+        }
+
+        @media (min-width: 980px){
+            transform: rotate(0deg);
+            top:3.8rem;
+            left: inherit;
+            right: 43.6rem;
+        }
+
+        @media (min-width: 1200px){
+            left: 0;
+            top: inherit;
+            bottom: 26rem;
+            font-size: 12rem;
+        }
+    }
+
+
+    &:nth-child(2){
+        z-index: 10;
+        right: 10rem;
+        top: 31rem;
+        font-family: 'Noto Serif Georgian', serif;
+        font-weight:700;
+        font-size: 2.2rem;
+        transform: rotate(-22deg);
+        text-transform:capitalize; 
+        transition: font-size 0.4s ease;
+
+        @media (min-width: 768px){
+            z-index: 10;
+            top: 21.8rem;
+            right: 13.6rem;
+            font-size: 2.9rem;
+            transform: rotate(0deg);
+            color: var(--bleu);
+        }
+
+        @media (min-width: 980px){
+            transform: rotate(-90deg);
+            color: var(--darkgray);
+            top: inherit;
+            bottom: 13rem;
+            right: 1.6rem;
+            font-size: 3rem;
+        }
+
+        @media (min-width: 1200px){
+            transform: rotate(0);
+            color: var(--or);
+            top: inherit;
+            bottom: 3rem;
+            right: 13.8rem;
+            font-size: 3.4rem;
+        }
+    }
+}
