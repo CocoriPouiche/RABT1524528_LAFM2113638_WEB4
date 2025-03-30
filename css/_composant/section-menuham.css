@@ -1,82 +1,78 @@
-/*[ COMPOSANT SECTION-MENU (HAMBURGER) ]*/
+/*[ COMPOSANT SECTION-MENU-HAMBURGER ]*/
 /* ------------------------------------------------------------ */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-
 .menu-ham {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 20px;
-    background-color: #c3a93f;
-}
-
-#menu-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px; 
-}
-
-#menu-toggle svg {
-    fill: #333;
-    width: 40px;
-    height: 40px;
-}
-
-
-h1 {
-    text-align: center;
-    font-size: 3.5rem;
-    padding: 25px;
-}
-
-
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-
-section {
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #e6e6e7;
-}
-
-
-ul {
-    list-style: none;
-}
-
-li {
-    padding: 5px 0;
-    font-size: 1.1rem;
-}
-
-.logo-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    background: #17334A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Conteneur du menu hamburger */
+.header-ham {
+    display: flex;
+    align-items: center;
+}
+
+/* Bouton du menu hamburger */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    background: #FFD700; /* Doré élégant */
+    border-radius: 5px;
+}
+
+/* Menu toujours visible */
+.header-quatre-titre {
+    position: relative;
+    width: 100%;
+    background: #5A2D0C; /* Marron foncé */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.header-quatre-titre h1 {
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+}
+
+.header-quatre-titre h1:hover {
+    background: #FFD700;
+    color: #5A2D0C;
+}
+
+/* Bouton de réservation */
+.btn-reservation {
+    background: #FFD700;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5A2D0C;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
