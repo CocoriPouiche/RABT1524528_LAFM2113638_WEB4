@@ -22,4 +22,25 @@ body {
     font-size: 4.5rem;
 }
 
+/* Mise en page générale */
+.Main-LesEntrees {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
+}
+
+/* Conteneur principal */
+.section-DesEntrees {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.section-DesEntrees {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
 
