@@ -17,26 +17,9 @@ body {
     color: white;
 }
 
-
 .t-vin {
     margin: 0;
     font-size: 4.5rem;
-}
-
-
-.Main-principaux {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-
-.Item-principaux {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-vins {
