@@ -30,79 +30,126 @@ body {
     background-color: #f8f8f8;
 }
 
+/* Mise en page générale */
 .Main-principaux {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
 }
 
-/* Style pour les titres des sections */
-.section-title {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-/* Style pour les sections des plats */
+/* Conteneur principal */
 .section-plats {
-    margin-bottom: 40px;
+    width: 90%;
+    max-width: 1200px;
 }
 
-/* Style pour chaque item de plat */
-.plat-item {
+/* Titre des sections */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #17334A;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* Effet de ligne dorée sous le titre */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #C3A93F;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Grille des plats */
+.section-plats {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 }
 
-/* Effet de survol des items */
+/* Cartes des plats */
+.plat-item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 320px;
+    border: 2px solid #C3A93F;
+    position: relative;
+}
+
+/* Effet au survol */
 .plat-item:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Style pour l'image du plat */
+/* Images des plats */
 .plat-item img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 220px;
     object-fit: cover;
-    max-height: 200px;
+    border-bottom: 3px solid #C3A93F;
 }
 
-/* Style pour le texte de chaque plat */
-.plat-item .plat-name {
-    font-size: 1.5em;
-    color: #333;
+/* Titres et descriptions */
+.plat-name {
+    font-size: 1.5rem;
+    color: #004A80;
+    margin: 1rem 0 0.5rem;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
-.plat-item .plat-description {
-    font-size: 1em;
-    color: #666;
-    margin: 10px 0;
+.plat-description {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 0 1.5rem;
+    line-height: 1.5;
 }
 
-.plat-item .plat-price {
-    font-size: 1.2em;
+/* Prix avec effet premium */
+.plat-price {
+    font-size: 1.3rem;
+    font-weight: bold;
     color: #C3A93F;
-    font-weight: bold;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
 }
 
-/* Ajout d'un conteneur pour l'image et les informations */
-.plat-item-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* Effet de séparation dorée */
+.plat-item::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: #C3A93F;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #17334A;
+    color: white;
+    font-size: 1rem;
 }
 
 footer {
