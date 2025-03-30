@@ -24,51 +24,105 @@ body {
 }
 
 /* Main section pour les desserts */
+/* Mise en page générale */
 .Main-dessert {
-    padding: 2rem;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(to bottom, #f3f3f3, #e6e6e6);
 }
 
-/* Titre de chaque catégorie de desserts */
+/* Conteneur principal */
+.section-dessert {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Titre principal */
 .section-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #004A80;
-}
-
-/* LA boite/section de chaque dessert */
-.plat-item {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-}
-
-/* Nom du dessert */
-.plat-name {
-    font-size: 1.6rem;
+    text-align: center;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #17334A;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Description du dessert */
+/* Grille des desserts */
+.section-dessert {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+/* Cartes des desserts */
+.plat-item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 320px;
+    border: 2px solid #C3A93F;
+    position: relative;
+}
+
+/* Effet au survol */
+.plat-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Images des desserts */
+.plat-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #C3A93F;
+}
+
+/* Titres et descriptions */
+.plat-name {
+    font-size: 1.5rem;
+    color: #004A80;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 .plat-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #555;
-    margin-bottom: 1rem;
+    padding: 0 1.5rem;
+    line-height: 1.5;
 }
 
-/* Prix du dessertt */
+/* Prix avec effet premium */
 .plat-price {
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: bold;
     color: #C3A93F;
-    text-align: right;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* Effet de séparation dorée */
+.plat-item::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: #C3A93F;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
 
