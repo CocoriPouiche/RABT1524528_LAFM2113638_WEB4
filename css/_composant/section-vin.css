@@ -9,7 +9,8 @@ body {
 }
 
 
-.Header-principaux {
+.Header-CaveAVin {
+    background: url('/assets/images/jpg/VineTopView.jpg') center/cover no-repeat;
     background-color: #004A80;
     padding: 1rem;
     text-align: center;
