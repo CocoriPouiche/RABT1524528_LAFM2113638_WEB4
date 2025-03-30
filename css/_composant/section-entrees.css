@@ -10,6 +10,7 @@ body {
 
 /* En-tête des entrées */
 .header-entrees {
+    background: url('/assets/images/jpg/EntreeTopView.jpg') center/cover no-repeat;
     background-color: #374d5c;
     padding: 1rem;
     text-align: center;
