@@ -36,6 +36,13 @@ body {
     background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
 }
 
+section {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Conteneur principal */
 .section-plats {
     width: 90%;
