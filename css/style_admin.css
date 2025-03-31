@@ -1,126 +1,406 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #dcdad7;
+@media (min-width: 361px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #dcdad7;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    h1 {
+        margin: 0 0 25px 0;
+        color: #fff;
+        background-color: #C3A93F;
+        padding: 25px;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    nav {
+        background-color: #374d5c;
+        padding: 10px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    main {
+        color: #fff;
+        background-color: #374d5c;
+        border-radius: 25px;
+        padding: 15px;
+    }
+    
+    a, input.modifier, input.ajouter {
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        box-shadow: 5px 5px #0000004e;
+    }
+    
+    input, select {
+        font-size: 16px;
+        padding: 2px;
+        margin-bottom: 5px;
+    }
+    
+    form p {
+        font-weight: bold;
+    }
+    
+    a, input {
+        &.ajouter{
+            background-color: #acf046;
+        }
+        
+        &.ajout {
+            background-color: #acf046;
+            height: 20px;
+        }
+        
+        &.supprimer {
+            background-color: #d43b3b;
+            margin-left: 20px;
+        }
+        
+        &.modifier {
+            background-color: #F5CC00;
+            margin-left: auto;
+        }
+        
+        &.changement_page {
+            background-color: #F5CC00;
+        }
+        
+        &.deconnexion {
+            background-color: #d43b3b;
+            margin-left: auto;
+        }
+    }
+    
+    .un_item {
+        font-size: large;
+        display: flex;
+        align-items: center;
+        border: 1px solid #000000;
+        border-bottom: none;
+        padding: 10px;
+    }
+    
+    .dernier_item {
+        border-bottom: 1px solid #000000;
+    }
+    
+    .tete_liste {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .bienvenu {
+        text-align: center;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    
+    p.item_liste_repas {
+        margin: 0 8px;
+    }
+    
+    p.partie_liste_repas {
+        margin-left: 8px;
+    }
+    
+    .action_reussie {
+        color: #2bff00;
+    }
 }
 
-header {
-    text-align: center;
-}
-
-h1 {
-    margin: 0 0 25px 0;
-    color: #fff;
-    background-color: #C3A93F;
-    padding: 25px;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 48px;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-nav {
-    background-color: #374d5c;
-    padding: 10px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-main {
-    color: #fff;
-    background-color: #374d5c;
-    border-radius: 25px;
-    padding: 15px;
-}
-
-a, input.modifier, input.ajouter {
-    border: none;
-    padding: 10px;
-    border-radius: 15px;
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-    box-shadow: 5px 5px #0000004e;
-}
-
-input, select {
-    font-size: 16px;
-    padding: 2px;
-    margin-bottom: 5px;
-}
-
-form p {
-    font-weight: bold;
-}
-
-a, input {
-    &.ajouter{
-        background-color: #acf046;
+@media (max-width: 992px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #dcdad7;
+    }
+    
+    header {
+        text-align: center;
+        max-width: 962px;
+    }
+    
+    h1 {
+        margin: 0 0 25px 0;
+        color: #fff;
+        background-color: #C3A93F;
+        padding: 25px;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    nav {
+        background-color: #374d5c;
+        padding: 10px;
+        border-radius: 25px;
+        display: grid;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    main {
+        color: #fff;
+        background-color: #374d5c;
+        border-radius: 25px;
+        padding: 15px;
+        max-width: 962px;
+        box-sizing: border-box;
+    }
+    
+    a, input.modifier, input.ajouter {
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        box-shadow: 5px 5px #0000004e;
+    }
+    
+    input, select {
+        font-size: 16px;
+        padding: 2px;
+        margin-bottom: 5px;
+    }
+    
+    form p {
+        font-weight: bold;
     }
 
-    &.ajout {
-        background-color: #acf046;
-        height: 20px;
+    a, input {
+        font-size: 16px;
+        &.ajouter{
+            background-color: #acf046;
+        }
+        
+        &.ajout {
+            background-color: #acf046;
+            height: 20px;
+            margin-bottom: 8px;
+        }
+        
+        &.supprimer {
+            background-color: #d43b3b;
+            margin-left: 20px;
+            margin: 8px auto;
+        }
+        
+        &.modifier {
+            background-color: #F5CC00;
+            margin: 8px auto;
+        }
+        
+        &.changement_page {
+            background-color: #F5CC00;
+        }
+        
+        &.deconnexion {
+            background-color: #d43b3b;
+            margin-left: auto;
+        }
+    }
+    
+    .un_item {
+        text-align: center;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        border-bottom: none;
+        padding: 10px;
+    }
+    
+    .dernier_item {
+        border-bottom: 1px solid #000000;
+    }
+    
+    .tete_liste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .bienvenu {
+        text-align: center;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    
+    p.item_liste_repas {
+        margin: 0 8px;
+    }
+    
+    p.partie_liste_repas {
+        margin-left: 8px;
+    }
+    
+    .action_reussie {
+        color: #2bff00;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #dcdad7;
+    }
+    
+    header {
+        text-align: center;
+        max-width: 330px;
+    }
+    
+    h1 {
+        margin: 0 0 25px 0;
+        color: #fff;
+        background-color: #C3A93F;
+        padding: 25px;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    nav {
+        background-color: #374d5c;
+        padding: 10px;
+        border-radius: 25px;
+        display: grid;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    main {
+        color: #fff;
+        background-color: #374d5c;
+        border-radius: 25px;
+        padding: 15px;
+        max-width: 330px;
+        box-sizing: border-box;
+    }
+    
+    a, input.modifier, input.ajouter {
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        box-shadow: 5px 5px #0000004e;
+    }
+    
+    input, select {
+        font-size: 16px;
+        padding: 2px;
+        margin-bottom: 5px;
+    }
+    
+    form p {
+        font-weight: bold;
     }
 
-    &.supprimer {
-        background-color: #d43b3b;
-        margin-left: 20px;
+    a, input {
+        font-size: 16px;
+        &.ajouter{
+            background-color: #acf046;
+        }
+        
+        &.ajout {
+            background-color: #acf046;
+            height: 20px;
+            margin-bottom: 8px;
+        }
+        
+        &.supprimer {
+            background-color: #d43b3b;
+            margin-left: 20px;
+            margin: 8px auto;
+        }
+        
+        &.modifier {
+            background-color: #F5CC00;
+            margin: 8px auto;
+        }
+        
+        &.changement_page {
+            background-color: #F5CC00;
+        }
+        
+        &.deconnexion {
+            background-color: #d43b3b;
+            margin-left: auto;
+        }
     }
-
-    &.modifier {
-        background-color: #F5CC00;
-        margin-left: auto;
+    
+    .un_item {
+        text-align: center;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        border-bottom: none;
+        padding: 10px;
     }
-
-    &.changement_page {
-        background-color: #F5CC00;
+    
+    .dernier_item {
+        border-bottom: 1px solid #000000;
     }
-
-    &.deconnexion {
-        background-color: #d43b3b;
-        margin-left: auto;
+    
+    .tete_liste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
     }
-}
-
-.un_item {
-    font-size: large;
-    display: flex;
-    align-items: center;
-    border: 1px solid #000000;
-    border-bottom: none;
-    padding: 10px;
-}
-
-.dernier_item {
-    border-bottom: 1px solid #000000;
-}
-
-.tete_liste {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.bienvenu {
-    text-align: center;
-    font-size: 38px;
-    font-weight: bold;
-}
-
-p.item_liste_repas {
-    margin: 0 8px;
-}
-
-p.partie_liste_repas {
-    margin-left: 8px;
-}
-
-.action_reussie {
-    color: #2bff00;
+    
+    .bienvenu {
+        text-align: center;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    
+    p.item_liste_repas {
+        margin: 0 8px;
+    }
+    
+    p.partie_liste_repas {
+        margin-left: 8px;
+    }
+    
+    .action_reussie {
+        color: #2bff00;
+    }
 }

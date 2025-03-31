@@ -76,11 +76,10 @@
             <!-- Pour chaque $un_admin dans le tableau $les_admins -->
             <?php foreach ($les_admins as $un_admin): ?>
                 <div class="un_item">
-                    <?= $un_admin["id"]?>
-                    <?= $un_admin["courriel"]?>
-                    <?= $un_admin["mdp"]?>
+                    <p><?= $un_admin["id"]?></p>
+                    <p><?= $un_admin["courriel"]?></p>
                     <!-- On donne le paramètre GET du id directement dans les liens -->
-                     <!-- Modifier le bouton modifier en lui ajoutant un lien vers la page modifier_admin.php -->
+                    <!-- Modifier le bouton modifier en lui ajoutant un lien vers la page modifier_admin.php -->
                     <a class="modifier" href="modifier_admin.php?id=<?= $un_admin['id']?>">Modifier</a>
                     <a class="supprimer" href="gestion_admin.php?supprimer=<?= $un_admin['id']?>">Supprimer</a>
                 </div>

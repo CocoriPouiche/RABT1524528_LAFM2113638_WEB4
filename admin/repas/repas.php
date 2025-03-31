@@ -81,12 +81,12 @@
                                 <p class="item_liste_repas"><?= $un_repas["ingredients"]?></p>
                                 <p class="partie_liste_repas"><strong>PRIX :  </strong></p>
                                 <p class="item_liste_repas"><?= $un_repas["prix"]?></p>
-                    <!-- On donne le paramètre GET du id directement dans les liens -->
-                    <a class="modifier" href="modifier_repas.php?id=<?= $un_repas['id']?>">Modifier</a>
-                    <a class="supprimer" href="repas.php?supprimer=<?= $un_repas['id']?>">Supprimer</a>
-                </div>
-                <?php endforeach?>
-                <div class="dernier_item"></div>
+                                <!-- On donne le paramètre GET du id directement dans les liens -->
+                                <a class="modifier" href="modifier_repas.php?id=<?= $un_repas['id']?>">Modifier</a>
+                                <a class="supprimer" href="repas.php?supprimer=<?= $un_repas['id']?>">Supprimer</a>
+                            </div>
+                        <?php endforeach?>
+                    <div class="dernier_item"></div>
             </div>
         </main>
         
