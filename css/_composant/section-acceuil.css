@@ -31,8 +31,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.reserver-btn {
-    margin-top: 15px;
+.btn-reserver-acc {
+    margin-left: 185px;
+    margin-top: 25px;
     padding: 10px 20px;
     background-color: #c3a93f; 
     color: white;
@@ -41,7 +42,7 @@ body {
     cursor: pointer;
 }
 
-.reserver-btn:hover {
+.btn-reserver-acc:hover {
     background-color: #896d00; 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }

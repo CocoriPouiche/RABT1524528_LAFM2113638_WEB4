@@ -26,10 +26,9 @@ header {
     cursor: pointer;
 }
 
-.bar {
+div.header div.menu-toggle div.bar {
     width: 30px;
     height: 4px;
-    color: whitesmoke;
     margin: 5px 0;
     transition: 0.3s;
 }
