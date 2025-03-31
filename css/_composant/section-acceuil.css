@@ -51,7 +51,7 @@ body {
     font-weight: bold;
     color: #333; 
     margin-bottom: 15px;
-    color: #e6e6e7;
+    color: #C3A93F;
     text-align: center;
 
 }
@@ -90,6 +90,7 @@ body {
 .grid-item.text .t-chef {
     margin-bottom: 10px;
     font-size: 59px;
+    color: #C3A93F;
 }
 
 .grid-item.text p {
