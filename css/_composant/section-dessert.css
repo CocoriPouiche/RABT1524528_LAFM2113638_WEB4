@@ -18,6 +18,9 @@ body {
 }
 
 .t-desserts {
+    position: absolute;
+    top: 400px;
+    left: 800px;
     margin: 0;
     font-size: 4.5rem;
     color: #dcdad7;
@@ -57,7 +60,6 @@ body {
     justify-items: center;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem 0;
