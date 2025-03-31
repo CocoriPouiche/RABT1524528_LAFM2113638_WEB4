@@ -25,7 +25,7 @@
             ":id" => $_GET["supprimer"]
         ]);
         // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
-        header("location: repas.php");
+        header("location: repas.php?suppression=1");
     }
 
     $sql = "
@@ -57,6 +57,15 @@
         </nav>
     </header>
     <main>
+        <?php if (isset($_GET["ajout"])): ?>
+        <p class="action_reussie"> L'élément a bien été ajouté</p>
+        <?php endif ?>
+        <?php if (isset($_GET["modification"])): ?>
+        <p class="action_reussie"> L'élément a bien été modifié</p>
+        <?php endif ?>
+        <?php if (isset($_GET["suppression"])): ?>
+        <p class="action_reussie"> L'élément a bien été supprimé</p>
+        <?php endif ?>
         <div class="tete_liste">
             <h2>Liste des repas</h2>
             <a class="ajout" href="ajouter.php"> Ajouter un repas</a>

@@ -120,3 +120,7 @@ p.item_liste_repas {
 p.partie_liste_repas {
     margin-left: 8px;
 }
+
+.action_reussie {
+    color: #2bff00;
+}
