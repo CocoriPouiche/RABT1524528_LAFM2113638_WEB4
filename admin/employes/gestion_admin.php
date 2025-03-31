@@ -26,7 +26,7 @@
         ]
         );
         // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
-        header("location: gestion_admin.php");
+        header("location: gestion_admin.php?suppression=1");
     }
 
     $sql = "
@@ -59,6 +59,15 @@
         
     </header>
     <main>
+        <?php if (isset($_GET["ajout"])): ?>
+        <p class="action_reussie"> L'élément a bien été ajouté</p>
+        <?php endif ?>
+        <?php if (isset($_GET["modification"])): ?>
+        <p class="action_reussie"> L'élément a bien été modifié</p>
+        <?php endif ?>
+        <?php if (isset($_GET["suppression"])): ?>
+        <p class="action_reussie"> L'élément a bien été supprimé</p>
+        <?php endif ?>
         <div class="tete_liste">
             <h2>Liste des administrateurs</h2>
             <a class="ajout" href="creer_administrateur.php"> Créer un administrateur </a>

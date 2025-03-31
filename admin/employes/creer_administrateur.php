@@ -21,6 +21,8 @@
             ":courriel" => $courriel,
             ":mdp"      => $mdp_encrypte,
         ]);
+
+        header("location: gestion_admin.php?ajout=1");
     }
 
 ?>
