@@ -1,4 +1,4 @@
-/*[ COMPOSANT NAVIGATION.JS ]*/
+/*[ JAVASCRIPT NAVIGATION.JS ]*/
 /* ------------------------------------------------------------ */
 
 // Variables
