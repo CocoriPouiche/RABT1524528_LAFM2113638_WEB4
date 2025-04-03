@@ -32,7 +32,7 @@ header {
 .menu-toggle .bar {
     width: 100%;
     height: 5px;
-    background-color: black; /* Ajuste la couleur si besoin */
+    background-color: black;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }

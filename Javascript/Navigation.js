@@ -2,10 +2,11 @@
 /* ------------------------------------------------------------ */
 
 // Variables
-// Sélectionne le bouton du menu hamburger
 const menuToggle = document.querySelector('.menu-toggle');
-// Sélectionne le logo dans le menu Navigateur.html
+
 const logoMenuHam = document.querySelector('.logo-menu-ham img');
+
+const btnReservation = document.querySelector('.btn-reservation');
 
 // Vérifie si l'élément existe avant d'ajouter un événement
 if (menuToggle) {
@@ -35,6 +36,13 @@ if (menuToggle) {
 if (logoMenuHam) {
     logoMenuHam.addEventListener('click', () => {
         window.location.href = "Acceuil.html";
+    });
+}
+
+//Si le bouton reservation est cliqué
+if (btnReservation) {
+    btnReservation.addEventListener('click', () => {
+        window.location.href = "PageReservation.html";
     });
 }
 

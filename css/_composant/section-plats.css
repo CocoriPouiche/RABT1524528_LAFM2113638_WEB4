@@ -129,7 +129,7 @@ section {
     line-height: 1.5;
 }
 
-/* Prix avec effet premium */
+/* Prix avec effet */
 .plat-price {
     font-size: 1.3rem;
     font-weight: bold;
@@ -154,7 +154,7 @@ section {
     border-radius: 2px;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 2rem 0;
@@ -170,7 +170,7 @@ footer {
     padding: 1rem 0;
 }
 
-/* Responsivité : pour les écrans plus petits */
+/* Responsivité : pour les écrans plus petits (Cellulaire/Tablette */
 @media (max-width: 768px) {
     .plat-item {
         grid-template-columns: 1fr;
