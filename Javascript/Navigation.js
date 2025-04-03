@@ -45,4 +45,3 @@ if (btnReservation) {
         window.location.href = "PageReservation.html";
     });
 }
-

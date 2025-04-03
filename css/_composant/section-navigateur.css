@@ -38,6 +38,7 @@
     transform: translateX(-50%);
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .bar-ham {
