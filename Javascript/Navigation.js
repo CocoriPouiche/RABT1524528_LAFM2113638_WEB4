@@ -31,3 +31,10 @@ if (menuToggle) {
     });
 }
 
+// Si l'utilisateur clique sur le logo, il est ramené à l'acceuil
+if (logoMenuHam) {
+    logoMenuHam.addEventListener('click', () => {
+        window.location.href = "Acceuil.html";
+    });
+}
+
