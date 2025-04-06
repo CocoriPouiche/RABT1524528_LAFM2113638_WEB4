@@ -24,6 +24,8 @@ if (menuToggle) {
                 window.location.href = "Entrees.php";
             } else if (document.referrer.includes("PlatPrincipaux.php")) {
                 window.location.href = "PlatPrincipaux.php";
+            } else if (document.referrer.includes("PageReservation.php")) {
+                window.location.href = "PageReservation.php";
             }
         } else {
             // Si on n'est pas sur navigation.php, on y va

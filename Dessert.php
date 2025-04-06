@@ -53,48 +53,6 @@
                 </div>
             <?php endforeach?>
 
-            <!-- <div class="plat-item">
-                <img src="/assets/images/jpg/Fondat.jpeg" alt="Desserts">
-                <h3 class="plat-name">Fondant au chocolat et camerise</h3>
-                <p class="plat-description">Chocolat noir, camerise, crème fraîche</p>
-                <p class="plat-price">12$</p>
-            </div>
-
-            <div class="plat-item">
-                <img src="/assets/images/jpg/CremeBruler.jpeg" alt="Desserts">
-                <h3 class="plat-name">Crème brûlée au sapin baumier</h3>
-                <p class="plat-description">Œufs bio, sapin baumier, sucre de canne</p>
-                <p class="plat-price">16$</p>
-            </div>
-
-            <div class="plat-item">
-                <img src="/assets/images/jpg/TarteBluets.jpeg" alt="Desserts">
-                <h3 class="plat-name">Tarte aux bleuets et thé du Labrador</h3>
-                <p class="plat-description">Bleuets du Lac-Saint-Jean, pâte sablée, thé du Labrador</p>
-                <p class="plat-price">12$</p>
-            </div>
-
-            <div class="plat-item">
-                <img src="/assets/images/jpg/PChomeur.jpeg" alt="Desserts">
-                <h3 class="plat-name">Pouding chômeur au sirop de bouleau</h3>
-                <p class="plat-description">Farine locale, sirop de bouleau, crème</p>
-                <p class="plat-price">8$</p>
-            </div>
-
-            <div class="plat-item">
-                <img src="/assets/images/jpg/Parfait.jpeg" alt="Desserts">
-                <h3 class="plat-name">Parfait glacé au miel forestier et noix de caryer</h3>
-                <p class="plat-description">Miel brut, noix de caryer, crème fouettée</p>
-                <p class="plat-price">12$</p>
-            </div>
-
-            <div class="plat-item">
-                <img src="/assets/images/jpg/GateauCarotte.jpeg" alt="Desserts">
-                <h3 class="plat-name">Gâteau aux carottes et glaçage au fromage frais et érable</h3>
-                <p class="plat-description">Carottes fraîches, fromage frais, érable</p>
-                <p class="plat-price">10$</p>
-            </div> -->
-
         </section>
 
     </main>

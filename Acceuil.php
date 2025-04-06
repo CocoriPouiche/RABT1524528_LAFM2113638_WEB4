@@ -57,7 +57,7 @@
             <div class="grid-item text">
                 <h2 class="section-h2">Réservation</h2>
                 <p>Réservez dès maintenant pour vivre une expérience inoubliable.</p>
-                <a href="PageReservation.html"><button class="btn-reserver-acc">Voir réservations</button></a>
+                <a href="PageReservation.php"><button class="btn-reserver-acc">Voir réservations</button></a>
             </div>
         </section>
         
