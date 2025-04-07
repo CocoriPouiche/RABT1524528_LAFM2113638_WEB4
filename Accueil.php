@@ -80,7 +80,7 @@
     </main>
 
     <section class="separator-section">
-        <img src="/assets/images/jpg/SEPARATEUR-NOURRITURE.jpg" alt="Image de séparation" class="separator-image">
+        <img src="/assets/images/jpg/SeparateurAccueil.jpg" alt="Image de séparation" class="separator-image">
     </section>
 
     <footer class="footer-accueil">
@@ -88,9 +88,9 @@
             <div class="footer-left">
                 <img src="/assets/images/png/RABT1524528_Logo.png" alt="Logo" class="footer-logo">
                 <div class="social-icons">
-                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="/assets/images/png/Facebook-logo.png" alt="Facebook"></a>
+                    <a href="#"><img src="/assets/images/png/Instagram-Logo.png" alt="Instagram"></a>
+                    <a href="#"><img src="/assets/images/png/Twitter-Logo.png" alt="Twitter"></a>
                     <a href="mailto:contact@exemple.com"><img src="images/email.png" alt="Email"></a>
                 </div>
             </div>
