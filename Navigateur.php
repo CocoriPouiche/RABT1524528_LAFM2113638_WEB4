@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Les Rives Boréales - Menu Hamburger</title>
+</head>
+<body>
+    
+    <header class="menu-ham">
+
+        <div class="header-container">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <div class="logo-menu-ham">
+            <img src="/assets/images/png/RABT1524528_Logo.png" alt="Logo Les Rives Boréales" width="80">
+            
+        </div>
+
+        <div class="header-quatre-titre">
+
+            <a href="Entrees.php"><h1>Entrées</h1></a>
+            <a href="PlatPrincipaux.php"><h1>Plats principaux</h1></a>
+            <a href="Dessert.php"><h1>Desserts</h1></a>
+            <a href="CaveAVin.php"><h1>Cave à Vin</h1></a>
+            
+        </div>
+        
+
+        <h2 class="btn-reservation">Réservation</h2>
+    </header>
+
+    <script src="Javascript/Navigation.js"></script>
+
+</body>
+</html>

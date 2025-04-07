@@ -14,6 +14,7 @@
     $stmt->execute();
     $entrees = $stmt->fetchAll();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,13 +38,12 @@
 
     </header>
     
-    <main class="Main-principaux">
+    <h2 class="section-title-dessert">Accueil / Entrées</h2>
 
-        <section class="section-plats">
-            
-            <h2 class="section-title">Les Entrées</h2>
+    <main class="Main-LesEntrees">
 
-            
+        <section class="section-DesEntrees">
+
             <?php foreach ($entrees as $entree): ?>
                 <div class="plat-item">
                     <img src="<?= $entree["url_image"] ?>" alt="Entrees">
@@ -52,15 +52,16 @@
                     <p class="plat-price"><?= $entree["prix"]?></p>
                 </div>
             <?php endforeach?>
-            
+
         </section>
 
     </main>
 
     <footer>
-
         <p>&copy; 2025 Les Rives Boréales</p>
-        
     </footer>
+
+    <script src="Javascript/Navigation.js"></script>
+
 </body>
 </html>

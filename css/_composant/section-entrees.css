@@ -10,77 +10,42 @@ body {
 
 /* En-tête des entrées */
 .header-entrees {
-    background-color: #374d5c;
-    padding: 1rem;
+    background: url('/assets/images/jpg/EntreeTopView.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: white;
+    padding: 20px;
+    background-color: #374d5c;
+    position: relative;
 }
 
 .t-entrees {
     margin: 0;
     font-size: 4.5rem;
-}
-
-/* Main section pour les entrées */
-.Main-principaux {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-/* Section pour chaque catégorie d'entrées */
-.section-plats {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Titre de chaque catégorie d'entrées */
-.section-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #004A80;
-}
-
-
-.plat-item {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-}
-
-/* Nom du plat */
-.plat-name {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #17334A;
-    margin-bottom: 0.5rem;
-}
-
-/* Description de l'entrées */
-.plat-description {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 1rem;
-}
-
-/* Prix de l'entrée */
-.plat-price {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #C3A93F;
-    text-align: right;
-}
-
-
-footer {
-    background-color: #004A80;
     color: white;
-    text-align: center;
-    padding: 1rem 0;
 }
+
+/* Mise en page générale */
+.Main-LesEntrees {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
+}
+
+/* Conteneur principal */
+.section-DesEntrees {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.section-DesEntrees {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+

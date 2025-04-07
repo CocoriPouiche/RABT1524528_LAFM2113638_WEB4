@@ -10,6 +10,7 @@
 
 /* Header */
 .header-reserve {
+    background: url('/assets/images/jpg/TableRestaurant.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,35 +43,53 @@
     color: #dcdad7;
 }
 
-.reservation-grid {
+main.reservation-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .reservation-item {
-    background: #222222;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 2rem;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .reservation-item h2 {
+    color: #17334A;
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .reservation-item p {
+    color: #004A80;
     font-size: 1.1rem;
-    color: #e6e6e7;
+    margin-bottom: 1.5rem;
 }
 
-@media (max-width: 768px) {
-    .reservation-grid {
-        grid-template-columns: 1fr;
-    }
+.reserver-btn {
+    background: #C3A93F;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.reserver-btn:hover {
+    background: #A78E35;
 }

@@ -9,33 +9,22 @@ body {
 }
 
 
-.Header-principaux {
-    background-color: #004A80;
-    padding: 1rem;
+.Header-CaveAVin {
+    background: url('/assets/images/jpg/VineTopView.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: white;
+    padding: 20px;
+    background-color: #374d5c;
+    position: relative;
 }
-
 
 .t-vin {
     margin: 0;
     font-size: 4.5rem;
-}
-
-
-.Main-principaux {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-
-.Item-principaux {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .main-vins {
