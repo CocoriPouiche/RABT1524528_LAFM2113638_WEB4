@@ -77,6 +77,9 @@
                 <img src="/assets/images/jpg/HORAIRE.jpg" alt="Horaire">
             </div>
         </section>
+
+        <img src="/assets/images/svg/CoeurBackground.svg" alt="CoeurBackground">
+
     </main>
 
     <section class="separator-section">
