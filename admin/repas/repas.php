@@ -25,7 +25,7 @@
             ":id" => $_GET["supprimer"]
         ]);
         // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
-        header("location: repas.php");
+        header("location: repas.php?suppression=1");
     }
 
     $sql = "
@@ -57,29 +57,40 @@
         </nav>
     </header>
     <main>
-        <div class="tete_liste">
-            <h2>Liste des repas</h2>
-            <a class="ajout" href="ajouter.php"> Ajouter un repas</a>
-        </div>
-        <div class="les_items">
-            <!-- Pour chaque $un_repas dans le tableau $les_repas -->
-            <?php foreach ($les_repas as $un_repas): ?>
-                <div class="un_item">
-                    <?= $un_repas["id"]?>
-                    <p class="partie_liste_repas"><strong>NOM :  </strong></p>
-                    <p class="item_liste_repas"><?= $un_repas["nom"]?></p>
-                    <p class="partie_liste_repas"><strong>INGRÉDIENTS :  </strong></p>
-                    <p class="item_liste_repas"><?= $un_repas["ingredients"]?></p>
-                    <p class="partie_liste_repas"><strong>PRIX :  </strong></p>
-                    <p class="item_liste_repas"><?= $un_repas["prix"]?></p>
-                    <!-- On donne le paramètre GET du id directement dans les liens -->
-                    <a class="modifier" href="modifier_repas.php?id=<?= $un_repas['id']?>">Modifier</a>
-                    <a class="supprimer" href="repas.php?supprimer=<?= $un_repas['id']?>">Supprimer</a>
-                </div>
-            <?php endforeach?>
-            <div class="dernier_item"></div>
-        </div>
-    </main>
+        <?php if (isset($_GET["ajout"])): ?>
+            <p class="action_reussie"> L'élément a bien été ajouté</p>
+            <?php endif ?>
+            <?php if (isset($_GET["modification"])): ?>
+                <p class="action_reussie"> L'élément a bien été modifié</p>
+                <?php endif ?>
+                <?php if (isset($_GET["suppression"])): ?>
+                    <p class="action_reussie"> L'élément a bien été supprimé</p>
+                    <?php endif ?>
+                    <div class="tete_liste">
+                        <h2>Liste des repas</h2>
+                        <a class="ajout" href="ajouter.php"> Ajouter un repas</a>
+                    </div>
+                    <div class="les_items">
+                        <!-- Pour chaque $un_repas dans le tableau $les_repas -->
+                        <?php foreach ($les_repas as $un_repas): ?>
+                            <div class="un_item">
+                                <?= $un_repas["id"]?>
+                                <p class="partie_liste_repas"><strong>NOM :  </strong></p>
+                                <p class="item_liste_repas"><?= $un_repas["nom"]?></p>
+                                <p class="partie_liste_repas"><strong>INGRÉDIENTS :  </strong></p>
+                                <p class="item_liste_repas"><?= $un_repas["ingredients"]?></p>
+                                <p class="partie_liste_repas"><strong>PRIX :  </strong></p>
+                                <p class="item_liste_repas"><?= $un_repas["prix"]?></p>
+                                <!-- On donne le paramètre GET du id directement dans les liens -->
+                                <a class="modifier" href="modifier_repas.php?id=<?= $un_repas['id']?>">Modifier</a>
+                                <a class="supprimer" href="repas.php?supprimer=<?= $un_repas['id']?>">Supprimer</a>
+                            </div>
+                        <?php endforeach?>
+                    <div class="dernier_item"></div>
+            </div>
+        </main>
+        
+        <script src="../../js/admin.js"></script>
 </body>
 </html>
 

@@ -44,7 +44,7 @@
                 // echo $cible;
                 move_uploaded_file($image["tmp_name"], $cible);
                 // Redirection vers repas.php
-                header("location: repas.php");
+                header("location: repas.php?ajout=1");
             }
             else {
                 $erreur_upload = true;

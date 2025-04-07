@@ -26,7 +26,7 @@
         ]
         );
         // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
-        header("location: gestion_admin.php");
+        header("location: gestion_admin.php?suppression=1");
     }
 
     $sql = "
@@ -59,6 +59,15 @@
         
     </header>
     <main>
+        <?php if (isset($_GET["ajout"])): ?>
+        <p class="action_reussie"> L'élément a bien été ajouté</p>
+        <?php endif ?>
+        <?php if (isset($_GET["modification"])): ?>
+        <p class="action_reussie"> L'élément a bien été modifié</p>
+        <?php endif ?>
+        <?php if (isset($_GET["suppression"])): ?>
+        <p class="action_reussie"> L'élément a bien été supprimé</p>
+        <?php endif ?>
         <div class="tete_liste">
             <h2>Liste des administrateurs</h2>
             <a class="ajout" href="creer_administrateur.php"> Créer un administrateur </a>
@@ -67,11 +76,10 @@
             <!-- Pour chaque $un_admin dans le tableau $les_admins -->
             <?php foreach ($les_admins as $un_admin): ?>
                 <div class="un_item">
-                    <?= $un_admin["id"]?>
-                    <?= $un_admin["courriel"]?>
-                    <?= $un_admin["mdp"]?>
+                    <p><?= $un_admin["id"]?></p>
+                    <p><?= $un_admin["courriel"]?></p>
                     <!-- On donne le paramètre GET du id directement dans les liens -->
-                     <!-- Modifier le bouton modifier en lui ajoutant un lien vers la page modifier_admin.php -->
+                    <!-- Modifier le bouton modifier en lui ajoutant un lien vers la page modifier_admin.php -->
                     <a class="modifier" href="modifier_admin.php?id=<?= $un_admin['id']?>">Modifier</a>
                     <a class="supprimer" href="gestion_admin.php?supprimer=<?= $un_admin['id']?>">Supprimer</a>
                 </div>
@@ -79,6 +87,8 @@
             <div class="dernier_item"></div>
         </div>
     </main>
+
+    <script src="../../js/admin.js"></script>
 </body>
 </html>
 
