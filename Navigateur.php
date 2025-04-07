@@ -20,7 +20,7 @@
         </div>
 
         <div class="logo-menu-ham">
-            <img src="/assets/images/png/RABT1524528_Logo.png" alt="Logo Les Rives Boréales" width="80">
+            <img src="/assets/images/svg/RABT1524528_Logo.svg" alt="Logo Les Rives Boréales" width="80">
             
         </div>
 

@@ -28,7 +28,7 @@
         <div class="video-overlay">
             <div class="interface">
                 <div class="Logo_Acceuil">
-                    <img src="/assets/images/png/RABT1524528_Logo.png" alt="Montage architectural" class="montage--img">
+                    <img src="/assets/images/svg/RABT1524528_Logo.svg" alt="Montage architectural" class="montage--img">
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
     <footer class="footer-accueil">
         <div class="footer-container">
             <div class="footer-left">
-                <img src="/assets/images/png/RABT1524528_Logo.png" alt="Logo" class="footer-logo">
+                <img src="/assets/images/svg/RABT1524528_Logo.svg" alt="Logo" class="footer-logo">
                 <div class="social-icons">
                     <a href="#"><img src="/assets/images/png/Facebook-logo.png" alt="Facebook"></a>
                     <a href="#"><img src="/assets/images/png/Instagram-Logo.png" alt="Instagram"></a>
