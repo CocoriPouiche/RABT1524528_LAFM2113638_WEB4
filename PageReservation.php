@@ -22,7 +22,7 @@
 
     <h2 class="section-title-dessert">Accueil / Réservation</h2>
 
-    <main>
+    <main class="main-reserve">
 
         <div class="reservation-grid">
             <section class="reservation-item">
