@@ -62,7 +62,7 @@
         ]);
 
         // Redirection
-        header("location: gestion_admin.php");
+        header("location: gestion_admin.php?modification=1");
     }
 
 ?>

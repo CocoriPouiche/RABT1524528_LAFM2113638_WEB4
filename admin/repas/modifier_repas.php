@@ -123,7 +123,7 @@
                 // echo $cible;
                 move_uploaded_file($image["tmp_name"], $cible);
                 // Redirection
-                header("location: repas.php");
+                header("location: repas.php?modification=1");
             }
             else {
                 $erreur_upload = true;
