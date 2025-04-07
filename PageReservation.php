@@ -18,7 +18,9 @@
         <div class="header-title">
             <h1>RÉSERVATION</h1>
         </div>
-    </header> 
+    </header>
+
+    <h2 class="section-title-dessert">Accueil / Réservation</h2>
 
     <main>
 

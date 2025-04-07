@@ -65,6 +65,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
+    margin-top: 50px;
 }
 
 /* Effet de ligne dorée sous le titre */

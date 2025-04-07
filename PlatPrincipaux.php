@@ -60,6 +60,10 @@
         </div>
         <h1 class="t-principeaux">Plats Principaux</h1>
     </header>
+    
+    <div>
+        <h2 class="section-title-dessert">Accueil / Plats principaux</h2>
+    </div>
    
     <h2 class="section-title">Section Viande</h2>
      

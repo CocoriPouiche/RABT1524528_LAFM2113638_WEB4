@@ -86,6 +86,8 @@
 
         <h1 class="t-vin">Cave à vin</h1>
     </header>
+
+    <h2 class="section-title-dessert">Accueil / Cave à vin</h2>
     
     <main class="main-vins">
         <section class="vin-section">
