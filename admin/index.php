@@ -1,43 +1,5 @@
 <?php
-
-    // $bdd : Connexion à la base de données SQLite
-    include "../includes/base.php";
-    $location = "connexion.php";
-    verifierConnexion($location);
-
-    /**
-     * Affiche la liste des repas
-     * 
-     * Chaque repas aura un bouton modifier et supprimer
-     * 
-     * Si la page est appelée avec un ?supprimer= dans l'URL, 
-     * c'est qu'on vient d'appuyer sur un bouton supprimer
-     */
-    // Si le paramètre GET supprimer existe dans l'URL
-    if (isset($_GET["supprimer"])) {
-        $sql = "
-        DELETE  FROM repas
-        WHERE id = :id
-    ";
-        // Supprime l'élément avec le bon id
-        $stmt = $bdd->prepare($sql);
-        $stmt->execute([
-            ":id" => $_GET["supprimer"]
-        ]
-        );
-        // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
-        header("location: repas.php");
-    }
-
-    $sql = "
-    SELECT id, nom, ingredients, prix
-    FROM repas
-";
-    // Liste de tous les repas
-    $stmt = $bdd->prepare($sql);
-    $stmt->execute();
-    $les_repas = $stmt->fetchAll();
-
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
