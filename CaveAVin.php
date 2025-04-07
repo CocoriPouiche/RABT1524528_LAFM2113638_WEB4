@@ -74,7 +74,7 @@
     <title>Les Rives Boréales - Cave à Vin</title>
 </head>
 <body>
-    <header class="Header-principaux">
+    <header class="Header-CaveAVin">
         <div class="header-container">
             <div class="menu-toggle">
                 <div class="bar"></div>
