@@ -12,6 +12,8 @@
     padding: 20px;
     background-color: #374d5c;
     position: relative;
+    filter: brightness(0.7);
+    border-bottom: 2px solid #C3A93F;
 }
 
 .t-entrees {

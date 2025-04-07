@@ -12,6 +12,7 @@
     padding: 20px;
     background-color: #374d5c;
     position: relative;
+    filter: brightness(0.7);
 }
 
 .t-desserts {
