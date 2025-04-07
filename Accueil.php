@@ -91,7 +91,7 @@
                     <a href="#"><img src="/assets/images/png/Facebook-logo.png" alt="Facebook"></a>
                     <a href="#"><img src="/assets/images/png/Instagram-Logo.png" alt="Instagram"></a>
                     <a href="#"><img src="/assets/images/png/Twitter-Logo.png" alt="Twitter"></a>
-                    <a href="mailto:contact@exemple.com"><img src="images/email.png" alt="Email"></a>
+                    <a href="mailto:contact@exemple.com"><img src="/assets/images/png/Gmail-Logo.png" alt="Email"></a>
                 </div>
             </div>
     
