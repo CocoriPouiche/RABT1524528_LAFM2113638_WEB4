@@ -1,0 +1,89 @@
+/*[ COMPOSANT SECTION-MENU-HAMBURGER ]*/
+/* ------------------------------------------------------------ */
+
+.menu-ham {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #17334A; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Conteneur du menu hamburger */
+.header-ham {
+    display: flex;
+    align-items: center;
+}
+
+/* Bouton du menu hamburger */
+.menu-toggle-ham {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    cursor: pointer;
+}
+
+.logo-menu-ham {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bar-ham {
+    width: 100%;
+    height: 5px;
+    background: #FFD700;
+    border-radius: 5px;
+}
+
+.header-quatre-titre {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.header-quatre-titre h1 {
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+}
+
+.header-quatre-titre h1:hover {
+    background: #FFD700;
+    color: #5A2D0C;
+}
+
+/* Bouton de réservation */
+.btn-reservation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFD700;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5A2D0C;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}

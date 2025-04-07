@@ -10,10 +10,15 @@ body {
 
 /* En-tête des plats principaux */
 .Header-dessert {
-    background-color: #374d5c;
-    padding: 1rem;
+    background: url('/assets/images/jpg/DessertTopView.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: white;
+    padding: 20px;
+    background-color: #374d5c;
+    position: relative;
 }
 
 .t-desserts {
@@ -22,58 +27,44 @@ body {
     color: #dcdad7;
 }
 
-/* Main section pour les desserts */
+/* Mise en page générale */
 .Main-dessert {
-    padding: 2rem;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(to bottom, #f3f3f3, #e6e6e6);
 }
 
-/* Titre de chaque catégorie de desserts */
-.section-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #004A80;
+/* Conteneur principal */
+.section-dessert {
+    width: 90%;
+    max-width: 1200px;
 }
 
-/* LA boite/section de chaque dessert */
-.plat-item {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-}
-
-/* Nom du dessert */
-.plat-name {
-    font-size: 1.6rem;
+/* Titre principal */
+.section-title-dessert {
+    text-align: left;
+    font-size: 1rem;
     font-weight: bold;
     color: #17334A;
-    margin-bottom: 0.5rem;
+    padding-top: 25px;
+    margin-left: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Description du dessert */
-.plat-description {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 1rem;
+/* Grille des desserts */
+.section-dessert {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 }
-
-/* Prix du dessertt */
-.plat-price {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #C3A93F;
-    text-align: right;
-}
-
 
 footer {
-    background-color: #004A80;
-    color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    background: #17334A;
+    color: white;
+    font-size: 1rem;
 }
