@@ -1,6 +1,13 @@
 /*[ COMPOSANT SECTION-CHEF ]*/
 /* ------------------------------------------------------------ */
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5a4e28;
+}
+
 .chef-section {
     background-color: #222222;
     padding: 50px 20px;
@@ -15,11 +22,11 @@
     grid-template-columns: 1fr 1fr; 
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
-    gap: 30px;
+    margin: 50px auto;
     background-color: #222222;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
 }
 
 .grid-item.image img {
@@ -60,20 +67,6 @@
     color: #e6e6e7;
     line-height: 1.6; 
     text-align: center; 
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    max-width: 1200px;
-    margin: 50px auto;
-    gap: 20px;
-    padding: 20px;
-}
-
-.grid-container.reverse {
-    grid-template-columns: 1fr 1fr;
 }
 
 .grid-item img {

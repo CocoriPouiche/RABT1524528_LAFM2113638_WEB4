@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     padding: 4rem 1rem;
-    background: linear-gradient(to bottom, #f3f3f3, #e6e6e6);
+    background: linear-gradient(to bottom, #494128, #374d5c);
 }
 
 /* Titre principal */
@@ -56,12 +56,14 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border: 2px solid #C3A93F;
 }
 
 footer {
     text-align: center;
     padding: 2rem 0;
-    background: #17334A;
+    background: #374d5c;
     color: white;
     font-size: 1rem;
 }

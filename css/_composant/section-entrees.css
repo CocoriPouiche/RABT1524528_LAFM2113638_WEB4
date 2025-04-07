@@ -1,13 +1,6 @@
 /*[ COMPOSANT SECTION-ENTREES ]*/
 /* ------------------------------------------------------------ */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #494128;
-}
-
 /* En-tête des entrées */
 .header-entrees {
     background: url('/assets/images/jpg/EntreeTopView.jpg') center/cover no-repeat;
@@ -32,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 4rem 1rem;
-    background: linear-gradient(to bottom, #494128, #e6e6e6);
+    background: linear-gradient(to bottom, #494128, #374d5c);
 }
 
 /* Conteneur principal */
@@ -51,6 +44,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border: 2px solid #C3A93F;
 }
 
 h2.section-title-dessert{
