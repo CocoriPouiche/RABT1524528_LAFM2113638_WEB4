@@ -1,42 +1,15 @@
 <?php
 
-    // $bdd : Connexion à la base de données SQLite
     include "../includes/base.php";
-    $location = "connexion.php";
-    verifierConnexion($location);
-
-    /**
-     * Affiche la liste des repas
-     * 
-     * Chaque repas aura un bouton modifier et supprimer
-     * 
-     * Si la page est appelée avec un ?supprimer= dans l'URL, 
-     * c'est qu'on vient d'appuyer sur un bouton supprimer
-     */
-    // Si le paramètre GET supprimer existe dans l'URL
-    if (isset($_GET["supprimer"])) {
-        $sql = "
-        DELETE  FROM repas
-        WHERE id = :id
-    ";
-        // Supprime l'élément avec le bon id
-        $stmt = $bdd->prepare($sql);
-        $stmt->execute([
-            ":id" => $_GET["supprimer"]
-        ]
-        );
-        // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
-        header("location: repas.php");
-    }
 
     $sql = "
-    SELECT id, nom, ingredients, prix
-    FROM repas
-";
-    // Liste de tous les repas
+    SELECT id, nom, nb, temps
+    FROM reservations
+    ";
+    // Liste de toutes les réservations
     $stmt = $bdd->prepare($sql);
     $stmt->execute();
-    $les_repas = $stmt->fetchAll();
+    $les_reservations = $stmt->fetchAll();
 
 ?>
 <!DOCTYPE html>
@@ -61,6 +34,23 @@
         <p class="bienvenu">
             Bienvenu dans l'administration du site
         </p>
+
+        <div class="conteneur">
+            <div class="reservations">
+                <h2>Réservations</h2>
+                <?php foreach ($les_reservations as $une_reservation): ?>
+                    <div class="une-reservation">
+                        <p>Nom : <?= $une_reservation["nom"]?></p>
+                        <p>Nombre de personnes : <?= $une_reservation["nb"]?></p>
+                        <p>Heure : <?= $une_reservation["temps"]?></p>
+                    </div>
+                <?php endforeach ?>
+            </div>
+            <div class="statistiques">
+                <h2>Statistiques</h2>
+                <p>ette</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
