@@ -1,6 +1,15 @@
 <?php
 
-    
+    include "../includes/base.php";
+
+    $sql = "
+    SELECT id, nom, nb, temps
+    FROM reservations
+    ";
+    // Liste de toutes les réservations
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $les_reservations = $stmt->fetchAll();
 
 ?>
 <!DOCTYPE html>
@@ -29,7 +38,13 @@
         <div class="conteneur">
             <div class="reservations">
                 <h2>Réservations</h2>
-                <p>bob</p>
+                <?php foreach ($les_reservations as $une_reservation): ?>
+                    <div class="une-reservation">
+                        <p><?= $une_reservation["nom"]?></p>
+                        <p><?= $une_reservation["nb"]?></p>
+                        <p><?= $une_reservation["temps"]?></p>
+                    </div>
+                <?php endforeach ?>
             </div>
             <div class="statistiques">
                 <h2>Statistiques</h2>
