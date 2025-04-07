@@ -14,6 +14,7 @@
     $stmt->execute();
     $entrees = $stmt->fetchAll();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,13 +38,12 @@
 
     </header>
     
-    <main class="Main-principaux">
+    <h2 class="section-title-dessert">Accueil / Entrées</h2>
 
-        <section class="section-plats">
-            
-            <h2 class="section-title">Les Entrées</h2>
+    <main class="Main-LesEntrees">
 
-            
+        <section class="section-DesEntrees">
+
             <?php foreach ($entrees as $entree): ?>
                 <div class="plat-item">
                     <img src="<?= $entree["url_image"] ?>" alt="Entrees">
@@ -52,15 +52,72 @@
                     <p class="plat-price"><?= $entree["prix"]?></p>
                 </div>
             <?php endforeach?>
-            
+
+            <!-- <div class="plat-item">
+                <img src="/assets/images/jpg/TruiteFumee.jpg" alt="Entrees">
+                <h3 class="plat-name">Gravlax de truite fumée à l’érable et gin boréal</h3>
+                <p class="plat-description">Truite, érable, gin aux herbes sauvages</p>
+                <p class="plat-price">12$</p>
+            </div>
+
+            <div class="plat-item">
+                <img src="/assets/images/jpg/SChampignon.jpg" alt="Entrees">
+                <h3 class="plat-name">Soupe aux champignons sauvages et herbes nordiques</h3>
+                <p class="plat-description">Cèpes, chanterelles, orpin, livèche</p>
+                <p class="plat-price">10$</p>
+            </div>
+
+            <div class="plat-item">
+                <img src="/assets/images/jpg/Tartare.jpg" alt="Entrees">
+                <h3 class="plat-name">Tartare de bison aux airelles et baies de genièvre</h3>
+                <p class="plat-description">Bison haché, airelles, câpres de quenouille</p>
+                <p class="plat-price">14$</p>
+            </div>
+
+            <div class="plat-item">
+                <img src="/assets/images/jpg/FoieGras.jpg" alt="Entrees">
+                <h3 class="plat-name">Foie gras au cidre de glace, pain grillé aux noix</h3>
+                <p class="plat-description">Foie gras québécois, cidre de glace de Rougemont, noisettes du Québec</p>
+                <p class="plat-price">22$</p>
+            </div>
+
+            <div class="plat-item">
+                <img src="/assets/images/jpg/Croquettes.jpg" alt="Entrees">
+                <h3 class="plat-name">Croquettes de fromage en croûte de noisettes et miel forestier</h3>
+                <p class="plat-description">Fromage fermier, miel brut, noisettes grillées</p>
+                <p class="plat-price">12$</p>
+            </div>
+
+            <div class="plat-item">
+                <img src="/assets/images/jpg/Carpaccio.jpg" alt="Entrees">
+                <h3 class="plat-name">Carpaccio de cerf aux épices boréales</h3>
+                <p class="plat-description">Cerf mariné, vinaigre de sapin, poivre des dunes</p>
+                <p class="plat-price">14$</p>
+            </div>
+
+            <div class="plat-item">
+                <img src="/assets/images/jpg/Potage.jpg" alt="Entrees">
+                <h3 class="plat-name">Potage de courge et crème au sapin baumier</h3>
+                <p class="plat-description">Courge musquée, crème de sapin, muscade</p>
+                <p class="plat-price">8$</p>
+            </div>
+
+            <div class="plat-item">
+                <img src="/assets/images/jpg/Petoncle.jpeg" alt="Entrees">
+                <h3 class="plat-name">Pétoncles poêlés, purée de panais et tuile de pain au levain</h3>
+                <p class="plat-description">Pétoncles de l’Île-du-Prince-Édouard, panais caramélisé, levain maison</p>
+                <p class="plat-price">16$</p>
+            </div> -->
+
         </section>
 
     </main>
 
     <footer>
-
         <p>&copy; 2025 Les Rives Boréales</p>
-        
     </footer>
+
+    <script src="Javascript/Navigation.js"></script>
+
 </body>
 </html>

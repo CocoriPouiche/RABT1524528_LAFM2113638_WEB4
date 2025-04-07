@@ -25,10 +25,10 @@
 
         <div class="header-quatre-titre">
 
-            <a href="Entrees.html"><h1>Entrées</h1></a>
-            <a href="PlatPrincipaux.html"><h1>Plats principaux</h1></a>
-            <a href="Dessert.html"><h1>Desserts</h1></a>
-            <a href="CaveAVin.html"><h1>Cave à Vin</h1></a>
+            <a href="Entrees.php"><h1>Entrées</h1></a>
+            <a href="PlatPrincipaux.php"><h1>Plats principaux</h1></a>
+            <a href="Dessert.php"><h1>Desserts</h1></a>
+            <a href="CaveAVin.php"><h1>Cave à Vin</h1></a>
             
         </div>
         
