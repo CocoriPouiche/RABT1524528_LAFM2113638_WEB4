@@ -53,9 +53,15 @@ main {
             border-bottom: 2px solid black;
         }
     }
-
+    
     div.reservations {
         border-right: 3px solid black;
+    }
+
+    a.btn-reserver,
+    a.inactif {
+        margin-bottom: 80px;
+        background-color: #F5CC00;
     }
 }
 
@@ -64,8 +70,9 @@ main {
     justify-content: center;
     gap: 8px;
     border-bottom: 1px solid black;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
+
 
 a,
 input.modifier,
@@ -77,6 +84,13 @@ input.ajouter {
     color: black;
     font-size: larger;
     box-shadow: 5px 5px #0000004e;
+}
+
+a.inactif {
+    color: grey;
+    opacity: 0.5f;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 input,

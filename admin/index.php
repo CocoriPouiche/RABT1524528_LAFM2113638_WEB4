@@ -2,13 +2,23 @@
 
     include "../includes/base.php";
 
+    $nb_reservations = selectCount("reservations");
+    $nb_reservations_par_page = 5;
+    $nb_page_total = ceil($nb_reservations / $nb_reservations_par_page);
+    $page = $_GET["page"] ?? 1;
+
     $sql = "
     SELECT id, nom, nb, temps
     FROM reservations
+    LIMIT :limit
+    OFFSET :offset
     ";
     // Liste de toutes les réservations
     $stmt = $bdd->prepare($sql);
-    $stmt->execute();
+    $stmt->execute([
+        ":limit" => $nb_reservations_par_page,
+        ":offset" => ($page - 1) * $nb_reservations_par_page
+    ]);
     $les_reservations = $stmt->fetchAll();
 
 ?>
@@ -45,6 +55,19 @@
                         <p>Heure : <?= $une_reservation["temps"]?></p>
                     </div>
                 <?php endforeach ?>
+                <div class="boutons">
+                    <?php if ($page > 1): ?>
+                        <a class="btn-reserver" href="index.php?page=<?= $page - 1?>">Précédent</a>
+                    <?php else: ?>
+                        <a href="" class="inactif">Précédent</a>
+                    <?php endif ?>
+                    <?php if ($page < $nb_page_total): ?>
+                        <a class="btn-reserver" href="index.php?page=<?= $page + 1?>">Suivant</a>
+                    <?php else: ?>
+                        <a href="" class="inactif">Suivant</a>
+                    <?php endif ?>
+                </div>
+                <p>Page <?= $page ?> de <?= $nb_page_total ?></p>
             </div>
             <div class="statistiques">
                 <h2>Statistiques</h2>
