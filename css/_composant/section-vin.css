@@ -1,13 +1,6 @@
 /*[ COMPOSANT SECTION-CHEF ]*/
 /* ------------------------------------------------------------ */
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-}
-
-
 .Header-CaveAVin {
     background: url('/assets/images/jpg/VineTopView.jpg') center/cover no-repeat;
     display: flex;

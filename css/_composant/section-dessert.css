@@ -1,13 +1,6 @@
 /*[ COMPOSANT SECTION-DESSERT ]*/
 /* ------------------------------------------------------------ */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-}
-
 /* En-tête des plats principaux */
 .Header-dessert {
     background: url('/assets/images/jpg/DessertTopView.jpg') center/cover no-repeat;
