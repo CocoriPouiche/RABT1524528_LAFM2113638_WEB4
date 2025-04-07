@@ -77,8 +77,10 @@
                 <img src="/assets/images/jpg/HORAIRE.jpg" alt="Horaire">
             </div>
         </section>
-
-        <img src="/assets/images/svg/CoeurBackground.svg" alt="CoeurBackground">
+        
+        <div class="coeur">
+            <img src="/assets/images/svg/CoeurBackground.svg" alt="CoeurBackground">
+        </div>
 
     </main>
 
