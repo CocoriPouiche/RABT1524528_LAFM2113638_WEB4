@@ -40,9 +40,9 @@
                 <h2>Réservations</h2>
                 <?php foreach ($les_reservations as $une_reservation): ?>
                     <div class="une-reservation">
-                        <p><?= $une_reservation["nom"]?></p>
-                        <p><?= $une_reservation["nb"]?></p>
-                        <p><?= $une_reservation["temps"]?></p>
+                        <p>Nom : <?= $une_reservation["nom"]?></p>
+                        <p>Nombre de personnes : <?= $une_reservation["nb"]?></p>
+                        <p>Heure : <?= $une_reservation["temps"]?></p>
                     </div>
                 <?php endforeach ?>
             </div>

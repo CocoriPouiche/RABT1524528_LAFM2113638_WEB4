@@ -40,16 +40,31 @@ main {
     div.conteneur {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        border: 3px solid black;
     }
 
     div.reservations,
     div.statistiques {
         margin: 0 auto;
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            border-bottom: 2px solid black;
+        }
+    }
+
+    div.reservations {
+        border-right: 3px solid black;
     }
 }
 
 .une-reservation {
     display: flex;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
 }
 
 a,

@@ -84,7 +84,7 @@
             </Select>
         </div>
         <div>
-            <input class="ajouter" type="submit" value="Ajouter">
+                <button class="btn-reserver-acc" type="submit">Réserver</button>
         </div>
     </form>
         <div class="reservation-grid">

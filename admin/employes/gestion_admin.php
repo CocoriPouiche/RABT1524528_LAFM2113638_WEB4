@@ -23,8 +23,7 @@
         $stmt = $bdd->prepare($sql);
         $stmt->execute([
             ":id" => $_GET["supprimer"]
-        ]
-        );
+        ]);
         // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
         header("location: gestion_admin.php?suppression=1");
     }
