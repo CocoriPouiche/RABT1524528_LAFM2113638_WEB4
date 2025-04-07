@@ -37,15 +37,20 @@ body {
 
 /* Conteneur principal */
 .section-DesEntrees {
-    width: 90%;
-    max-width: 1200px;
-}
-
-.section-DesEntrees {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
+
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 

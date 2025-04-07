@@ -35,12 +35,6 @@ body {
     background: linear-gradient(to bottom, #f3f3f3, #e6e6e6);
 }
 
-/* Conteneur principal */
-.section-dessert {
-    width: 90%;
-    max-width: 1200px;
-}
-
 /* Titre principal */
 .section-title-dessert {
     text-align: left;
@@ -56,9 +50,19 @@ body {
 /* Grille des desserts */
 .section-dessert {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
+
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer {
