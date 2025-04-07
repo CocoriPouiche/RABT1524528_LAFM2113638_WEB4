@@ -3,9 +3,9 @@
     include "../includes/base.php";
 
     $nb_reservations = selectCount("reservations");
-    $nb_reservations_par_page = 5;
-    $nb_page_total = ceil($nb_reservations / $nb_reservations_par_page);
-    $page = $_GET["page"] ?? 1;
+    $nb_reservations_par_page = 6;
+    $nb_page_reservations_total = ceil($nb_reservations / $nb_reservations_par_page);
+    $page_reservations = $_GET["page"] ?? 1;
 
     $sql = "
     SELECT id, nom, nb, temps
@@ -17,7 +17,7 @@
     $stmt = $bdd->prepare($sql);
     $stmt->execute([
         ":limit" => $nb_reservations_par_page,
-        ":offset" => ($page - 1) * $nb_reservations_par_page
+        ":offset" => ($page_reservations - 1) * $nb_reservations_par_page
     ]);
     $les_reservations = $stmt->fetchAll();
 
@@ -47,7 +47,7 @@
 
         <div class="conteneur">
             <div class="reservations">
-                <h2>Réservations</h2>
+                <p class="titre-section">Réservations</p>
                 <?php foreach ($les_reservations as $une_reservation): ?>
                     <div class="une-reservation">
                         <p>Nom : <?= $une_reservation["nom"]?></p>
@@ -56,22 +56,46 @@
                     </div>
                 <?php endforeach ?>
                 <div class="boutons">
-                    <?php if ($page > 1): ?>
-                        <a class="btn-reserver" href="index.php?page=<?= $page - 1?>">Précédent</a>
+                    <?php if ($page_reservations > 1): ?>
+                        <a class="btn-reserver" href="index.php?page=<?= $page_reservations - 1?>">Précédent</a>
                     <?php else: ?>
                         <a href="" class="inactif">Précédent</a>
                     <?php endif ?>
-                    <?php if ($page < $nb_page_total): ?>
-                        <a class="btn-reserver" href="index.php?page=<?= $page + 1?>">Suivant</a>
+                    <?php if ($page_reservations < $nb_page_reservations_total): ?>
+                        <a class="btn-reserver" href="index.php?page=<?= $page_reservations + 1?>">Suivant</a>
                     <?php else: ?>
                         <a href="" class="inactif">Suivant</a>
                     <?php endif ?>
                 </div>
-                <p>Page <?= $page ?> de <?= $nb_page_total ?></p>
+                <p>Page <?= $page_reservations ?> de <?= $nb_page_reservations_total ?></p>
             </div>
+
             <div class="statistiques">
-                <h2>Statistiques</h2>
-                <p>ette</p>
+                <p class="titre-section">Statistiques</p>
+                <div class="une-statistique">
+                    <p>Page : Accueil</p>
+                    <p class="nb-vues">Nombre de vues : 666</p>
+                </div>
+                <div class="une-statistique">
+                    <p>Page : Entrées</p>
+                    <p class="nb-vues">Nombre de vues : 666</p>
+                </div>
+                <div class="une-statistique">
+                    <p>Page : Plats principaux</p>
+                    <p class="nb-vues">Nombre de vues : 666</p>
+                </div>
+                <div class="une-statistique">
+                    <p>Page : Desserts</p>
+                    <p class="nb-vues">Nombre de vues : 666</p>
+                </div>
+                <div class="une-statistique">
+                    <p>Page : Cave à vin</p>
+                    <p class="nb-vues">Nombre de vues : 666</p>
+                </div>
+                <div class="une-statistique">
+                    <p>Page : Réservations</p>
+                    <p class="nb-vues">Nombre de vues : 666</p>
+                </div>
             </div>
         </div>
     </main>
