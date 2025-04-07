@@ -48,10 +48,6 @@ main {
         margin: 0 auto;
         text-align: center;
         width: 100%;
-
-        h2 {
-            border-bottom: 2px solid black;
-        }
     }
     
     div.reservations {
@@ -65,7 +61,23 @@ main {
     }
 }
 
-.une-reservation {
+.partie-repas {
+    display: flex;
+    align-items: center;
+}
+
+p.courriel {
+    margin-left: 8px;
+}
+
+.titre-section {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.une-reservation,
+.une-statistique {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -73,6 +85,13 @@ main {
     margin-bottom: 12px;
 }
 
+.une-statistique {
+    padding: 0 20px;
+}
+
+.nb-vues {
+    margin-left: auto;
+}
 
 a,
 input.modifier,
@@ -219,6 +238,10 @@ p.partie_liste_repas {
         text-align: center;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .partie-repas {
+        display: block;
     }
 
     .tete_liste {
