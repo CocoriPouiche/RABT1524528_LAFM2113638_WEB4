@@ -1,13 +1,6 @@
 /*[ COMPOSANT SECTION-ENTREES ]*/
 /* ------------------------------------------------------------ */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-}
-
 /* En-tête des entrées */
 .header-entrees {
     background: url('/assets/images/jpg/EntreeTopView.jpg') center/cover no-repeat;
@@ -19,6 +12,8 @@ body {
     padding: 20px;
     background-color: #374d5c;
     position: relative;
+    filter: brightness(0.7);
+    border-bottom: 2px solid #C3A93F;
 }
 
 .t-entrees {
@@ -32,20 +27,31 @@ body {
     display: flex;
     justify-content: center;
     padding: 4rem 1rem;
-    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
+    background: linear-gradient(to bottom, #5a4e28, #374d5c);
 }
 
 /* Conteneur principal */
 .section-DesEntrees {
-    width: 90%;
-    max-width: 1200px;
-}
-
-.section-DesEntrees {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
+
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border: 2px solid #C3A93F;
+}
+
+h2.section-title-dessert{
+    color: white;
 }
 
 

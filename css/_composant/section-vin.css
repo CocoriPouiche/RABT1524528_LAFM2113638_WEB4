@@ -1,13 +1,9 @@
 /*[ COMPOSANT SECTION-CHEF ]*/
 /* ------------------------------------------------------------ */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
+.main-reserve {
+    background: linear-gradient(to bottom, #5a4e28, #374d5c);
 }
-
 
 .Header-CaveAVin {
     background: url('/assets/images/jpg/VineTopView.jpg') center/cover no-repeat;
@@ -19,6 +15,8 @@ body {
     padding: 20px;
     background-color: #374d5c;
     position: relative;
+    filter: brightness(0.7);
+    border-bottom: 2px solid #C3A93F;
 }
 
 .t-vin {
@@ -32,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background: linear-gradient(to bottom, #5a4e28, #374d5c);
 }
 
 .vin-section {

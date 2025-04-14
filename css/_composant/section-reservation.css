@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 /* Header */
@@ -19,6 +19,8 @@
     padding: 20px;
     background-color: #374d5c;
     position: relative;
+    filter: brightness(0.7);
+    border-bottom: 2px solid #C3A93F;
 }
 
 #menu-toggle {
