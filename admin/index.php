@@ -61,9 +61,9 @@
                 <p class="titre-section">Réservations</p>
                 <?php foreach ($les_reservations as $une_reservation): ?>
                     <div class="une-reservation">
-                        <p>Nom : <?= $une_reservation["nom"]?></p>
-                        <p>Nombre de personnes : <?= $une_reservation["nb"]?></p>
-                        <p>Heure : <?= $une_reservation["temps"]?></p>
+                        <p class="res-nom">Nom : <?= $une_reservation["nom"]?></p>
+                        <p class="res-nb">Nombre de personnes : <?= $une_reservation["nb"]?></p>
+                        <p class="res-heure">Heure : <?= $une_reservation["temps"]?></p>
                     </div>
                 <?php endforeach ?>
                 <div class="boutons">
