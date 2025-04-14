@@ -23,6 +23,15 @@
     ]);
     $les_reservations = $stmt->fetchAll();
 
+    $sql = "
+    SELECT *
+    FROM vues
+    ORDER BY nb DESC
+    ";
+
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $pages = $stmt->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -75,30 +84,12 @@
 
             <div class="statistiques">
                 <p class="titre-section">Statistiques</p>
-                <div class="une-statistique">
-                    <p>Page : Accueil</p>
-                    <p class="nb-vues">Nombre de vues : 666</p>
-                </div>
-                <div class="une-statistique">
-                    <p>Page : Entrées</p>
-                    <p class="nb-vues">Nombre de vues : 666</p>
-                </div>
-                <div class="une-statistique">
-                    <p>Page : Plats principaux</p>
-                    <p class="nb-vues">Nombre de vues : 666</p>
-                </div>
-                <div class="une-statistique">
-                    <p>Page : Desserts</p>
-                    <p class="nb-vues">Nombre de vues : 666</p>
-                </div>
-                <div class="une-statistique">
-                    <p>Page : Cave à vin</p>
-                    <p class="nb-vues">Nombre de vues : 666</p>
-                </div>
-                <div class="une-statistique">
-                    <p>Page : Réservations</p>
-                    <p class="nb-vues">Nombre de vues : 666</p>
-                </div>
+                <?php foreach ($pages as $page): ?>
+                    <div class="une-statistique">
+                        <p>Page : <?= $page["page"] ?></p>
+                        <p class="nb-vues"> Nombre de vues : <?= $page["nb"] ?></p>
+                    </div>
+                <?php endforeach ?>
             </div>
         </div>
     </main>

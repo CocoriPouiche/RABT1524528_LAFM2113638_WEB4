@@ -108,10 +108,10 @@
         <section class="vin-section">
             <div class="vin-titre">Vin Blanc</div>
             <?php foreach ($vins_blancs as $vin_blanc): ?>
-            <div class="vin-item">
-                <div class="vin-nom"><?= $vin_blanc["nom"]?></div>
-                <div class="vin-prix"><?= $vin_blanc["prix"]?></div>
-            </div>
+                <div class="vin-item">
+                    <div class="vin-nom"><?= $vin_blanc["nom"]?></div>
+                    <div class="vin-prix"><?= $vin_blanc["prix"]?></div>
+                </div>
             <?php endforeach?>
         </section>
     
