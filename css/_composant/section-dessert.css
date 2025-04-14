@@ -1,13 +1,6 @@
 /*[ COMPOSANT SECTION-DESSERT ]*/
 /* ------------------------------------------------------------ */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-}
-
 /* En-tête des plats principaux */
 .Header-dessert {
     background: url('/assets/images/jpg/DessertTopView.jpg') center/cover no-repeat;
@@ -19,7 +12,9 @@ body {
     padding: 20px;
     background-color: #374d5c;
     position: relative;
-}
+    filter: brightness(0.7);
+    border-bottom: 2px solid #C3A93F;
+} 
 
 .t-desserts {
     margin: 0;
@@ -32,13 +27,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 4rem 1rem;
-    background: linear-gradient(to bottom, #f3f3f3, #e6e6e6);
-}
-
-/* Conteneur principal */
-.section-dessert {
-    width: 90%;
-    max-width: 1200px;
+    background: linear-gradient(to bottom, #5a4e28, #374d5c);
 }
 
 /* Titre principal */
@@ -56,15 +45,27 @@ body {
 /* Grille des desserts */
 .section-dessert {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
+
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border: 2px solid #C3A93F;
 }
 
 footer {
     text-align: center;
     padding: 2rem 0;
-    background: #17334A;
+    background: #374d5c;
     color: white;
     font-size: 1rem;
 }

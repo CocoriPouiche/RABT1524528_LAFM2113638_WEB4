@@ -27,6 +27,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Les Rives Boréales - Menu Hamburger</title>
 </head>
 <body>
@@ -42,7 +43,7 @@
         </div>
 
         <div class="logo-menu-ham">
-            <img src="/assets/images/png/RABT1524528_Logo.png" alt="Logo Les Rives Boréales" width="80">
+            <img src="/assets/images/svg/RABT1524528_Logo.svg" alt="Logo Les Rives Boréales" width="80">
             
         </div>
 

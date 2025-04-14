@@ -34,7 +34,7 @@ if (menuToggle) {
     });
 }
 
-// Si l'utilisateur clique sur le logo, il est ramené à l'acceuil
+// Si l'utilisateur clique sur le logo, il est ramené à l'Accueil
 if (logoMenuHam) {
     logoMenuHam.addEventListener('click', () => {
         window.location.href = "Accueil.php";

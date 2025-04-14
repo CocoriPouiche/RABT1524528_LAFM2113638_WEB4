@@ -89,10 +89,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Les Rives Boréales - Cave à Vin</title>
 </head>
 <body>
-    <header class="Header-principaux">
+    <header class="Header-CaveAVin">
         <div class="header-container">
             <div class="menu-toggle">
                 <div class="bar"></div>
@@ -103,6 +104,8 @@
 
         <h1 class="t-vin">Cave à vin</h1>
     </header>
+
+    <h2 class="section-title-dessert">Accueil / Cave à vin</h2>
     
     <main class="main-vins">
         <section class="vin-section">

@@ -47,6 +47,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Rives Boréales - Réservation</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header-reserve">
@@ -60,9 +61,11 @@
         <div class="header-title">
             <h1>RÉSERVATION</h1>
         </div>
-    </header> 
+    </header>
+
 
     <main>
+        
         <h2>Faire une réservation</h2>
     <form action="PageReservation.php" method="post">
         <div>

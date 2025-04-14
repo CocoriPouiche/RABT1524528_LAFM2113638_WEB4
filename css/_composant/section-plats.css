@@ -1,13 +1,6 @@
 /*[ COMPOSANT SECTION-PLATS PRINCIPAUX ]*/
 /* ------------------------------------------------------------ */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-}
-
 /* En-tête des plats principaux */
 .Header-principaux {
     background: url('/assets/images/jpg/PPTopView.jpg') center/cover no-repeat;
@@ -19,6 +12,8 @@ body {
     padding: 20px;
     background-color: #374d5c;
     position: relative;
+    filter: brightness(0.7);
+    border-bottom: 2px solid #C3A93F;
 }
 
 .t-principeaux {
@@ -27,32 +22,12 @@ body {
     color: white;
 }
 
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
-
 /* Mise en page générale */
 .Main-principaux {
-    padding: 4rem 1rem;
-    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
-}
-
-section {
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Conteneur principal */
-.section-plats {
-    margin: auto;
-    width: 90%;
-    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(to bottom, #5a4e28, #374d5c);
 }
 
 /* Titre des sections */
@@ -60,11 +35,12 @@ section {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #17334A;
+    color: #ffffff;
     margin-bottom: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
+    margin-top: 50px;
 }
 
 /* Effet de ligne dorée sous le titre */
@@ -85,6 +61,17 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
+
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border: 2px solid #C3A93F;
 }
 
 /* Cartes des plats */
@@ -162,13 +149,7 @@ footer {
     background: #17334A;
     color: white;
     font-size: 1rem;
-}
-
-footer {
-    background-color: #17334A;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
+    border-top: 2px solid #C3A93F;
 }
 
 /* Responsivité : pour les écrans plus petits (Cellulaire/Tablette */

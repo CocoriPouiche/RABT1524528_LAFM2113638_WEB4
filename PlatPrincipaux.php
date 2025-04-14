@@ -64,6 +64,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Les Rives Boréales - Plats Principaux</title>
 </head>
 
@@ -78,6 +79,10 @@
         </div>
         <h1 class="t-principeaux">Plats Principaux</h1>
     </header>
+    
+    <div>
+        <h2 class="section-title-dessert">Accueil / Plats principaux</h2>
+    </div>
    
     <h2 class="section-title">Section Viande</h2>
      
