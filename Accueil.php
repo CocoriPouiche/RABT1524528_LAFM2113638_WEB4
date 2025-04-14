@@ -1,3 +1,27 @@
+<?php
+
+    // $bdd : Connexion à la base de données SQLite
+    include "includes/base.php";
+
+    $sql = "
+	SELECT nb
+    FROM vues
+	WHERE id = 1
+    ";
+
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $nb_vues_accueil = $stmt->fetch();
+
+    $nb = $nb_vues_accueil["nb"] += 1;
+
+    $stmt = $bdd->prepare("
+    UPDATE vues
+    SET nb = $nb
+    WHERE id= 1
+    ");
+    $stmt->execute();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

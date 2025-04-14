@@ -76,7 +76,7 @@
             <?php foreach ($les_admins as $un_admin): ?>
                 <div class="un_item">
                     <p><?= $un_admin["id"]?></p>
-                    <p><?= $un_admin["courriel"]?></p>
+                    <p class="courriel"><?= $un_admin["courriel"]?></p>
                     <!-- On donne le paramètre GET du id directement dans les liens -->
                     <!-- Modifier le bouton modifier en lui ajoutant un lien vers la page modifier_admin.php -->
                     <a class="modifier" href="modifier_admin.php?id=<?= $un_admin['id']?>">Modifier</a>
