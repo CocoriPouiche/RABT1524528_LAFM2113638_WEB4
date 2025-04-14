@@ -11,6 +11,7 @@ body {
 .chef-section {
     background-color: #222222;
     padding: 50px 20px;
+    border-bottom: 2px solid #C3A93F;
 }
 
 .separator-section{
