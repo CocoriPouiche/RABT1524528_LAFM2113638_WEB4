@@ -20,6 +20,25 @@
             ":temps"  => $temps
         ]);
     }
+
+    $sql = "
+    SELECT nb
+    FROM vues
+    WHERE id = 6
+    ";
+
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $nb_vues_reservations = $stmt->fetch();
+
+    $nb = $nb_vues_reservations["nb"] += 1;
+
+    $stmt = $bdd->prepare("
+    UPDATE vues
+    SET nb = $nb
+    WHERE id= 6
+    ");
+    $stmt->execute();
 ?>
 
 <html lang="fr">

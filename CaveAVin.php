@@ -63,6 +63,24 @@
     $stmt->execute();
     $vins_spiritueux = $stmt->fetchAll();
 
+    $sql = "
+	SELECT nb
+    FROM vues
+	WHERE id = 5
+    ";
+
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $nb_vues_cave_a_vin = $stmt->fetch();
+
+    $nb = $nb_vues_cave_a_vin["nb"] += 1;
+
+    $stmt = $bdd->prepare("
+    UPDATE vues
+    SET nb = $nb
+    WHERE id= 5
+    ");
+    $stmt->execute();
 ?>
 
 <!DOCTYPE html>
@@ -93,10 +111,10 @@
         <section class="vin-section">
             <div class="vin-titre">Vin Blanc</div>
             <?php foreach ($vins_blancs as $vin_blanc): ?>
-            <div class="vin-item">
-                <div class="vin-nom"><?= $vin_blanc["nom"]?></div>
-                <div class="vin-prix"><?= $vin_blanc["prix"]?></div>
-            </div>
+                <div class="vin-item">
+                    <div class="vin-nom"><?= $vin_blanc["nom"]?></div>
+                    <div class="vin-prix"><?= $vin_blanc["prix"]?></div>
+                </div>
             <?php endforeach?>
         </section>
     

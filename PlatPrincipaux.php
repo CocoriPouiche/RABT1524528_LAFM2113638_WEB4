@@ -37,6 +37,25 @@
     $stmt = $bdd->prepare($sql);
     $stmt->execute();
     $plats_vegetariens = $stmt->fetchAll();
+
+    $sql = "
+    SELECT nb
+    FROM vues
+    WHERE id = 3
+    ";
+
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $nb_vues_plats_principaux = $stmt->fetch();
+
+    $nb = $nb_vues_plats_principaux["nb"] += 1;
+
+    $stmt = $bdd->prepare("
+    UPDATE vues
+    SET nb = $nb
+    WHERE id= 3
+    ");
+    $stmt->execute();
 ?>
 
 <!DOCTYPE html>
