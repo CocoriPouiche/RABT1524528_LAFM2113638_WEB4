@@ -63,6 +63,24 @@
     $stmt->execute();
     $vins_spiritueux = $stmt->fetchAll();
 
+    $sql = "
+	SELECT nb
+    FROM vues
+	WHERE id = 5
+    ";
+
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $nb_vues_cave_a_vin = $stmt->fetch();
+
+    $nb = $nb_vues_cave_a_vin["nb"] += 1;
+
+    $stmt = $bdd->prepare("
+    UPDATE vues
+    SET nb = $nb
+    WHERE id= 5
+    ");
+    $stmt->execute();
 ?>
 
 <!DOCTYPE html>

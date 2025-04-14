@@ -1,6 +1,8 @@
 <?php
 
     include "../includes/base.php";
+    $location = "connexion.php";
+    verifierConnexion($location);
 
     $nb_reservations = selectCount("reservations");
     $nb_reservations_par_page = 6;

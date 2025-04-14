@@ -13,6 +13,25 @@
     $stmt = $bdd->prepare($sql);
     $stmt->execute();
     $desserts = $stmt->fetchAll();
+
+    $sql = "
+    SELECT nb
+    FROM vues
+    WHERE id = 4
+    ";
+
+    $stmt = $bdd->prepare($sql);
+    $stmt->execute();
+    $nb_vues_desserts = $stmt->fetch();
+
+    $nb = $nb_vues_desserts["nb"] += 1;
+
+    $stmt = $bdd->prepare("
+    UPDATE vues
+    SET nb = $nb
+    WHERE id= 4
+    ");
+    $stmt->execute();
 ?>
 
 <!DOCTYPE html>
