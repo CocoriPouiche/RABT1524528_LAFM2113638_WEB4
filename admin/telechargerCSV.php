@@ -19,7 +19,7 @@
 
     // Write rows to CSV
     foreach ($les_reservations as $row) {
-        fputcsv($output, $row);
+        fputcsv($output, $row, ";");
     }
 
     // Close stream
