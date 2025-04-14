@@ -30,6 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <title>RABT1524528 - Les Rives Boréal</title>
 </head>
 <body>
@@ -64,7 +65,8 @@
                 <img src="/assets/images/jpg/CHEF-LRB.jpg" alt="Chef">
             </div>
             <div class="grid-item text">
-                <h2 class="t-chef">Chef<br>Olivier Desrochers</h2>
+                <span class="chef">CHEF</span>
+                <h2 class="t-chef">Olivier Desrochers</h2>
                 <p>Diplômé de l'institut de tourisme et d'hôtellerie du Québec (ITHQ), il a perfectionné son art auprès
                     de chefs locaux avant de se rendre en Scandinavie pour travailler dans des restaurants réputés comme
                     le Noma de René Redxepi, où il a développé sa passion pour la cuisine boréale. De retour au Québec, il
