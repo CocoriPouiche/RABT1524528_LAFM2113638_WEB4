@@ -79,7 +79,9 @@
                     <?php endif ?>
                 </div>
                 <p>Page <?= $page_reservations ?> de <?= $nb_page_reservations_total ?></p>
-                <a  class="btn-reserver" href="index.php?exporter">Exporter</a>
+                <form action="telechargerCSV.php" method="post">
+                    <button class="telecharger" type="submit">Télécharger</button>
+                </form>
             </div>
 
             <div class="statistiques">

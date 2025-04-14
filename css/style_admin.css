@@ -192,6 +192,17 @@ p.partie_liste_repas {
     color: #2bff00;
 }
 
+.telecharger {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    box-shadow: 5px 5px #0000004e;
+    background-color: #F5CC00;
+}
+
 @media (max-width: 992px) {
     header {
         max-width: 962px;
