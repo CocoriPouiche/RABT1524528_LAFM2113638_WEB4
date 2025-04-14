@@ -24,7 +24,9 @@
 
 /* Mise en page générale */
 .Main-principaux {
-    padding: 4rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
     background: linear-gradient(to bottom, #5a4e28, #374d5c);
 }
 
