@@ -10,19 +10,15 @@
     $stmt->execute([]);
     $les_reservations = $stmt->fetchAll();
 
-    // Set headers to force download
     header('Content-Type: text/csv');
     header('Content-Disposition: attachment; filename="data.csv"');
 
-    // Open output stream
     $output = fopen('php://output', 'w');
 
-    // Write rows to CSV
     foreach ($les_reservations as $row) {
-        fputcsv($output, $row, ";");
+        fputcsv($output, $row, ";"); // On utilise des ; pour séparer les données, ce qui crée les colonnes en l'ouvrant dans excel
     }
 
-    // Close stream
     fclose($output);
     exit;
 ?>
