@@ -31,6 +31,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.2.4/dist/pixi.min.js"></script>
     <title>RABT1524528 - Les Rives Boréal</title>
 </head>
 <body>
@@ -77,20 +80,35 @@
     </section>
 
     <main>
-        <section class="grid-container">
+        <section class="section-reservation grid-container">
             <div class="grid-item image">
                 <img src="/assets/images/jpg/RESTAURANT.jpg" alt="Réservation">
             </div>
+
             <div class="grid-item text">
                 <h2 class="section-h2">Réservation</h2>
-                <h2>Table d'hôte option 1</h2>
-                <h2>Table d'hôte option 3</h2>
-                <h2>Table d'hôte option 2</h2>
-                <h2>Menu 7 services</h2>
-                <p>Réservez dès maintenant pour vivre une expérience inoubliable.</p>
-                <a href="PageReservation.php"><button class="btn-reserver-acc">Voir réservations</button></a>
+                <div class="reservation-options">
+                <h3>Nos options :</h3>
+                <ul>
+                    <li>Table d'hôte – Option 1</li>
+                    <li>Table d'hôte – Option 2</li>
+                    <li>Table d'hôte – Option 3</li>
+                    <li>Menu dégustation – 7 services</li>
+                </ul>
+                </div>
+                
+                <p class="reservation-description">
+                Réservez dès maintenant pour vivre une expérience gastronomique inoubliable.
+                </p>
+
+                <a href="PageReservation.php">
+                    <button class="btn-reserver-acc">Voir les réservations</button>
+                </a>
             </div>
         </section>
+
+
+        <div class="pixi-transition"></div>
         
         <section class="grid-container reverse">
             <div class="grid-item text">
@@ -148,6 +166,6 @@
 
     <!-- Rajout du script Javascript -->
     <script src="Javascript/Navigation.js"></script>
-
+    <script src="Javascript/Gsap.js"></script>
 </body>
 </html>
