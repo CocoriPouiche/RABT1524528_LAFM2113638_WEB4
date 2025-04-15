@@ -12,16 +12,20 @@ body {
     background-color: #222222;
     padding: 50px 20px;
     border-bottom: 2px solid #C3A93F;
+    position: relative; /* Pour permettre au span d'être positionné par rapport à ce container */
 }
 
 .chef{
-    position: absolute;
+    position: absolute; 
     font-family: "Caveat", cursive;
     font-size: 10rem;
-    transform: rotate(-20deg); /* Rotate by 45 degrees */
-    top: 62rem;
-    right: 45rem;
+    transform: rotate(-20deg);
+    bottom: 48%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(-20deg); 
     color: #C3A93F;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+    z-index: 2; 
 }
 
 .separator-section{

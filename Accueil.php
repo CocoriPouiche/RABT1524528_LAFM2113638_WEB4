@@ -83,6 +83,10 @@
             </div>
             <div class="grid-item text">
                 <h2 class="section-h2">Réservation</h2>
+                <h2>Table d'hôte option 1</h2>
+                <h2>Table d'hôte option 3</h2>
+                <h2>Table d'hôte option 2</h2>
+                <h2>Menu 7 services</h2>
                 <p>Réservez dès maintenant pour vivre une expérience inoubliable.</p>
                 <a href="PageReservation.php"><button class="btn-reserver-acc">Voir réservations</button></a>
             </div>
