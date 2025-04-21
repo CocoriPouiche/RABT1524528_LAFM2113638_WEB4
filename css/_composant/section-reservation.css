@@ -40,7 +40,7 @@
 
 /* Le h1 de la page */
 .header-title h1 {
-    font-size: 15.5rem;
+    font-size: 12.5rem;
     margin-bottom: 10px;
     color: #dcdad7;
 }
@@ -95,3 +95,75 @@ div.reservation-grid {
 .reserver-btn:hover {
     background: #A78E35;
 }
+
+/* Section interactif de la reservation */
+/* CONTENEUR GÉNÉRAL DU FORM */
+section form {
+    background-color: #f3f6f4;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* TITRE */
+section h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    color: #2e4c3f;
+    margin-bottom: 20px;
+}
+
+/* CHAQUE CHAMP */
+section form div {
+    margin-bottom: 20px;
+}
+
+/* LIBELLÉS */
+section form p {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #37423b;
+}
+
+/* INPUTS + SELECT */
+section form input,
+section form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #cfd8cf;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    transition: 0.3s border-color;
+}
+
+section form input:focus,
+section form select:focus {
+    border-color: #2e4c3f;
+    outline: none;
+}
+
+/* BOUTON */
+.btn-reserver-acc {
+    background-color: #2e4c3f;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-reserver-acc:hover {
+    background-color: #3c6450;
+}
+
