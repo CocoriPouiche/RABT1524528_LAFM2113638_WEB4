@@ -82,11 +82,36 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.reservation-options-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #9f8a34;
+}
+
+.reservation-options-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.reservation-option-item {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #636363;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-option-item:hover {
+    background-color: #f0f0f0;
+}
+
 /* Section Texte */
 .section-h2 {
     font-size: 80px;
-    font-weight: bold;
-    color: #333; 
+    font-weight: bold; 
     margin-bottom: 15px;
     color: #C3A93F;
     text-align: center;
