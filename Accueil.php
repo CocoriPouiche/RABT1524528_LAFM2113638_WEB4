@@ -88,13 +88,15 @@
             <div class="grid-item text">
                 <h2 class="section-h2">Réservation</h2>
                 <div class="reservation-options">
-                <h3>Nos options :</h3>
-                <ul>
-                    <li>Table d'hôte – Option 1</li>
-                    <li>Table d'hôte – Option 2</li>
-                    <li>Table d'hôte – Option 3</li>
-                    <li>Menu dégustation – 7 services</li>
-                </ul>
+
+                <div class="reservation-options-section">
+                    <h3 class="reservation-options-title">Nos options :</h3>
+                    <ul class="reservation-options-list">
+                        <li class="reservation-option-item">Table d'hôte – Option 1</li>
+                        <li class="reservation-option-item">Table d'hôte – Option 2</li>
+                        <li class="reservation-option-item">Table d'hôte – Option 3</li>
+                        <li class="reservation-option-item">Menu dégustation – 7 services</li>
+                    </ul>
                 </div>
                 
                 <p class="reservation-description">
