@@ -8,6 +8,10 @@
     font-family: "Raleway", sans-serif;
 }
 
+.main-reserve{
+    background: linear-gradient(to bottom, #5a4e28, #374d5c);
+}
+
 /* Header */
 .header-reserve {
     background: url('/assets/images/jpg/TableRestaurant.jpg') center/cover no-repeat;
@@ -97,7 +101,6 @@ div.reservation-grid {
 }
 
 /* Section interactif de la reservation */
-/* CONTENEUR GÉNÉRAL DU FORM */
 section form {
     background-color: #f3f6f4;
     border-radius: 20px;
@@ -106,14 +109,15 @@ section form {
     padding: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     font-family: 'Roboto', sans-serif;
+    border: 2px solid #C3A93F;
 }
 
 /* TITRE */
 section h2 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-    color: #2e4c3f;
+    font-size: 4em;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -122,7 +126,7 @@ section form div {
     margin-bottom: 20px;
 }
 
-/* LIBELLÉS */
+
 section form p {
     margin-bottom: 8px;
     font-weight: bold;
@@ -150,7 +154,7 @@ section form select:focus {
 
 /* BOUTON */
 .btn-reserver-acc {
-    background-color: #2e4c3f;
+    background-color: #c3a93f;
     color: white;
     padding: 14px 25px;
     border: none;
@@ -164,6 +168,6 @@ section form select:focus {
 }
 
 .btn-reserver-acc:hover {
-    background-color: #3c6450;
+    background-color: #896d00; 
 }
 
