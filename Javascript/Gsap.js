@@ -13,6 +13,98 @@ gsap.from(".chef-section", {
   }
 });
 
+// Animation de la section Réservation avec ScrollTrigger
+gsap.from(".section-reservation", {
+  opacity: 0,
+  y: 100, 
+  duration: 1.5, 
+  ease: "power3.out", 
+  scrollTrigger: {
+    trigger: ".section-reservation", 
+    start: "top 80%", 
+    end: "top 30%", 
+    scrub: true, 
+    toggleActions: "play none none none", 
+    markers: false 
+  }
+});
+
+// Animation spécifique pour l'image
+gsap.from(".section-reservation .image", {
+  opacity: 0, 
+  x: -100, 
+  duration: 1.5, 
+  ease: "power3.out", 
+  scrollTrigger: {
+    trigger: ".section-reservation .image", 
+    start: "top 80%", 
+    end: "top 30%",
+    scrub: true, 
+    toggleActions: "play none none none"
+  }
+});
+
+// Animation pour le texte
+gsap.from(".section-reservation .text", {
+  opacity: 0,
+  y: 50, 
+  duration: 1.5,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".section-reservation .text", 
+    start: "top 80%", 
+    end: "top 30%", 
+    scrub: true,
+    toggleActions: "play none none none"
+  }
+});
+
+// Animation de la section Horaire
+gsap.from(".grid-container.reverse", {
+  opacity: 0, 
+  y: 100, 
+  duration: 1.5, 
+  ease: "power3.out", 
+  scrollTrigger: {
+    trigger: ".grid-container.reverse", 
+    start: "top 80%", 
+    end: "top 30%", 
+    scrub: true, 
+    toggleActions: "play none none none", 
+    markers: false 
+  }
+});
+
+// Animation spécifique de l'image
+gsap.from(".grid-container.reverse .image", {
+  opacity: 0, 
+  x: 100, 
+  duration: 1.5, 
+  ease: "power3.out", 
+  scrollTrigger: {
+    trigger: ".grid-container.reverse .image", 
+    start: "top 80%", 
+    end: "top 30%",
+    scrub: true, 
+    toggleActions: "play none none none"
+  }
+});
+
+// Animation pour le texte
+gsap.from(".grid-container.reverse .text", {
+  opacity: 0,
+  y: 50, 
+  duration: 1.5,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".grid-container.reverse .text", 
+    start: "top 80%", 
+    end: "top 30%", 
+    scrub: true,
+    toggleActions: "play none none none"
+  }
+});
+
 // Animation de pixi entre les section du main (Reservation et horaire)
 const appTransition = new PIXI.Application({
     width: window.innerWidth,
@@ -43,3 +135,5 @@ const appTransition = new PIXI.Application({
       }
     }
   });
+  
+  

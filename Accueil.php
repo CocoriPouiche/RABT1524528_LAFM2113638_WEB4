@@ -120,13 +120,10 @@
         <section class="grid-container reverse">
 
             <div class="grid-item text">
-                <p>Lundi - Ouvert de 8AM à 8PM<br>
-                    Mardi - Ouvert de 8AM à 8PM<br>
-                    Mercredi - Ouvert de 10AM à 8PM<br>
-                    Jeudi - Ouvert de 8AM à 8PM<br>
-                    Vendredi - Ouvert de 10AM à 8PM<br>
-                    Samedi - Ouvert de 10AM à 5PM<br>
-                    Dimanche - Fermé</p>
+                <p class="horaire-text">Du lundi au vendredi de 8AM jusqu'à
+                    10PM<br>et du Samedi à dimanche de 10AM
+                    jusqu'à 11PM!
+                </p>
             </div>
 
             <div class="grid-item image">

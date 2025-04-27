@@ -144,6 +144,17 @@ body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
+.horaire-text {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #272727;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #C3A93F;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 .grid-item.text p {
     font-size: 18px;
     color: #e6e6e7;
