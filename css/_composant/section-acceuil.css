@@ -131,12 +131,17 @@ body {
 }
 
 .section-H-h2 {
-    font-size: 80px;
-    font-weight: bold; 
-    margin-bottom: 15px;
+    position: absolute;
+    font-family: "Caveat", cursive;
+    top: 15%;
+    left: 0%; 
+    transform: translate(-50%, -50%) rotate(4deg);
     color: #C3A93F;
+    font-size: 125px; 
+    font-weight: bold;
     text-align: center;
-
+    pointer-events: none;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .grid-item.text p {

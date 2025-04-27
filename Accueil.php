@@ -80,13 +80,18 @@
     </section>
 
     <main>
+
         <section class="section-reservation grid-container">
+
             <div class="grid-item image">
+
                 <img src="/assets/images/jpg/RESTAURANT.jpg" alt="Réservation">
                 <span class="section-R-h2">RÉSERVATION</span>
+
             </div>
 
             <div class="grid-item text">
+
                 <div class="reservation-options">
 
                 <div class="reservation-options-section">
@@ -113,8 +118,8 @@
         <div class="pixi-transition"></div>
         
         <section class="grid-container reverse">
+
             <div class="grid-item text">
-                <h2 class="section-H-h2">Horaire</h2>
                 <p>Lundi - Ouvert de 8AM à 8PM<br>
                     Mardi - Ouvert de 8AM à 8PM<br>
                     Mercredi - Ouvert de 10AM à 8PM<br>
@@ -123,9 +128,14 @@
                     Samedi - Ouvert de 10AM à 5PM<br>
                     Dimanche - Fermé</p>
             </div>
+
             <div class="grid-item image">
+
                 <img src="/assets/images/jpg/HORAIRE.jpg" alt="Horaire">
+                <span class="section-H-h2">HORAIRE</span>
+
             </div>
+
         </section>
         
         <div class="coeur">
