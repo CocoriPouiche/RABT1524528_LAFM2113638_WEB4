@@ -123,7 +123,7 @@
                 </div>
 
                 <div>
-                        <button class="btn-reserver-acc" type="submit">Réserver</button>
+                        <button class="btn-reserver-res" type="submit">Réserver</button>
                 </div>
             </form>
         <section>

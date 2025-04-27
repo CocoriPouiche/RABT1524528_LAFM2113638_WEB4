@@ -67,14 +67,18 @@ body {
 
 /* Section Réserver */
 .btn-reserver-acc {
-    margin-left: 185px;
-    margin-top: 25px;
-    padding: 10px 20px;
-    background-color: #c3a93f; 
+    background-color: #c3a93f;
     color: white;
+    padding: 14px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .btn-reserver-acc:hover {
@@ -111,7 +115,7 @@ body {
     overflow: visible;
 }
 
-/* Section Texte */
+/* Section Reservation et Horaire */
 .section-R-h2 {
     position: absolute;
     font-family: "Caveat", cursive;
@@ -152,7 +156,7 @@ body {
     padding: 20px;
 }
 
-
+/* Le coeur*/
 .coeur {
     display: flex;
     justify-content: center;
