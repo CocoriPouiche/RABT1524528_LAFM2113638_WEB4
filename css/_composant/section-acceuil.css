@@ -105,8 +105,27 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* RAPPEL : cette section sers a mettre le texte ''Reservation'' par dessus */
+.image {
+    position: relative;
+}
+
 /* Section Texte */
-.section-h2 {
+.section-R-h2 {
+    position: absolute;
+    font-family: "Caveat", cursive;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #C3A93F;
+    font-size: 80px; 
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-H-h2 {
     font-size: 80px;
     font-weight: bold; 
     margin-bottom: 15px;
