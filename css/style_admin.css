@@ -80,18 +80,10 @@ p.courriel {
 .une-reservation,
 .une-statistique {
     display: flex;
-    justify-content: center;
-    gap: 8px;
+    justify-content: space-between;
     border-bottom: 1px solid black;
     margin-bottom: 12px;
-}
-
-.une-statistique {
     padding: 0 20px;
-}
-
-.nb-vues {
-    margin-left: auto;
 }
 
 a,
@@ -190,6 +182,17 @@ p.partie_liste_repas {
 
 .action_reussie {
     color: #2bff00;
+}
+
+.telecharger {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    box-shadow: 5px 5px #0000004e;
+    background-color: #F5CC00;
 }
 
 @media (max-width: 992px) {
