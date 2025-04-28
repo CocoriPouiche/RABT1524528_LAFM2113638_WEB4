@@ -102,7 +102,7 @@ div.reservation-grid {
 
 /* Section interactif de la reservation */
 section form {
-    background: linear-gradient(to bottom, #2e2e2e, #5a4e28);
+    background-color: linear-gradient(to bottom, #2e2e2e, #5a4e28);
     border-radius: 20px;
     max-width: 600px;
     margin: 40px auto;
@@ -165,7 +165,7 @@ section form select:focus {
     margin: 0 auto;
 }
 
-.btn-reserver-acc:hover {
+.btn-reserver-res:hover {
     background-color: #896d00; 
 }
 
