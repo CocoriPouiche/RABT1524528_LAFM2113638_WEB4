@@ -63,12 +63,13 @@ div.reservation-grid {
 }
 
 .reservation-item {
-    background: rgba(255, 255, 255, 0.9);
+    background-color: #272727;
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #C3A93F;
 }
 
 .reservation-item:hover {
@@ -77,13 +78,13 @@ div.reservation-grid {
 }
 
 .reservation-item h2 {
-    color: #17334A;
+    color: #f8f8f8;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
 .reservation-item p {
-    color: #004A80;
+    color: #f8f8f8;
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }

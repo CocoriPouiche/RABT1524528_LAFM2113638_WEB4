@@ -30,6 +30,7 @@ body {
 }
 
 .grid-item.text .t-chef {
+    font-family: "Bebas Neue", sans-serif;
     margin-bottom: 10px;
     font-size: 62px;
     color: #C3A93F;
