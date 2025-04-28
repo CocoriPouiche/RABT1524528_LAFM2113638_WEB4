@@ -65,7 +65,7 @@ div.reservation-grid {
 .reservation-item {
     background-color: #272727;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 2.2rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -79,13 +79,13 @@ div.reservation-grid {
 
 .reservation-item h2 {
     color: #f8f8f8;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
 }
 
 .reservation-item p {
     color: #f8f8f8;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -118,12 +118,23 @@ section form {
 }
 
 /* TITRE */
-section h2 {
+.t-h2-res {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 4em;
     color: #ffffff;
     margin-bottom: 20px;
+    padding-top: 25px;
+}
+
+.t-h2-res::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #C3A93F;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 section form div {
