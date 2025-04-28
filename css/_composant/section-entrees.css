@@ -21,6 +21,9 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 15.5rem;
     color: white;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 0.1rem 3rem;
+    border-radius: 25px;
 }
 
 /* Mise en page générale */
