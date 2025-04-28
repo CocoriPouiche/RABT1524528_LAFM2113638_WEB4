@@ -102,7 +102,7 @@
                     <?php endif ?>
                 </div>
                 <p>Page <?= $page_reservations ?> de <?= $nb_page_reservations_total ?></p>
-                <form action="telechargerCSV.php" method="post">
+                <form class="form-telecharger" action="telechargerCSV.php" method="post">
                     <button class="telecharger" type="submit">Télécharger</button>
                 </form>
             </div>
