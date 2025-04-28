@@ -92,7 +92,7 @@
         <input name="courriel" type="text" value="<?= $admin["courriel"]?>">
 
         <p>Mot de passe: </p>
-        <input name="mdp" type="text"  value="<?= $admin["mdp"]?>">
+        <input name="mdp" type="text"  value="">
 
         <div>
             <input class="modifier" type="submit" value="Modifier">
