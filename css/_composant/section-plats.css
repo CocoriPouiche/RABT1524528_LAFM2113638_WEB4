@@ -27,7 +27,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 4rem;
-    background: linear-gradient(to bottom, #5a4e28, #374d5c);
+    background: linear-gradient(to bottom, #5a4e28, #2e2e2e);
 }
 
 /* Titre des sections */
@@ -66,7 +66,7 @@
     width: 90%;
     max-width: 1200px;
 
-    background: #f8f8f8;
+    background: #222222;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -76,7 +76,7 @@
 
 /* Cartes des plats */
 .plat-item {
-    background: white;
+    background: #272727;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -104,7 +104,7 @@
 /* Titres et descriptions */
 .plat-name {
     font-size: 1.5rem;
-    color: #004A80;
+    color: #f8f8f8;
     margin: 1rem 0 0.5rem;
     font-weight: bold;
     text-transform: capitalize;
@@ -112,7 +112,7 @@
 
 .plat-description {
     font-size: 1.1rem;
-    color: #555;
+    color: #d4d4d4;
     padding: 0 1.5rem;
     line-height: 1.5;
 }
@@ -123,7 +123,7 @@
     font-weight: bold;
     color: #C3A93F;
     margin-bottom: 1rem;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.05);
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 20px;

@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     padding: 4rem 1rem;
-    background: linear-gradient(to bottom, #5a4e28, #374d5c);
+    background: linear-gradient(to bottom, #5a4e28, #2e2e2e);
 }
 
 /* Titre principal */
@@ -54,7 +54,7 @@
     width: 90%;
     max-width: 1200px;
 
-    background: #f8f8f8;
+    background: #222222;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -65,7 +65,7 @@
 footer {
     text-align: center;
     padding: 2rem 0;
-    background: #374d5c;
+    background: #2e2e2e;
     color: white;
     font-size: 1rem;
 }
