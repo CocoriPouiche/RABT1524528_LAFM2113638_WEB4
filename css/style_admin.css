@@ -53,7 +53,7 @@ main {
     div.conteneur {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border: 3px solid black;
+        border: 3px solid #C3A93F;
     }
 
     div.reservations,
@@ -65,7 +65,7 @@ main {
     }
 
     div.reservations {
-        border-right: 3px solid black;
+        border-right: 3px solid #C3A93F;
     }
 
     a.btn-reserver,
@@ -95,7 +95,7 @@ p.courriel {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #C3A93F;
     margin-bottom: 12px;
     padding: 0 20px;
 }
