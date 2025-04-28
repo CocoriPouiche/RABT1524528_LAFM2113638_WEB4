@@ -42,7 +42,7 @@
         <a class="changement_page" href="gestion_admin.php"> Gérer admins </a>
         <a class="deconnexion" href="../deconnexion.php"> Deconnexion </a>
     </nav>
-    <h2>Création d'administrateur</h2>
+    <h2>Créer un administrateur</h2>
 
     <form action="creer_administrateur.php" method="post">
         <p>Courriel: </p>

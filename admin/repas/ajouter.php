@@ -107,7 +107,7 @@
         <a class="changement_page" href="../employes/gestion_admin.php"> Gérer admins </a>
         <a class="deconnexion" href="../deconnexion.php"> Deconnexion </a>
     </nav>
-    <h2>Ajouter</h2>
+    <h2>Ajouter un repas</h2>
 
     <!-- action: La page qui reçoit les infos (soi-même) -->
     <!-- method: le type d'envoi -->
