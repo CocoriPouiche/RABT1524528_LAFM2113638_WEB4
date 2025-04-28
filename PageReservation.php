@@ -69,7 +69,7 @@
         <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Réservation</h2>
 
         <section>
-                <h2 class="t-h2-res">Faire une réservation</h2>
+                <h2 class="t-h2-res">FAIRE UNE RÉSERVATION</h2>
             <form action="PageReservation.php" method="post">
                 <div>
                     <p>Réservation à quel nom?</p>
@@ -128,7 +128,7 @@
             </form>
         <section>
 
-        <h2 class="t-h2-res">Les options de reservations</h2>
+        <h2 class="t-h2-res">LES OPTIONS DE RÉSERVATIONS</h2>
 
         <div class="reservation-grid">
             <section class="reservation-item">
