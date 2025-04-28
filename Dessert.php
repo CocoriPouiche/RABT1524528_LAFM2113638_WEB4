@@ -58,7 +58,7 @@
         
     </header>
     
-    <h2 class="section-title-dessert">Accueil / Desserts</h2>
+    <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Desserts</h2>
     
     <main class="Main-dessert">
 

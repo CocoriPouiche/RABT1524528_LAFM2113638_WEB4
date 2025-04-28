@@ -81,7 +81,7 @@
     </header>
     
     <div>
-        <h2 class="section-title-dessert">Accueil / Plats principaux</h2>
+        <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Plats principaux</h2>
     </div>
    
     <h2 class="section-title">Section Viande</h2>

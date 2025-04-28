@@ -66,7 +66,7 @@
 
     <main class="main-reserve">
 
-        <h2 class="section-title-dessert">Accueil / Réservation</h2>
+        <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Réservation</h2>
 
         <section>
                 <h2>Faire une réservation</h2>
