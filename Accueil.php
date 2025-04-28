@@ -122,7 +122,7 @@
 
             <div class="grid-item text">
                 <p class="horaire-text">Du lundi au vendredi de 8AM jusqu'à
-                    10PM<br>et du Samedi à dimanche de 10AM
+                    10PM<br>et du samedi à dimanche de 10AM
                     jusqu'à 11PM!
                 </p>
             </div>
