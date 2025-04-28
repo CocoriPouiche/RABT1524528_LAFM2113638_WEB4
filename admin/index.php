@@ -4,17 +4,32 @@
     $location = "connexion.php";
     verifierConnexion($location);
 
+    if (isset($_GET["supprimer"])) {
+        $sql = "
+        DELETE  FROM reservations
+        WHERE id = :id
+    ";
+        // Supprime l'élément avec le bon id
+        $stmt = $bdd->prepare($sql);
+        $stmt->execute([
+            ":id" => $_GET["supprimer"]
+        ]);
+        // Redirection vers la liste après (soi-même) (pour retirer ?supprimer[id] de l'URL pour empêcher de potentiels problèmes)
+        header("location: index.php?suppression=1");
+    }
+
     $nb_reservations = selectCount("reservations");
     $nb_reservations_par_page = 6;
     $nb_page_reservations_total = ceil($nb_reservations / $nb_reservations_par_page);
     $page_reservations = $_GET["page"] ?? 1;
 
     $sql = "
-    SELECT id, nom, nb, temps
+    SELECT id, jour, type, nom, nb, temps
     FROM reservations
     LIMIT :limit
     OFFSET :offset
     ";
+
     // Liste de toutes les réservations
     $stmt = $bdd->prepare($sql);
     $stmt->execute([
@@ -61,9 +76,17 @@
                 <p class="titre-section">Réservations</p>
                 <?php foreach ($les_reservations as $une_reservation): ?>
                     <div class="une-reservation">
-                        <p class="res-nom">Nom : <?= $une_reservation["nom"]?></p>
-                        <p class="res-nb">Nombre de personnes : <?= $une_reservation["nb"]?></p>
-                        <p class="res-heure">Heure : <?= $une_reservation["temps"]?></p>
+                        <div class="reservation-infos">
+                            <p class="res-type">Type : <?= $une_reservation["type"]?></p>
+                            <p class="res-nom">Nom : <?= $une_reservation["nom"]?></p>
+                            <p class="res-nb">Nombre de personnes : <?= $une_reservation["nb"]?></p>
+                            <p class="res-heure">Heure : <?= $une_reservation["temps"]?></p>
+                            <p class="res-jour">Jour : <?= $une_reservation["jour"]?></p>
+                        </div>
+                        <div class="btn-reservation">
+                            <a class="modifier" href="modifier_reservation.php?id=<?= $une_reservation['id']?>">Modifier</a>
+                            <a class="supprimer" href="index.php?supprimer=<?= $une_reservation['id']?>">Supprimer</a>
+                        </div>
                     </div>
                 <?php endforeach ?>
                 <div class="boutons">
