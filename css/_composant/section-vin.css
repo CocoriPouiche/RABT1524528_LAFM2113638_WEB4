@@ -23,6 +23,7 @@
     background: rgba(0, 0, 0, 0.5); 
     padding: 0.1rem 50rem;
     border-radius: 25px;
+    white-space: nowrap;
 }
 
 .main-vins {
