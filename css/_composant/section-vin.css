@@ -1,10 +1,6 @@
 /*[ COMPOSANT SECTION-CHEF ]*/
 /* ------------------------------------------------------------ */
 
-.main-reserve {
-    background: linear-gradient(to bottom, #5a4e28, #374d5c);
-}
-
 .Header-CaveAVin {
     background: url('/assets/images/jpg/VineTopView.jpg') center/cover no-repeat;
     display: flex;
@@ -30,11 +26,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background: linear-gradient(to bottom, #5a4e28, #374d5c);
+    background: linear-gradient(to bottom, #5a4e28, #2e2e2e);
 }
 
 .vin-section {
-    background-color: white;
+    background-color: #222222;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,7 +40,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #004A80;
+    color: #dddddd;
 }
 
 .vin-item {
@@ -57,7 +53,7 @@
 
 .vin-nom {
     font-size: 1.1rem;
-    color: #17334A;
+    color: #dddddd;
     text-align: left;
 }
 

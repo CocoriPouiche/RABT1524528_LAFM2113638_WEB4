@@ -9,7 +9,7 @@
 }
 
 .main-reserve{
-    background: linear-gradient(to bottom, #5a4e28, #374d5c);
+    background: linear-gradient(to bottom, #5a4e28, #2e2e2e);
 }
 
 /* Header */
@@ -102,7 +102,7 @@ div.reservation-grid {
 
 /* Section interactif de la reservation */
 section form {
-    background-color: #f3f6f4;
+    background: linear-gradient(to bottom, #2e2e2e, #5a4e28);
     border-radius: 20px;
     max-width: 600px;
     margin: 40px auto;
@@ -128,7 +128,7 @@ section form div {
 section form p {
     margin-bottom: 8px;
     font-weight: bold;
-    color: #37423b;
+    color: #ffffff;
 }
 
 /* INPUTS + SELECT */
