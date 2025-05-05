@@ -251,6 +251,65 @@ body {
 }
 
 
-  @media (max-width: 360px) {
+  /* ============================
+   MEDIA QUERY – MOBILE 
+   ============================ */
+@media (max-width: 576px) {
 
-  }
+    /* Conteneur principal en colonne, marge réduite */
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 30px 10px;
+        gap: 15px;
+    }
+
+    /* Image centrée et redimensionnée */
+    .grid-item.image img {
+        max-width: 100%;
+        border-radius: 6px;
+    }
+
+    /* Texte centré et espacé */
+    .grid-item.text p {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+
+    /* Titre "Chef" réduit */
+    .chef {
+        font-size: 4.5rem;
+        bottom: 52%;
+    }
+
+    /* Titres artistiques ajustés */
+    .section-R-h2 {
+        font-size: 36px;
+        top: 8%;
+        left: 85%;
+    }
+
+    .section-H-h2 {
+        font-size: 60px;
+        top: 10%;
+        left: 15%;
+    }
+
+    /* Titres des sections */
+    .grid-item.text .t-chef,
+    .reservation-options-title {
+        font-size: 32px;
+    }
+
+    /* Bouton centré et compact */
+    .btn-reserver-acc {
+        font-size: 0.95em;
+        padding: 10px 18px;
+    }
+
+    /* Cartes de réservation */
+    .reservation-option-item {
+        font-size: 0.9em;
+        padding: 8px;
+        margin: 8px 0;
+    }
+}
