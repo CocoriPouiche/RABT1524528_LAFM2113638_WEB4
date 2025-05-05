@@ -104,10 +104,10 @@ if (empty($_POST)) {
             <p>Heure:</p>
             <Select name="temps">
                 <option value="<?= $reservation["temps"] ?>"><?= $reservation["temps"] ?></option>
-                <option value="8:00">8H</option>
-                <option value="8:30">8H30</option>
-                <option value="9:00">9H</option>
-                <option value="9:30">9H30</option>
+                <option value="08:00">8H</option>
+                <option value="08:30">8H30</option>
+                <option value="09:00">9H</option>
+                <option value="09:30">9H30</option>
                 <option value="10:00">10H</option>
                 <option value="10:30">10H30</option>
                 <option value="11:00">11H</option>
