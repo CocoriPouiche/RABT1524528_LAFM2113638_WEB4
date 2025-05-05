@@ -16,6 +16,7 @@
     border-bottom: 2px solid #C3A93F;
 }
 
+/* Le titre principal du header */
 .t-entrees {
     margin: 0;
     font-family: "Bebas Neue", sans-serif;
@@ -58,4 +59,27 @@ h2.section-title-dessert{
     color: white;
 }
 
-
+@media (max-width: 992px) {
+    .t-entrees {
+      font-size: 8rem;
+      padding: 0.1rem 10rem;
+    }
+  
+    .header-entrees {
+      padding: 40px 20px;
+      background-position: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .t-entrees {
+      font-size: 4rem;
+      padding: 0.5rem 2rem;
+    }
+  
+    .header-entrees {
+      padding: 30px 10px;
+      background-position: center;
+    }
+  }
+  

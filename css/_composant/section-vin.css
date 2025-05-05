@@ -69,4 +69,50 @@
     text-align: right;
 } 
 
-
+@media (max-width: 992px) {
+    .t-vin {
+      font-size: 8rem;
+      padding: 0.1rem 10rem;
+    }
+  
+    .Header-CaveAVin {
+      padding: 40px 20px;
+      background-position: center;
+    }
+  
+    .vin-titre {
+      font-size: 1.2rem;
+    }
+  
+    .vin-nom, .vin-prix {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .t-vin {
+      font-size: 4rem;
+      padding: 0.5rem 2rem;
+    }
+  
+    .Header-CaveAVin {
+      padding: 30px 10px;
+    }
+  
+    .vin-item {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 0.5rem;
+    }
+  
+    .vin-nom, .vin-prix {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  
+    .vin-titre {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+  
