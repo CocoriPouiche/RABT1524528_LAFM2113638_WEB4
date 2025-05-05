@@ -93,32 +93,32 @@ $stmt->execute();
                     <p>À quelle heure?</p>
                     <Select name="temps">
                         <option value=""></option>
-                        <option value="8H">8H</option>
-                        <option value="8H30">8H30</option>
-                        <option value="9H">9H</option>
-                        <option value="9H30">9H30</option>
-                        <option value="10H">10H</option>
-                        <option value="10H30">10H30</option>
-                        <option value="11H">11H</option>
-                        <option value="11H30">11H30</option>
-                        <option value="12H">12H</option>
-                        <option value="12H30">12H30</option>
-                        <option value="13H">13H</option>
-                        <option value="13H30">13H30</option>
-                        <option value="14H">14H</option>
-                        <option value="14H30">14H30</option>
-                        <option value="15H">15H</option>
-                        <option value="15H30">15H30</option>
-                        <option value="16H">16H</option>
-                        <option value="16H30">16H30</option>
-                        <option value="17H">17H</option>
-                        <option value="17H30">17H30</option>
-                        <option value="18H">18H</option>
-                        <option value="18H30">18H30</option>
-                        <option value="19H">19H</option>
-                        <option value="19H30">19H30</option>
-                        <option value="20H">20H</option>
-                        <option value="20H30">20H30</option>
+                        <option value="8:00">8H</option>
+                        <option value="8:30">8H30</option>
+                        <option value="9:00">9H</option>
+                        <option value="9:30">9H30</option>
+                        <option value="10:00">10H</option>
+                        <option value="10:30">10H30</option>
+                        <option value="11:00">11H</option>
+                        <option value="11:30">11H30</option>
+                        <option value="12:00">12H</option>
+                        <option value="12:30">12H30</option>
+                        <option value="13:00">13H</option>
+                        <option value="13:30">13H30</option>
+                        <option value="14:00">14H</option>
+                        <option value="14:30">14H30</option>
+                        <option value="15:00">15H</option>
+                        <option value="15:30">15H30</option>
+                        <option value="16:00">16H</option>
+                        <option value="16:30">16H30</option>
+                        <option value="17:00">17H</option>
+                        <option value="17:30">17H30</option>
+                        <option value="18:00">18H</option>
+                        <option value="18:30">18H30</option>
+                        <option value="19:00">19H</option>
+                        <option value="19:30">19H30</option>
+                        <option value="20:00">20H</option>
+                        <option value="20:30">20H30</option>
                     </Select>
                 </div>
 
@@ -140,11 +140,11 @@ $stmt->execute();
                     <p>Quel type de réservation?</p>
                     <select name="type">
                         <option value=""></option>
-                        <option value="Réservation régulière">Réservation régulière</option>
-                        <option value="Table d'hôte option 1">Table d'hôte option 1</option>
-                        <option value="Table d'hôte option 2">Table d'hôte option 2</option>
-                        <option value="Table d'hôte option 3">Table d'hôte option 3</option>
-                        <option value="Menu 7 services">Menu 7 services</option>
+                        <option value="regulier">Réservation régulière</option>
+                        <option value="option1">Table d'hôte option 1</option>
+                        <option value="option2">Table d'hôte option 2</option>
+                        <option value="option3">Table d'hôte option 3</option>
+                        <option value="7services">Menu 7 services</option>
                     </select>
                 </div>
 

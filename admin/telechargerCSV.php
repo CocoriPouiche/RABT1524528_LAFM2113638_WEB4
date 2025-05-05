@@ -2,7 +2,7 @@
     include "../includes/base.php";
     
     $sql = "
-    SELECT nom, nb, temps
+    SELECT type, nom, nb, temps, jour
     FROM reservations
     ";
     // Liste de toutes les réservations
