@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body >
+    <div class="interface">
+        
+        <svg id='burger--menu' viewBox="0 0 100 80" width="40" height="40" onclick="openNav()" >
+            <rect width="100" height="20"></rect>
+            <rect width="100" height="20" y="30" ></rect>
+            <rect width="100" height="20" y="60" ></rect>
+        </svg>
+
+        <nav id="nav--primary">
+            
+            <a href="javascript:void(0)" id="btn--close" onclick="closeNav()">&times;</a>
+        
+            <ul class="nav--liste">
+                <li class="nav--element"> <a href="autrepage.html" onclick="redirection(event)">Mon premier choix</a> </li>
+                <li class="nav--element"> <a href="index.html" onclick="redirection(event)">Ma deuxième option</a> </li>
+                <li class="nav--element"> <a href="pasrapport.html" onclick="redirection(event)">Option erronnée</a> </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="erreur--404">
+                <p class="txt--erreur">ERREUR 404</p>
+                <p>Vous serez redirigé vers l'accueil dans : </p>
+                <div class="compteur">
+                    <span id="cpt">5</span> <span>secondes</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Importation du script -->
+    <script src="js/script.js"></script>
+    <script src="js/erreur404.js"></script>
+</body>
+</html>
