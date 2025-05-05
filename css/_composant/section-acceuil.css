@@ -188,3 +188,11 @@ body {
     z-index: 1;
     overflow: hidden;
   }
+
+  @media (min-width: 992px) {
+
+  }
+
+  @media (min-width: 360px) {
+
+  }
