@@ -26,6 +26,17 @@
     $sql = "
     SELECT id, jour, type, nom, nb, temps
     FROM reservations
+	ORDER BY 
+		CASE jour
+			WHEN 'Lundi' THEN 1
+			WHEN 'Mardi' THEN 2
+			WHEN 'Mercredi' THEN 3
+			WHEN 'Jeudi' THEN 4
+			WHEN 'Vendredi' THEN 5
+			WHEN 'Samedi' THEN 6
+			WHEN 'Dimanche' THEN 7
+			END,
+			temps
     LIMIT :limit
     OFFSET :offset
     ";
@@ -77,11 +88,11 @@
                 <?php foreach ($les_reservations as $une_reservation): ?>
                     <div class="une-reservation">
                         <div class="reservation-infos">
-                            <p class="res-type">Type : <?= $une_reservation["type"]?></p>
-                            <p class="res-nom">Nom : <?= $une_reservation["nom"]?></p>
-                            <p class="res-nb">Nombre de personnes : <?= $une_reservation["nb"]?></p>
                             <p class="res-heure">Heure : <?= $une_reservation["temps"]?></p>
                             <p class="res-jour">Jour : <?= $une_reservation["jour"]?></p>
+                            <p class="res-type">Type : <?= $une_reservation["type"]?></p>
+                            <p class="res-nb">Nombre de personnes : <?= $une_reservation["nb"]?></p>
+                            <p class="res-nom">Nom : <?= $une_reservation["nom"]?></p>
                         </div>
                         <div class="btn-reservation">
                             <a class="modifier" href="modifier_reservation.php?id=<?= $une_reservation['id']?>">Modifier</a>
