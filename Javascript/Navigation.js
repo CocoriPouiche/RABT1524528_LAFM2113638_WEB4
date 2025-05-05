@@ -12,24 +12,24 @@ const btnReservation = document.querySelector('.btn-reservation');
 if (menuToggle) {
     menuToggle.addEventListener('click', () => {
         // Vérifie si on est déjà sur navigation.php
-        if (window.location.pathname.includes("Navigateur.php")) {
+        if (window.location.pathname.includes("navigateur.php")) {
             // Si on est sur navigation.php, on revient à la page où l'utilisateur était avant
             if (document.referrer.includes("index.php")) {
                 window.location.href = "index.php";
-            } else if (document.referrer.includes("CaveAVin.php")) {
-                window.location.href = "CaveAVin.php";
-            } else if (document.referrer.includes("Dessert.php")) {
-                window.location.href = "Dessert.php";
-            } else if (document.referrer.includes("Entrees.php")) {
-                window.location.href = "Entrees.php";
-            } else if (document.referrer.includes("PlatPrincipaux.php")) {
-                window.location.href = "PlatPrincipaux.php";
-            } else if (document.referrer.includes("PageReservation.php")) {
-                window.location.href = "PageReservation.php";
+            } else if (document.referrer.includes("caveavin.php")) {
+                window.location.href = "caveavin.php";
+            } else if (document.referrer.includes("dessert.php")) {
+                window.location.href = "dessert.php";
+            } else if (document.referrer.includes("entrees.php")) {
+                window.location.href = "entrees.php";
+            } else if (document.referrer.includes("platprincipaux.php")) {
+                window.location.href = "platprincipaux.php";
+            } else if (document.referrer.includes("pagereservation.php")) {
+                window.location.href = "pagereservation.php";
             }
         } else {
             // Si on n'est pas sur navigation.php, on y va
-            window.location.href = "Navigateur.php";
+            window.location.href = "navigateur.php";
         }
     });
 }
@@ -44,6 +44,6 @@ if (logoMenuHam) {
 //Si le bouton reservation est cliqué
 if (btnReservation) {
     btnReservation.addEventListener('click', () => {
-        window.location.href = "PageReservation.php";
+        window.location.href = "pagereservation.php";
     });
 }
