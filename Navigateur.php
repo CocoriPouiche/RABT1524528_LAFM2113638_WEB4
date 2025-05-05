@@ -60,7 +60,7 @@
         <h2 class="btn-reservation">Réservation</h2>
     </header>
 
-    <script src="Javascript/Navigation.js"></script>
+    <script src="js/Navigation.js"></script>
 
 </body>
 </html>

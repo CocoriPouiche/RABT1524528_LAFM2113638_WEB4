@@ -174,7 +174,7 @@
     </footer>
 
     <!-- Rajout du script Javascript -->
-    <script src="Javascript/Navigation.js"></script>
-    <script src="Javascript/Gsap.js"></script>
+    <script src="js/Navigation.js"></script>
+    <script src="js/Gsap.js"></script>
 </body>
 </html>

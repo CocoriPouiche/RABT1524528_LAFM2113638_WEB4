@@ -138,7 +138,7 @@ $pages = $stmt->fetchAll();
         </div>
     </main>
 
-    <script src="../../Javascript/admin.js"></script>
+    <script src="../../js/admin.js"></script>
 </body>
 
 </html>
