@@ -49,10 +49,10 @@
 
         <div class="header-quatre-titre">
 
-            <a href="Entrees.php"><h1>Entrées</h1></a>
-            <a href="PlatPrincipaux.php"><h1>Plats principaux</h1></a>
-            <a href="Dessert.php"><h1>Desserts</h1></a>
-            <a href="CaveAVin.php"><h1>Cave à Vin</h1></a>
+            <a href="entrees.php"><h1>Entrées</h1></a>
+            <a href="platprincipaux.php"><h1>Plats principaux</h1></a>
+            <a href="dessert.php"><h1>Desserts</h1></a>
+            <a href="caveavin.php"><h1>Cave à Vin</h1></a>
             
         </div>
         

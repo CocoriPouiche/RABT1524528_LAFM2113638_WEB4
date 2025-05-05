@@ -28,7 +28,7 @@ if (menuToggle) {
                 window.location.href = "pagereservation.php";
             }
         } else {
-            // Si on n'est pas sur navigateur.php, on y va
+            // Si on n'est pas sur navigation.php, on y va
             window.location.href = "navigateur.php";
         }
     });
