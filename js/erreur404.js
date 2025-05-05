@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         countdownElement.textContent = count; // Met à jour le texte du span
         if (count === 0) {
             clearInterval(countdown); // Arrête le compteur
-            window.location.href = "index.html"; // Redirection
+            window.location.href = "index.php"; // Redirection
         }
         count--;
     }, 1000);

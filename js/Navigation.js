@@ -14,8 +14,8 @@ if (menuToggle) {
         // Vérifie si on est déjà sur navigation.php
         if (window.location.pathname.includes("Navigateur.php")) {
             // Si on est sur navigation.php, on revient à la page où l'utilisateur était avant
-            if (document.referrer.includes("Accueil.php")) {
-                window.location.href = "Accueil.php";
+            if (document.referrer.includes("index.php")) {
+                window.location.href = "index.php";
             } else if (document.referrer.includes("CaveAVin.php")) {
                 window.location.href = "CaveAVin.php";
             } else if (document.referrer.includes("Dessert.php")) {
@@ -34,10 +34,10 @@ if (menuToggle) {
     });
 }
 
-// Si l'utilisateur clique sur le logo, il est ramené à l'Accueil
+// Si l'utilisateur clique sur le logo, il est ramené à l'index
 if (logoMenuHam) {
     logoMenuHam.addEventListener('click', () => {
-        window.location.href = "Accueil.php";
+        window.location.href = "index.php";
     });
 }
 
