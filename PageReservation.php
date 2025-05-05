@@ -43,6 +43,8 @@ $stmt = $bdd->prepare("
     WHERE id= 6
     ");
 $stmt->execute();
+
+$n;
 ?>
 
 <html lang="fr">
@@ -93,32 +95,21 @@ $stmt->execute();
                     <p>À quelle heure?</p>
                     <Select name="temps">
                         <option value=""></option>
-                        <option value="08:00">8H</option>
-                        <option value="08:30">8H30</option>
-                        <option value="09:00">9H</option>
-                        <option value="09:30">9H30</option>
-                        <option value="10:00">10H</option>
-                        <option value="10:30">10H30</option>
-                        <option value="11:00">11H</option>
-                        <option value="11:30">11H30</option>
-                        <option value="12:00">12H</option>
-                        <option value="12:30">12H30</option>
-                        <option value="13:00">13H</option>
-                        <option value="13:30">13H30</option>
-                        <option value="14:00">14H</option>
-                        <option value="14:30">14H30</option>
-                        <option value="15:00">15H</option>
-                        <option value="15:30">15H30</option>
-                        <option value="16:00">16H</option>
-                        <option value="16:30">16H30</option>
-                        <option value="17:00">17H</option>
-                        <option value="17:30">17H30</option>
-                        <option value="18:00">18H</option>
-                        <option value="18:30">18H30</option>
-                        <option value="19:00">19H</option>
-                        <option value="19:30">19H30</option>
-                        <option value="20:00">20H</option>
-                        <option value="20:30">20H30</option>
+                        <?php
+                        $debut = strtotime("08:00");
+                        $fin = strtotime("20:30");
+
+                        for ($temps = $debut; $temps <= $fin; $temps = strtotime("+30 minutes", $temps)) {
+                            $value = date("H:i", $temps);
+                            $label = date("G\H", $temps);
+
+                            if (date("i", $temps) == "30") {
+                                $label .= "30";
+                            }
+
+                            echo "<option value=\"$value\">$label</option>\n";
+                        }
+                        ?>
                     </Select>
                 </div>
 
