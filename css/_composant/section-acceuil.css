@@ -189,11 +189,45 @@ body {
     overflow: hidden;
   }
 
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
 
+    .chef {
+        font-size: 8rem; 
+        bottom: 40%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+    }
+
+    .grid-item.text .t-chef {
+        font-size: 55px; 
+    }
+
+    .btn-reserver-acc {
+        padding: 12px 20px; 
+        font-size: 1em;
+    }
+
+    .section-R-h2, .section-H-h2 {
+        font-size: 60px; 
+    }
+
+    .horaire-text {
+        font-size: 18px; 
+    }
+
+    .grid-item.text p {
+        font-size: 20px; 
+    }
+
+    .pixi-transition {
+        height: 250px; 
+    }
 
   }
 
-  @media (min-width: 360px) {
+  @media (max-width: 360px) {
 
   }
