@@ -79,11 +79,7 @@ $n;
         <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Réservation</h2>
 
         <section>
-<<<<<<< HEAD
-            <h2>Faire une réservation</h2>
-=======
                 <h2 class="t-h2-res">FAIRE UNE RÉSERVATION</h2>
->>>>>>> origin/Resolution
             <form action="PageReservation.php" method="post">
                 <div>
                     <p>Réservation à quel nom?</p>
@@ -149,11 +145,7 @@ $n;
             </form>
             <section>
 
-<<<<<<< HEAD
-                <h2>Les options de reservations</h2>
-=======
         <h2 class="t-h2-res">LES OPTIONS DE RÉSERVATIONS</h2>
->>>>>>> origin/Resolution
 
                 <div class="reservation-grid">
                     <section class="reservation-item">
@@ -186,11 +178,7 @@ $n;
         <p>&copy; 2025 Les Rives Boréales</p>
     </footer>
 
-<<<<<<< HEAD
-    <script src="js/Navigation.js"></script>
-=======
-    <script src="Javascript/navigation.js"></script>
->>>>>>> origin/Resolution
+    <script src="js/navigation.js"></script>
 
 </body>
 

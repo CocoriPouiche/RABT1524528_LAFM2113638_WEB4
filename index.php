@@ -174,13 +174,8 @@
         </div>
     </footer>
 
-    <!-- Rajout du script Javascript -->
-<<<<<<< HEAD
-    <script src="js/Navigation.js"></script>
-    <script src="js/Gsap.js"></script>
-=======
-    <script src="Javascript/navigation.js"></script>
-    <script src="Javascript/gsap.js"></script>
->>>>>>> origin/Resolution
+    <script src="js/navigation.js"></script>
+    <script src="js/gsap.js"></script>
+    
 </body>
 </html>

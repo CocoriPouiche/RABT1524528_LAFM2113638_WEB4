@@ -81,11 +81,7 @@
         <p>&copy; 2025 Les Rives Boréales</p>
     </footer>
 
-<<<<<<< HEAD
-    <script src="js/Navigation.js"></script>
-=======
-    <script src="Javascript/navigation.js"></script>
->>>>>>> origin/Resolution
+    <script src="js/navigation.js"></script>
 
 </body>
 </html>

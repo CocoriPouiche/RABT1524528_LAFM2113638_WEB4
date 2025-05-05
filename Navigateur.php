@@ -60,11 +60,7 @@
         <h2 class="btn-reservation">Réservation</h2>
     </header>
 
-<<<<<<< HEAD
-    <script src="js/Navigation.js"></script>
-=======
-    <script src="Javascript/navigation.js"></script>
->>>>>>> origin/Resolution
+    <script src="js/navigation.js"></script>
 
 </body>
 </html>
