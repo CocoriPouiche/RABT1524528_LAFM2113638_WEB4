@@ -2,8 +2,19 @@
     include "../includes/base.php";
     
     $sql = "
-    SELECT type, nom, nb, temps, jour
+    SELECT temps, jour, type, nb, nom
     FROM reservations
+	ORDER BY 
+		CASE jour
+			WHEN 'Lundi' THEN 1
+			WHEN 'Mardi' THEN 2
+			WHEN 'Mercredi' THEN 3
+			WHEN 'Jeudi' THEN 4
+			WHEN 'Vendredi' THEN 5
+			WHEN 'Samedi' THEN 6
+			WHEN 'Dimanche' THEN 7
+			END,
+			temps
     ";
     // Liste de toutes les réservations
     $stmt = $bdd->prepare($sql);
