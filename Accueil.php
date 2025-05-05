@@ -176,6 +176,6 @@
 
     <!-- Rajout du script Javascript -->
     <script src="Javascript/navigation.js"></script>
-    <script src="Javascript/Gsap.js"></script>
+    <script src="Javascript/gsap.js"></script>
 </body>
 </html>
