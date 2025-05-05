@@ -47,6 +47,10 @@
     font-size: 12.5rem;
     margin-bottom: 10px;
     color: #dcdad7;
+    font-family: "Bebas Neue", sans-serif;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 0.1rem 50rem;
+    border-radius: 25px;
 }
 
 div.reservation-grid {
@@ -59,12 +63,17 @@ div.reservation-grid {
 }
 
 .reservation-item {
-    background: rgba(255, 255, 255, 0.9);
+    background-color: #272727;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 2.2rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #C3A93F;
+
+    &:nth-child(4){
+        width: 318%;
+    }
 }
 
 .reservation-item:hover {
@@ -73,14 +82,14 @@ div.reservation-grid {
 }
 
 .reservation-item h2 {
-    color: #17334A;
-    font-size: 1.8rem;
+    color: #f8f8f8;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
 }
 
 .reservation-item p {
-    color: #004A80;
-    font-size: 1.1rem;
+    color: #f8f8f8;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -113,12 +122,23 @@ section form {
 }
 
 /* TITRE */
-section h2 {
+.t-h2-res {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 4em;
     color: #ffffff;
     margin-bottom: 20px;
+    padding-top: 25px;
+}
+
+.t-h2-res::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #C3A93F;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 section form div {

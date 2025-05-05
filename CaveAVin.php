@@ -105,7 +105,7 @@
         <h1 class="t-vin">Cave à vin</h1>
     </header>
 
-    <h2 class="section-title-dessert">Accueil / Cave à vin</h2>
+    <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Cave à vin</h2>
     
     <main class="main-vins">
         <section class="vin-section">
@@ -167,7 +167,7 @@
         <p>&copy; 2025 Les Rives Boréales</p>
     </footer>
 
-    <script src="js/Navigation.js"></script>
-    
+    <script src="js/navigation.js"></script>
+
 </body>
 </html>

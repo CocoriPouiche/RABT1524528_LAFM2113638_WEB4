@@ -20,6 +20,10 @@
     margin: 0;
     font-size: 15.5rem;
     color: white;
+    font-family: "Bebas Neue", sans-serif;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 0.1rem 50rem;
+    border-radius: 25px;
 }
 
 /* Mise en page générale */
@@ -107,7 +111,6 @@
     color: #f8f8f8;
     margin: 1rem 0 0.5rem;
     font-weight: bold;
-    text-transform: capitalize;
 }
 
 .plat-description {

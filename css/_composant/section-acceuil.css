@@ -20,7 +20,6 @@ body {
     position: absolute; 
     font-family: "Caveat", cursive;
     font-size: 10rem;
-    transform: rotate(-20deg);
     bottom: 48%; 
     left: 50%; 
     transform: translate(-50%, -50%) rotate(-20deg); 
@@ -30,9 +29,11 @@ body {
 }
 
 .grid-item.text .t-chef {
+    font-family: "Bebas Neue", sans-serif;
     margin-bottom: 10px;
     font-size: 62px;
     color: #C3A93F;
+    text-align: center;
 }
 
 .grid-item.text p {
@@ -113,7 +114,7 @@ body {
 .image {
     position: relative;
     overflow: visible;
-}
+} 
 
 /* Section Reservation et Horaire */
 .section-R-h2 {
@@ -187,4 +188,128 @@ body {
     overflow: hidden;
   }
 
-/* Faire quelque chose de plus dynamique, style overlapping */
+  /* ============================
+   MEDIA QUERY – POUR TABLETTE 
+   ============================ */
+@media (max-width: 992px) {
+
+    /* Grille en colonne */
+    .grid-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Image prend moins de hauteur visuelle */
+    .grid-item.image img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Titre "chef" ajusté */
+    .chef {
+        font-size: 6rem;
+        bottom: 50%;
+    }
+
+    /* Titre dans section réservation */
+    .section-R-h2 {
+        font-size: 50px;
+        top: 10%;
+        left: 90%;
+    }
+
+    /* Titre dans section horaire */
+    .section-H-h2 {
+        font-size: 80px;
+        top: 12%;
+        left: 10%;
+    }
+
+    /* Ajustement des paragraphes */
+    .grid-item.text p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* Réduction du bouton */
+    .btn-reserver-acc {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    /* Liste des options de réservation */
+    .reservation-option-item {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+
+    /* Réduction des titres */
+    .grid-item.text .t-chef,
+    .reservation-options-title {
+        font-size: 40px;
+    }
+}
+
+
+  /* ============================
+   MEDIA QUERY – MOBILE 
+   ============================ */
+@media (max-width: 576px) {
+
+    /* Conteneur principal en colonne, marge réduite */
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: 30px 10px;
+        gap: 15px;
+    }
+
+    /* Image centrée et redimensionnée */
+    .grid-item.image img {
+        max-width: 100%;
+        border-radius: 6px;
+    }
+
+    /* Texte centré et espacé */
+    .grid-item.text p {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+
+    /* Titre "Chef" réduit */
+    .chef {
+        font-size: 4.5rem;
+        bottom: 52%;
+    }
+
+    /* Titres artistiques ajustés */
+    .section-R-h2 {
+        font-size: 36px;
+        top: 8%;
+        left: 85%;
+    }
+
+    .section-H-h2 {
+        font-size: 60px;
+        top: 10%;
+        left: 15%;
+    }
+
+    /* Titres des sections */
+    .grid-item.text .t-chef,
+    .reservation-options-title {
+        font-size: 32px;
+    }
+
+    /* Bouton centré et compact */
+    .btn-reserver-acc {
+        font-size: 0.95em;
+        padding: 10px 18px;
+    }
+
+    /* Cartes de réservation */
+    .reservation-option-item {
+        font-size: 0.9em;
+        padding: 8px;
+        margin: 8px 0;
+    }
+}

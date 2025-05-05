@@ -81,7 +81,7 @@
     </header>
     
     <div>
-        <h2 class="section-title-dessert">Accueil / Plats principaux</h2>
+        <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Plats principaux</h2>
     </div>
    
     <h2 class="section-title">Section Viande</h2>
@@ -140,7 +140,11 @@
         <p>&copy; 2025 Les Rives Boréales</p>
     </footer>
 
+<<<<<<< HEAD
     <script src="js/Navigation.js"></script>
+=======
+    <script src="Javascript/navigation.js"></script>
+>>>>>>> origin/Resolution
 
 </body>
 </html>

@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.2.4/dist/pixi.min.js"></script>
@@ -121,7 +122,7 @@
 
             <div class="grid-item text">
                 <p class="horaire-text">Du lundi au vendredi de 8AM jusqu'à
-                    10PM<br>et du Samedi à dimanche de 10AM
+                    10PM<br>et du samedi à dimanche de 10AM
                     jusqu'à 11PM!
                 </p>
             </div>
@@ -174,7 +175,12 @@
     </footer>
 
     <!-- Rajout du script Javascript -->
+<<<<<<< HEAD
     <script src="js/Navigation.js"></script>
     <script src="js/Gsap.js"></script>
+=======
+    <script src="Javascript/navigation.js"></script>
+    <script src="Javascript/gsap.js"></script>
+>>>>>>> origin/Resolution
 </body>
 </html>
