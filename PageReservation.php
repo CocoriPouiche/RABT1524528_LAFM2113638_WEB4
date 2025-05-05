@@ -76,7 +76,7 @@ $n;
 
     <main class="main-reserve">
 
-        <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Réservation</h2>
+        <h2 class="section-title-dessert"><a href="index.php">Accueil</a> / Réservation</h2>
 
         <section>
                 <h2 class="t-h2-res">FAIRE UNE RÉSERVATION</h2>

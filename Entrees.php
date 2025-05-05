@@ -58,7 +58,7 @@
 
     </header>
     
-    <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Entrées</h2>
+    <h2 class="section-title-dessert"><a href="index.php">Accueil</a> / Entrées</h2>
 
     <main class="Main-LesEntrees">
 
@@ -82,6 +82,6 @@
     </footer>
 
     <script src="js/navigation.js"></script>
-    
+
 </body>
 </html>

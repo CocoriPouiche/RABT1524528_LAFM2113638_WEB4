@@ -105,7 +105,7 @@
         <h1 class="t-vin">Cave à vin</h1>
     </header>
 
-    <h2 class="section-title-dessert"><a href="Accueil.php">Accueil</a> / Cave à vin</h2>
+    <h2 class="section-title-dessert"><a href="index.php">Accueil</a> / Cave à vin</h2>
     
     <main class="main-vins">
         <section class="vin-section">
