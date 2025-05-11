@@ -207,15 +207,26 @@ body {
 
     /* Titre "chef" ajusté */
     .chef {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-bottom: 20px;
         font-size: 6rem;
         bottom: 50%;
     }
 
     /* Titre dans section réservation */
     .section-R-h2 {
-        font-size: 50px;
-        top: 10%;
-        left: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        color: #C3A93F;
+        font-weight: bold;
+        text-shadow: 1px 1px 10px black;
+        z-index: 10;
+        text-align: center;
     }
 
     /* Titre dans section horaire */
