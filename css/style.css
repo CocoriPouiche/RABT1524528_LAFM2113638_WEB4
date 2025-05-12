@@ -18,6 +18,7 @@
 @import url('_composant/section-plats.css');
 @import url('_composant/section-dessert.css');
 @import url('_composant/section-entrees.css');
+@import url('_composant/section-404.css');
 
 /*[ importation du dossier _layout ]*/
 @import url('_layout/structure.css');
