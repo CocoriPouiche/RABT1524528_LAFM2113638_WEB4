@@ -50,14 +50,14 @@
         </div>
 
         <video autoplay muted loop playsinline class="bg-video">
-            <source src="/assets/video/RABT1524528_Acceuil_Video.mp4" type="video/mp4">
+            <source src="assets/video/RABT1524528_Acceuil_Video.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la vidéo HTML5.
         </video>
     
         <div class="video-overlay">
             <div class="interface">
                 <div class="Logo_Acceuil">
-                    <img src="/assets/images/svg/RABT1524528_Logo.svg" alt="Montage architectural" class="montage--img">
+                    <img src="assets/images/svg/RABT1524528_Logo.svg" alt="Montage architectural" class="montage--img">
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
     <section class="chef-section">
         <div class="grid-container">
             <div class="grid-item image">
-                <img src="/assets/images/jpg/CHEF-LRB.jpg" alt="Chef">
+                <img src="assets/images/jpg/CHEF-LRB.jpg" alt="Chef">
             </div>
             <div class="grid-item text">
                 <span class="chef">CHEF</span>
@@ -86,7 +86,7 @@
 
             <div class="grid-item image">
 
-                <img src="/assets/images/jpg/RESTAURANT.jpg" alt="Réservation">
+                <img src="assets/images/jpg/RESTAURANT.jpg" alt="Réservation">
                 <span class="section-R-h2">RÉSERVATION</span>
 
             </div>
@@ -129,7 +129,7 @@
 
             <div class="grid-item image">
 
-                <img src="/assets/images/jpg/HORAIRE.jpg" alt="Horaire">
+                <img src="assets/images/jpg/HORAIRE.jpg" alt="Horaire">
                 <span class="section-H-h2">HORAIRE</span>
 
             </div>
@@ -137,24 +137,24 @@
         </section>
         
         <div class="coeur">
-            <img src="/assets/images/svg/CoeurBackground.svg" alt="CoeurBackground">
+            <img src="assets/images/svg/CoeurBackground.svg" alt="CoeurBackground">
         </div>
 
     </main>
 
     <section class="separator-section">
-        <img src="/assets/images/jpg/SeparateurAccueil.jpg" alt="Image de séparation" class="separator-image">
+        <img src="assets/images/jpg/SeparateurAccueil.jpg" alt="Image de séparation" class="separator-image">
     </section>
 
     <footer class="footer-accueil">
         <div class="footer-container">
             <div class="footer-left">
-                <img src="/assets/images/svg/RABT1524528_Logo.svg" alt="Logo" class="footer-logo">
+                <img src="assets/images/svg/RABT1524528_Logo.svg" alt="Logo" class="footer-logo">
                 <div class="social-icons">
-                    <a href="#"><img src="/assets/images/png/Facebook-logo.png" alt="Facebook"></a>
-                    <a href="#"><img src="/assets/images/png/Instagram-Logo.png" alt="Instagram"></a>
-                    <a href="#"><img src="/assets/images/png/Twitter-Logo.png" alt="Twitter"></a>
-                    <a href="mailto:contact@exemple.com"><img src="/assets/images/png/Gmail-Logo.png" alt="Email"></a>
+                    <a href="#"><img src="assets/images/png/Facebook-logo.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/png/Instagram-Logo.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/images/png/Twitter-Logo.png" alt="Twitter"></a>
+                    <a href="mailto:contact@exemple.com"><img src="assets/images/png/Gmail-Logo.png" alt="Email"></a>
                 </div>
             </div>
     
