@@ -3,7 +3,7 @@
 
 /* En-tête des entrées */
 .header-entrees {
-    background: url('/assets/images/jpg/EntreeTopView.jpg') center/cover no-repeat;
+    background: url('assets/images/jpg/EntreeTopView.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;

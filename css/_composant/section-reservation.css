@@ -16,7 +16,7 @@
 
 /* Header de la section réservation avec image de fond et filtre sombre */
 .header-reserve {
-    background: url('/assets/images/jpg/TableRestaurant.jpg') center/cover no-repeat;
+    background: url('assets/images/jpg/TableRestaurant.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
