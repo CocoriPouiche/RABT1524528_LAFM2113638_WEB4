@@ -109,7 +109,7 @@
                 Réservez dès maintenant pour vivre une expérience gastronomique inoubliable.
                 </p>
 
-                <a href="PageReservation.php">
+                <a href="pagereservation.php">
                     <button class="btn-reserver-acc">Voir les réservations</button>
                 </a>
             </div>
