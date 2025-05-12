@@ -151,6 +151,10 @@ footer {
     border-top: 2px solid #C3A93F;
 }
 
+/* --------- RESPONSIVE max-width: 992px --------- */
+/* ============================
+   MEDIA QUERY – POUR TABLETTE 
+   ============================ */
 @media (max-width: 992px) {
     .t-principeaux {
       font-size: 8rem;
@@ -163,6 +167,10 @@ footer {
     }
   }
   
+  /* --------- RESPONSIVE max-width: 576px --------- */
+  /* ============================
+   MEDIA QUERY – MOBILE 
+   ============================ */
   @media (max-width: 576px) {
     .t-principeaux {
       font-size: 4rem;
@@ -175,7 +183,7 @@ footer {
     }
   }  
 
-/* Responsivité : pour les écrans plus petits (Cellulaire/Tablette) */
+/* Test / essaie : pour les écrans plus petits (Cellulaire/Tablette) */
 @media (max-width: 768px) {
     .plat-item {
         grid-template-columns: 1fr;

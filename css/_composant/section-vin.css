@@ -1,6 +1,7 @@
 /*[ COMPOSANT SECTION-CHEF ]*/
 /* ------------------------------------------------------------ */
 
+/* Section Header avec une image en fond, centré et sombre pour mettre en valeur le texte */
 .Header-CaveAVin {
     background: url('/assets/images/jpg/VineTopView.jpg') center/cover no-repeat;
     display: flex;
@@ -15,6 +16,7 @@
     border-bottom: 2px solid #C3A93F;
 }
 
+/* Titre de la section CaveAVin, avec une taille de police énorme, fond sombre et texte centré */
 .t-vin {
     margin: 0;
     font-size: 15.5rem;
@@ -26,6 +28,7 @@
     white-space: nowrap;
 }
 
+/* Conteneur principal des sections de vins, avec un fond dégradé et une disposition en colonne */
 .main-vins {
     padding: 2rem;
     display: flex;
@@ -34,6 +37,7 @@
     background: linear-gradient(to bottom, #5a4e28, #2e2e2e);
 }
 
+/* Section individuelle de vin avec fond sombre, padding et ombre légère */
 .vin-section {
     background-color: #222222;
     padding: 1rem;
@@ -41,6 +45,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Titre d'une section de vin avec une taille de police plus grande et un espacement sous le titre */
 .vin-titre {
     font-size: 1.5rem;
     font-weight: bold;
@@ -48,6 +53,7 @@
     color: #dddddd;
 }
 
+/* Disposition des éléments de vin sous forme de grille à 2 colonnes */
 .vin-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -56,12 +62,14 @@
     border-bottom: 1px solid #ddd;
 }
 
+/* Nom du vin avec une couleur claire et aligné à gauche */
 .vin-nom {
     font-size: 1.1rem;
     color: #dddddd;
     text-align: left;
 }
 
+/* Prix du vin avec une couleur dorée, aligné à droite */
 .vin-prix {
     font-size: 1.1rem;
     font-weight: 500;
@@ -69,6 +77,10 @@
     text-align: right;
 } 
 
+/* --------- RESPONSIVE max-width: 992px --------- */
+/* ============================
+   MEDIA QUERY – POUR TABLETTE 
+   ============================ */
 @media (max-width: 992px) {
     .t-vin {
       font-size: 8rem;
@@ -89,6 +101,10 @@
     }
   }
   
+  /* --------- RESPONSIVE max-width: 576px --------- */
+  /* ============================
+   MEDIA QUERY – MOBILE 
+   ============================ */
   @media (max-width: 576px) {
     .t-vin {
       font-size: 4rem;

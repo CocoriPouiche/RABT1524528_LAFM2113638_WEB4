@@ -1,6 +1,7 @@
-/*[ COMPOSANT SECTION-RESERVATION ]*/
+/* [ COMPOSANT SECTION-RESERVATION ] */
 /* ------------------------------------------------------------ */
 
+/* Réinitialisation de base + typographie par défaut */
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +9,12 @@
     font-family: "Raleway", sans-serif;
 }
 
-.main-reserve{
+/* Arrière-plan principal de la section de réservation */
+.main-reserve {
     background: linear-gradient(to bottom, #5a4e28, #2e2e2e);
 }
 
-/* Header */
+/* Header de la section réservation avec image de fond et filtre sombre */
 .header-reserve {
     background: url('/assets/images/jpg/TableRestaurant.jpg') center/cover no-repeat;
     display: flex;
@@ -27,6 +29,7 @@
     border-bottom: 2px solid #C3A93F;
 }
 
+/* Bouton de menu hamburger (responsive) */
 #menu-toggle {
     background: none;
     border: none;
@@ -36,13 +39,14 @@
     right: 20px;
 }
 
+/* Icône SVG du bouton menu */
 #menu-toggle svg {
     fill: #333;
     width: 40px;
     height: 40px;
 }
 
-/* Le h1 de la page */
+/* Titre principal dans le header */
 .header-title h1 {
     font-size: 12.5rem;
     margin-bottom: 10px;
@@ -53,6 +57,7 @@
     border-radius: 25px;
 }
 
+/* Grille contenant les éléments de réservation (infos, options, etc.) */
 div.reservation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -62,6 +67,7 @@ div.reservation-grid {
     margin: 0 auto;
 }
 
+/* Carte individuelle dans la grille de réservation */
 .reservation-item {
     background-color: #272727;
     border-radius: 12px;
@@ -71,28 +77,33 @@ div.reservation-grid {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid #C3A93F;
 
+    /* Exception pour la 4e carte (souvent un formulaire), largeur étendue */
     &:nth-child(4){
         width: 318%;
     }
 }
 
+/* Effet au survol des cartes */
 .reservation-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Titre des cartes */
 .reservation-item h2 {
     color: #f8f8f8;
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
 
+/* Texte des cartes */
 .reservation-item p {
     color: #f8f8f8;
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
+/* Bouton de réservation dans les cartes */
 .reserver-btn {
     background: #C3A93F;
     color: white;
@@ -105,11 +116,12 @@ div.reservation-grid {
     transition: background 0.3s ease;
 }
 
+/* Effet hover du bouton */
 .reserver-btn:hover {
     background: #A78E35;
 }
 
-/* Section interactif de la reservation */
+/* Section contenant le formulaire de réservation */
 section form {
     background-color:#2e2e2e;
     border-radius: 20px;
@@ -121,7 +133,7 @@ section form {
     border: 2px solid #C3A93F;
 }
 
-/* TITRE */
+/* Titre h2 dans la section formulaire */
 .t-h2-res {
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -131,6 +143,7 @@ section form {
     padding-top: 25px;
 }
 
+/* Ligne décorative sous le titre */
 .t-h2-res::after {
     content: "";
     display: block;
@@ -141,17 +154,19 @@ section form {
     border-radius: 2px;
 }
 
+/* Espacement entre les champs du formulaire */
 section form div {
     margin-bottom: 20px;
 }
 
+/* Étiquette du champ (ex. nom, courriel, etc.) */
 section form p {
     margin-bottom: 8px;
     font-weight: bold;
     color: #ffffff;
 }
 
-/* INPUTS + SELECT */
+/* Styles des champs de texte et listes déroulantes */
 section form input,
 section form select {
     width: 100%;
@@ -164,13 +179,14 @@ section form select {
     transition: 0.3s border-color;
 }
 
+/* Focus sur les champs */
 section form input:focus,
 section form select:focus {
     border-color: #2e4c3f;
     outline: none;
 }
 
-/* BOUTON */
+/* Bouton pour envoyer le formulaire */
 .btn-reserver-res {
     background-color: #c3a93f;
     color: white;
@@ -185,64 +201,78 @@ section form select:focus {
     margin: 0 auto;
 }
 
+/* Hover sur le bouton formulaire */
 .btn-reserver-res:hover {
     background-color: #896d00; 
 }
 
+/* --------- RESPONSIVE max-width: 1027px --------- */
 @media (max-width: 1027px) {
+    /* Titre plus petit */
     .header-title h1 {
         font-size: 6rem;
         padding: 0.5rem 2rem;
     }
 
+    /* Grille à une seule colonne */
     div.reservation-grid {
         grid-template-columns: 1fr;
         padding: 2rem 1rem;
     }
 
+    /* Annulation du débordement pour l'élément 4 */
     .reservation-item:nth-child(4) {
         width: 100%;
     }
 
+    /* Taille réduite du titre */
     .t-h2-res {
         font-size: 2.5em;
     }
 
+    /* Formulaire réduit et centré */
     section form {
         padding: 20px;
-        margin: 20px auto; /* centrage horizontal */
+        margin: 20px auto;
     }
 }
 
+/* --------- RESPONSIVE max-width: 576px --------- */
 @media (max-width: 576px) {
+    /* Titre encore plus petit pour mobiles */
     .header-title h1 {
         font-size: 3.5rem;
         padding: 0.5rem 1rem;
         border-radius: 15px;
     }
 
+    /* Boutons adaptatifs */
     .reserver-btn,
     .btn-reserver-res {
         width: 100%;
         font-size: 0.9rem;
     }
 
+    /* Taille du titre réduite */
     .t-h2-res {
         font-size: 2em;
         padding-top: 15px;
     }
 
+    /* Formulaire plus compact */
     section form {
         padding: 15px;
         margin: 15px;
     }
 
+    /* Champs plus petits */
     section form input,
     section form select {
         font-size: 0.9em;
         padding: 10px;
     }
 
+    /* Icône hamburger plus petite */
     #menu-toggle svg {
         width: 30px;
         height: 30px;
