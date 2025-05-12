@@ -20,7 +20,7 @@
     WHERE id= 7
     ");
     $stmt->execute();
-?>
+?> 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
