@@ -189,3 +189,62 @@ section form select:focus {
     background-color: #896d00; 
 }
 
+@media (max-width: 992px) {
+    .header-title h1 {
+        font-size: 6rem;
+        padding: 0.5rem 2rem;
+    }
+
+    div.reservation-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+
+    .reservation-item:nth-child(4) {
+        width: 100%;
+    }
+
+    .t-h2-res {
+        font-size: 2.5em;
+    }
+
+    section form {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-title h1 {
+        font-size: 3.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+    }
+
+    .reserver-btn,
+    .btn-reserver-res {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .t-h2-res {
+        font-size: 2em;
+        padding-top: 15px;
+    }
+
+    section form {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    section form input,
+    section form select {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    #menu-toggle svg {
+        width: 30px;
+        height: 30px;
+    }
+}

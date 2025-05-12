@@ -16,6 +16,7 @@
     border-bottom: 2px solid #C3A93F;
 }
 
+/* Titre principal du header */
 .t-principeaux {
     margin: 0;
     font-size: 15.5rem;
@@ -91,12 +92,6 @@
     position: relative;
 }
 
-/* Effet au survol */
-.plat-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
 /* Images des plats */
 .plat-item img {
     width: 100%;
@@ -113,6 +108,7 @@
     font-weight: bold;
 }
 
+/* Description des plats */
 .plat-description {
     font-size: 1.1rem;
     color: #d4d4d4;
@@ -145,7 +141,7 @@
     border-radius: 2px;
 }
 
-
+/* Section du footer */
 footer {
     text-align: center;
     padding: 2rem 0;
@@ -155,7 +151,31 @@ footer {
     border-top: 2px solid #C3A93F;
 }
 
-/* Responsivité : pour les écrans plus petits (Cellulaire/Tablette */
+@media (max-width: 992px) {
+    .t-principeaux {
+      font-size: 8rem;
+      padding: 0.1rem 10rem;
+    }
+  
+    .Header-principaux {
+      padding: 40px 20px;
+      background-position: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .t-principeaux {
+      font-size: 4rem;
+      padding: 0.5rem 2rem;
+    }
+  
+    .Header-principaux {
+      padding: 30px 10px;
+      background-position: center;
+    }
+  }  
+
+/* Responsivité : pour les écrans plus petits (Cellulaire/Tablette) */
 @media (max-width: 768px) {
     .plat-item {
         grid-template-columns: 1fr;

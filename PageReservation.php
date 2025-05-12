@@ -57,6 +57,7 @@ $n;
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400..700&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
