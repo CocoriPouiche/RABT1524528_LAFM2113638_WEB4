@@ -76,6 +76,10 @@ footer {
     font-size: 1rem;
 }
 
+/* --------- RESPONSIVE max-width: 992px --------- */
+/* ============================
+   MEDIA QUERY – POUR TABLETTE 
+   ============================ */
 @media (max-width: 992px) {
     .t-desserts {
       font-size: 8rem;
@@ -93,6 +97,10 @@ footer {
     }
   }
 
+  /* --------- RESPONSIVE max-width: 576px --------- */
+  /* ============================
+   MEDIA QUERY – MOBILE 
+   ============================ */
   @media (max-width: 576px) {
     .t-desserts {
       font-size: 4rem;

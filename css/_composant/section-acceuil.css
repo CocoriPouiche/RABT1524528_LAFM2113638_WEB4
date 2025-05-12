@@ -188,7 +188,8 @@ body {
     overflow: hidden;
   }
 
-  /* ============================
+/* --------- RESPONSIVE max-width: 992px --------- */
+/* ============================
    MEDIA QUERY – POUR TABLETTE 
    ============================ */
 @media (max-width: 992px) {
@@ -269,9 +270,10 @@ body {
 }
 
 
-  /* ============================
-   MEDIA QUERY – MOBILE 
-   ============================ */
+/* --------- RESPONSIVE max-width: 576px --------- */
+/* ============================
+MEDIA QUERY – MOBILE 
+============================ */
 @media (max-width: 576px) {
 
     /* Conteneur principal en colonne, marge réduite */
