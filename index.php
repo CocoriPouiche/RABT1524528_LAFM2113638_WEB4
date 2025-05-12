@@ -57,7 +57,7 @@
         <div class="video-overlay">
             <div class="interface">
                 <div class="Logo_Acceuil">
-                    <img src="assets/images/svg/RABT1524528_Logo.svg" alt="Montage architectural" class="montage--img">
+                    <img src="assets/images/svg/Logo.svg" alt="Montage architectural" class="montage--img">
                 </div>
             </div>
         </div>
