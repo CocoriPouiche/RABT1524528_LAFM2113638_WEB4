@@ -1,21 +1,24 @@
 /*[ COMPOSANT SECTION-FOOTER ]*/
 /* ------------------------------------------------------------ */
 
+/* Footer spécifique à la page d'accueil */
 footer.footer-accueil {
     background: #5a4e28;
     color: white;
     padding: 3rem 2rem;
 }
 
+/* Conteneur du footer avec flexbox pour l'agencement des sections */
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser en plusieurs lignes si nécessaire */
+    justify-content: space-between; /* Espacement égal entre les éléments */
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centrage horizontal */
 }
 
+/* Section gauche du footer : logo et icônes sociales */
 .footer-left {
     display: flex;
     flex-direction: column;
@@ -23,41 +26,49 @@ footer.footer-accueil {
     text-align: center;
 }
 
+/* Logo dans le footer avec une largeur maximale */
 .footer-logo {
     max-width: 150px;
     margin-bottom: 1rem;
 }
 
+/* Icônes sociales avec espacement entre chaque */
 .social-icons {
     display: flex;
-    gap: 1rem;
+    gap: 1rem; /* Espacement de 1rem entre les icônes */
 }
 
+/* Effet de transformation des icônes sociales au survol */
 .social-icons a img {
     width: 30px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Transition fluide pour l'effet de survol */
 }
 
+/* Agrandissement des icônes sociales au survol */
 .social-icons a img:hover {
     transform: scale(1.2);
 }
 
+/* Section droite du footer avec abonnez-vous à la newsletter */
 .footer-right {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Flexbox pour aligner les éléments */
+    flex-direction: column; /* Disposition verticale */
     align-items: center;
     text-align: center;
 }
 
+/* Section pour la newsletter avec un espacement sous l'élément */
 .newsletter {
     margin-bottom: 1.5rem;
 }
 
+/* Formulaire d'abonnement à la newsletter avec espacement entre les champs */
 .newsletter form {
     display: flex;
     gap: 0.5rem;
 }
 
+/* Style des champs de saisie de la newsletter (l'infolettre) */
 .newsletter input {
     padding: 0.75rem;
     border: none;
@@ -65,27 +76,31 @@ footer.footer-accueil {
     font-size: 1rem;
 }
 
+/* Bouton d'abonnement à la newsletter */
 .newsletter button {
     background: #C3A93F;
     color: white;
     border: none;
-    padding: 0.75rem 1.2rem;
+    padding: 0.75rem 1.2rem; /* Espacement interne */
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease; /* Transition pour le changement de couleur de fond */
 }
 
+/* Effet de changement de couleur au survol du bouton */
 .newsletter button:hover {
     background: #A78E35;
 }
 
+/* Liens supplémentaires dans le footer */
 .footer-links {
     display: flex;
     gap: 1rem;
 }
 
+/* Style des liens dans le footer */
 .footer-links a {
     color: white;
     text-decoration: none;
@@ -93,13 +108,15 @@ footer.footer-accueil {
     transition: color 0.3s ease;
 }
 
+/* Changement de couleur des liens au survol */
 .footer-links a:hover {
     color: #C3A93F;
 }
 
+/* Footer général de la page avec fond sombre et texte centré */
 footer {
-    text-align: center;
-    padding: 20px;
+    text-align: center; /* Texte centré */
+    padding: 20px; /* Espacement autour du footer */
     background: #333;
     color: white;
 }

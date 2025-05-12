@@ -59,6 +59,10 @@ h2.section-title-dessert{
     color: white;
 }
 
+/* --------- RESPONSIVE max-width: 992px --------- */
+/* ============================
+   MEDIA QUERY – POUR TABLETTE 
+   ============================ */
 @media (max-width: 992px) {
     .t-entrees {
       font-size: 8rem;
@@ -71,6 +75,10 @@ h2.section-title-dessert{
     }
   }
   
+  /* --------- RESPONSIVE max-width: 576px --------- */
+  /* ============================
+   MEDIA QUERY – MOBILE 
+   ============================ */
   @media (max-width: 576px) {
     .t-entrees {
       font-size: 4rem;
