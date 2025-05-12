@@ -149,7 +149,7 @@
     <footer class="footer-accueil">
         <div class="footer-container">
             <div class="footer-left">
-                <img src="assets/images/svg/RABT1524528_Logo.svg" alt="Logo" class="footer-logo">
+                <img src="assets/images/svg/Logo.svg" alt="Logo" class="footer-logo">
                 <div class="social-icons">
                     <a href="#"><img src="assets/images/png/Facebook-logo.png" alt="Facebook"></a>
                     <a href="#"><img src="assets/images/png/Instagram-Logo.png" alt="Instagram"></a>
