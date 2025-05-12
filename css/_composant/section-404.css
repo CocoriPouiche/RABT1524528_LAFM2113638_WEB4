@@ -1,3 +1,129 @@
 /*[ COMPOSANT SECTION-404 ]*/
 /* ------------------------------------------------------------ */
 
+/* Réinitialisation des marges et gestion du modèle de boîte pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de base du body : police, couleur de fond, couleur du texte et centrage du contenu */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    height: 100vh; /* Hauteur de la fenêtre visible */
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+}
+
+/* Conteneur principal de la page */
+.interface {
+    width: 90%; /* Prend 90% de la largeur de la fenêtre */
+    max-width: 800px; /* Ne dépasse jamais 800px */
+    padding: 2rem; /* Espacement intérieur de 2 rem */
+}
+
+/* Icône du menu burger */
+#burger--menu {
+    position: absolute; /* Placé par rapport à la fenêtre */
+    top: 20px; /* 20px du haut */
+    right: 20px; /* 20px de la droite */
+    cursor: pointer; /* Curseur en forme de main */
+    fill: #333;
+    transition: transform 0.3s ease; /* Animation douce sur le zoom */
+}
+
+/* Effet visuel au survol du burger */
+#burger--menu:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+/* Menu de navigation principal */
+#nav--primary {
+    position: fixed; /* Fixé à l’écran, ne bouge pas avec le scroll */
+    top: 0;
+    left: -100%; /* Caché à gauche par défaut */
+    width: 60%; /* Largeur du menu sur 60% de la page */
+    height: 100%; /* Prend toute la hauteur */
+    background-color: #333; /* Fond noir/gris foncé */
+    color: white; /* Texte blanc */
+    padding: 2rem; /* Espacement intérieur */
+    transition: left 0.4s ease; /* Animation lors de l'ouverture/fermeture */
+    z-index: 1000; /* Toujours au-dessus du reste */
+}
+
+/* Classe ajoutée dynamiquement pour ouvrir le menu */
+#nav--primary.open {
+    left: 0; /* Glisse à gauche de l’écran */
+}
+
+/* Bouton "fermer" (X) du menu */
+#btn--close {
+    font-size: 2rem; /* Taille grande pour le X */
+    color: white; /* Couleur blanche */
+    text-decoration: none; /* Pas de soulignement */
+    position: absolute; /* Positionné dans le menu */
+    top: 10px;
+    right: 20px;
+    cursor: pointer; /* Main au survol */
+}
+
+/* Liste des éléments de navigation */
+.nav--liste {
+    list-style: none; /* Supprime les puces de liste */
+    margin-top: 50px; /* Espacement du haut */
+}
+
+/* Chaque élément de menu */
+.nav--element {
+    margin: 20px 0; /* Espace au-dessus et en dessous de chaque élément */
+}
+
+/* Lien dans le menu */
+.nav--element a {
+    color: white; /* Texte blanc */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 1.2rem; /* Taille de police plus grande */
+    transition: color 0.3s; /* Animation douce sur hover */
+}
+
+/* Couleur différente au survol */
+.nav--element a:hover {
+    color: #00BFF3; /* Bleu clair au survol */
+}
+
+/* Section principale 404 */
+.erreur--404 {
+    text-align: center; /* Centrage du texte */
+    margin-top: 100px; /* Espacement du haut */
+}
+
+/* Texte principal "ERREUR 404" */
+.txt--erreur {
+    font-size: 4rem; /* Très grand texte */
+    font-weight: bold; /* Gras */
+    color: #C62828; /* Rouge foncé pour signaler une erreur */
+    margin-bottom: 1rem; /* Espace avec le texte suivant */
+}
+
+/* Section contenant le compte à rebours */
+.compteur {
+    font-size: 2rem; /* Texte du compte à rebours plus grand */
+    margin-top: 1rem; /* Espacement avec le texte du haut */
+    animation: fadeIn 1s ease-in-out; /* Apparition en douceur */
+}
+
+/* Animation d'apparition en fondu et montée */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Invisible au départ */
+        transform: translateY(10px); /* Positionné légèrement plus bas */
+    }
+    to {
+        opacity: 1; /* Devient visible */
+        transform: translateY(0); /* Remonte à sa position initiale */
+    }
+}
