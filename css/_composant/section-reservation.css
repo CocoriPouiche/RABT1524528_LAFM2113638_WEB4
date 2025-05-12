@@ -189,7 +189,7 @@ section form select:focus {
     background-color: #896d00; 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1027px) {
     .header-title h1 {
         font-size: 6rem;
         padding: 0.5rem 2rem;
@@ -210,7 +210,7 @@ section form select:focus {
 
     section form {
         padding: 20px;
-        margin: 20px;
+        margin: 20px auto; /* centrage horizontal */
     }
 }
 
