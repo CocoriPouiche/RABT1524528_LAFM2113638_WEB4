@@ -3,7 +3,7 @@
 
 /* Section Header avec une image en fond, centré et sombre pour mettre en valeur le texte */
 .Header-CaveAVin {
-    background: url('assets/images/jpg/VineTopView.jpg') center/cover no-repeat;
+    background: url('/assets/images/jpg/VineTopView.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
