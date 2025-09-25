@@ -54,8 +54,8 @@
         <?php endif; ?>
 
         <form action="connexion.php" method="post">
-            <input name="courriel" type="text" placeholder="Courriel">
-            <input name="mdp" type="password" placeholder="Mot de passe">
+            <input name="courriel" type="text" placeholder="Courriel" value="mikael@gmail.com">
+            <input name="mdp" type="password" placeholder="Mot de passe" value="Sexyjutsu">
             <input type="submit" value="Connexion">
         </form>
 </body>
